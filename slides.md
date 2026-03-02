@@ -15,14 +15,14 @@ fonts:
   background: #0d1117 !important;
   color: #e6edf3;
 }
-.slidev-layout h1 { color: #00ff88 !important; font-size: 1.6em !important; }
-.slidev-layout h2 { color: #00ff88 !important; }
+.slidev-layout h1 { color: #10b981 !important; font-size: 1.6em !important; }
+.slidev-layout h2 { color: #10b981 !important; }
 .slidev-layout h3 { color: #58a6ff !important; }
 .slidev-layout p  { margin: 0.4em 0; }
 .slidev-layout ul { padding-left: 1.2em; }
 .slidev-layout li { margin: 0.25em 0; }
 
-.accent  { color: #00ff88; font-weight: 700; }
+.accent  { color: #10b981; font-weight: 700; }
 .blue    { color: #58a6ff; font-weight: 600; }
 .muted   { color: #8b949e; }
 .red     { color: #f85149; font-weight: 600; }
@@ -36,7 +36,7 @@ fonts:
 }
 .card-green {
   background: #071912;
-  border: 1px solid #00ff88;
+  border: 1px solid #10b981;
   border-radius: 8px;
   padding: 12px 16px;
 }
@@ -53,28 +53,28 @@ fonts:
   padding: 12px 16px;
 }
 
-.metric-val   { font-size: 2.2em; font-weight: 800; color: #00ff88; line-height: 1.1; }
+.metric-val   { font-size: 2.2em; font-weight: 800; color: #10b981; line-height: 1.1; }
 .metric-label { font-size: 0.75em; color: #8b949e; margin-top: 3px; }
 
-.badge       { display:inline-block; background:#00ff88; color:#0d1117; font-size:0.68em; font-weight:700; padding:2px 7px; border-radius:20px; letter-spacing:.4px; }
+.badge       { display:inline-block; background:#10b981; color:#0d1117; font-size:0.68em; font-weight:700; padding:2px 7px; border-radius:20px; letter-spacing:.4px; }
 .badge-blue  { display:inline-block; background:#58a6ff; color:#0d1117; font-size:0.68em; font-weight:700; padding:2px 7px; border-radius:20px; }
 .badge-red   { display:inline-block; background:#f85149; color:#fff;    font-size:0.68em; font-weight:700; padding:2px 7px; border-radius:20px; }
 .badge-gray  { display:inline-block; background:#30363d; color:#e6edf3; font-size:0.68em; font-weight:600; padding:2px 7px; border-radius:20px; }
 
 table { width:100%; border-collapse:collapse; font-size:0.83em; }
-th { background:#161b22; color:#00ff88; padding:7px 11px; border:1px solid #30363d; text-align:left; }
+th { background:#161b22; color:#10b981; padding:7px 11px; border:1px solid #30363d; text-align:left; }
 td { padding:7px 11px; border:1px solid #21262d; color:#e6edf3; }
 tr:nth-child(even) td { background:#0d1117; }
 
 .demo-step {
   background:#161b22;
-  border-left:3px solid #00ff88;
+  border-left:3px solid #10b981;
   padding:8px 14px;
   margin:5px 0;
   border-radius:0 6px 6px 0;
   font-size:0.85em;
 }
-.step-n { color:#00ff88; font-weight:700; margin-right:6px; }
+.step-n { color:#10b981; font-weight:700; margin-right:6px; }
 
 .url-box {
   background:#161b22;
@@ -95,13 +95,13 @@ tr:nth-child(even) td { background:#0d1117; }
 .a-ic { font-size:1.35em; margin-bottom:2px; }
 .a-lb { color:#e6edf3; font-weight:700; font-size:0.70em; line-height:1.2; }
 .a-sb { color:#8b949e; font-size:0.62em; line-height:1.3; margin-top:1px; }
-.a-nd.a-on { border-color:#00ff88 !important; background:#071912 !important; box-shadow:0 0 18px #00ff8855; transform:scale(1.10); z-index:5; }
+.a-nd.a-on { border-color:#10b981 !important; background:#071912 !important; box-shadow:0 0 18px #10b98155; transform:scale(1.10); z-index:5; }
 .a-nd.a-off { opacity:0.12; transform:scale(0.95); }
 .a-ar { color:#30363d; font-size:1.05em; flex-shrink:0; transition:color 0.32s; line-height:1; }
-.a-ar.a-on { color:#00ff88; }
+.a-ar.a-on { color:#10b981; }
 .a-ar.a-off { opacity:0.08; }
 .a-zn { border-radius:10px; padding:10px 14px; border:1px solid; }
-.a-zc { background:#07120eaa; border-color:#00ff8820; }
+.a-zc { background:#07120eaa; border-color:#10b98120; }
 .a-zl { background:#07090f; border-color:#58a6ff20; }
 .a-zn-lb { font-size:0.60em; font-weight:700; letter-spacing:2px; margin-bottom:8px; }
 .a-row { display:flex; align-items:center; gap:7px; }
@@ -116,14 +116,14 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
 <div class="text-center">
 
 <div class="mb-3">
-  <img src="./logo.jpeg" style="height:68px; border-radius:50%; box-shadow:0 0 0 3px #00ff8840;" />
+  <img src="./logo.jpeg" style="height:68px; border-radius:50%; box-shadow:0 0 0 3px #10b98140;" />
 </div>
 
 <div class="muted small" style="letter-spacing:2px; margin-bottom:10px;">TRABAJO DE GRADO · INGENIERÍA EN SISTEMAS</div>
 
 <h1 style="font-size:1.55em !important; line-height:1.35; color:#fff !important; font-weight:800; margin-bottom:6px;">
   Estrategia de Automatización de<br>
-  <span style="color:#00ff88;">Pruebas Funcionales y de Regresión</span>
+  <span style="color:#10b981;">Pruebas Funcionales y de Regresión</span>
 </h1>
 <p class="muted" style="font-size:0.9em; margin-bottom:26px;">para la mejora de la calidad del software en entornos cloud</p>
 
@@ -399,7 +399,7 @@ clicks: 6
 
 # 02 · Arquitectura de la Solución
 
-<div style="margin-top:10px;"><div class="a-zn a-zc" style="margin-bottom:7px;"><div class="a-zn-lb" style="color:#00ff88;">☁️ CLOUD</div><div class="a-row" style="margin-bottom:9px;"><div class="a-nd" :class="$clicks===2?'a-on':$clicks>0?'a-off':''"><div class="a-ic">🐙</div><div class="a-lb">GitHub</div><div class="a-sb">Repositorio</div></div><div class="a-ar" :class="($clicks===2||$clicks===3)?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===3?'a-on':$clicks>0?'a-off':''"><div class="a-ic">⚙️</div><div class="a-lb">GitHub Actions</div><div class="a-sb">Pipeline YAML</div></div><div class="a-ar" :class="($clicks===3||$clicks===4)?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===4?'a-on':$clicks>0?'a-off':''"><div class="a-ic">⚛️</div><div class="a-lb">Build + Deploy</div><div class="a-sb">React + Vite · GitHub Pages</div></div><div style="flex:1;"></div></div><div class="a-row" style="padding-left:116px;"><div class="a-ar" style="transform:rotate(90deg);" :class="($clicks===3||$clicks===5)?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===5?'a-on':$clicks>0?'a-off':''"><div class="a-ic">🌲</div><div class="a-lb">Cypress E2E</div><div class="a-sb">6 specs · headless</div></div><div class="a-ar" :class="$clicks===6?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===6?'a-on':$clicks>0?'a-off':''"><div class="a-ic">📊</div><div class="a-lb">Cypress Cloud</div><div class="a-sb">resultados + evidencias</div></div><div class="a-ar" :class="$clicks===6?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===6?'a-on':$clicks>0?'a-off':''"><div class="a-ic">📋</div><div class="a-lb">GitHub Projects</div><div class="a-sb">issues auto-gestionados</div></div></div></div><div class="a-zn a-zl"><div class="a-zn-lb" style="color:#58a6ff;">🖥️ LOCAL</div><div class="a-row"><div class="a-nd" :class="$clicks===1?'a-on':$clicks>0?'a-off':''"><div class="a-ic">👨‍💻</div><div class="a-lb">Equipo Dev</div><div class="a-sb">commit / push</div></div><div class="a-ar" :class="$clicks===1?'a-on':$clicks>0?'a-off':''">+</div><div class="a-nd" :class="$clicks===1?'a-on':$clicks>0?'a-off':''"><div class="a-ic">🧪</div><div class="a-lb">Equipo QA</div><div class="a-sb">specs · commit / push</div></div><div class="a-ar" :class="($clicks===1||$clicks===2)?'a-on':$clicks>0?'a-off':''">⬆ push</div><div style="flex:1;"></div><div class="a-nd" :class="$clicks===6?'a-on':$clicks>0?'a-off':''"><div class="a-ic">👔</div><div class="a-lb">Product Owner</div><div class="a-sb">Approve / Reject</div></div></div></div><div class="a-cap"><span v-if="$clicks===0" style="color:#8b949e;font-weight:400;">→ para recorrer el flujo etapa por etapa</span><span v-if="$clicks===1" style="color:#00ff88;">① Dev escribe código · QA escribe specs de Cypress · ambos hacen commit y push</span><span v-if="$clicks===2" style="color:#00ff88;">② GitHub recibe el push y dispara automáticamente el trigger CI/CD</span><span v-if="$clicks===3" style="color:#00ff88;">③ GitHub Actions lee el YAML y orquesta todos los pasos del pipeline</span><span v-if="$clicks===4" style="color:#00ff88;">④ Build de la app React + Vite y deploy automático en GitHub Pages</span><span v-if="$clicks===5" style="color:#00ff88;">⑤ Cypress ejecuta los 6 specs en modo headless contra la app desplegada</span><span v-if="$clicks===6" style="color:#00ff88;">⑥ Cypress Cloud registra resultados · GitHub Projects gestiona los issues automáticamente</span></div></div>
+<div style="margin-top:10px;"><div class="a-zn a-zc" style="margin-bottom:7px;"><div class="a-zn-lb" style="color:#10b981;">☁️ CLOUD</div><div class="a-row" style="margin-bottom:9px;"><div class="a-nd" :class="$clicks===2?'a-on':$clicks>0?'a-off':''"><div class="a-ic">🐙</div><div class="a-lb">GitHub</div><div class="a-sb">Repositorio</div></div><div class="a-ar" :class="($clicks===2||$clicks===3)?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===3?'a-on':$clicks>0?'a-off':''"><div class="a-ic">⚙️</div><div class="a-lb">GitHub Actions</div><div class="a-sb">Pipeline YAML</div></div><div class="a-ar" :class="($clicks===3||$clicks===4)?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===4?'a-on':$clicks>0?'a-off':''"><div class="a-ic">⚛️</div><div class="a-lb">Build + Deploy</div><div class="a-sb">React + Vite · GitHub Pages</div></div><div style="flex:1;"></div></div><div class="a-row" style="padding-left:116px;"><div class="a-ar" style="transform:rotate(90deg);" :class="($clicks===3||$clicks===5)?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===5?'a-on':$clicks>0?'a-off':''"><div class="a-ic">🌲</div><div class="a-lb">Cypress E2E</div><div class="a-sb">6 specs · headless</div></div><div class="a-ar" :class="$clicks===6?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===6?'a-on':$clicks>0?'a-off':''"><div class="a-ic">📊</div><div class="a-lb">Cypress Cloud</div><div class="a-sb">resultados + evidencias</div></div><div class="a-ar" :class="$clicks===6?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===6?'a-on':$clicks>0?'a-off':''"><div class="a-ic">📋</div><div class="a-lb">GitHub Projects</div><div class="a-sb">issues auto-gestionados</div></div></div></div><div class="a-zn a-zl"><div class="a-zn-lb" style="color:#58a6ff;">🖥️ LOCAL</div><div class="a-row"><div class="a-nd" :class="$clicks===1?'a-on':$clicks>0?'a-off':''"><div class="a-ic">👨‍💻</div><div class="a-lb">Equipo Dev</div><div class="a-sb">commit / push</div></div><div class="a-ar" :class="$clicks===1?'a-on':$clicks>0?'a-off':''">+</div><div class="a-nd" :class="$clicks===1?'a-on':$clicks>0?'a-off':''"><div class="a-ic">🧪</div><div class="a-lb">Equipo QA</div><div class="a-sb">specs · commit / push</div></div><div class="a-ar" :class="($clicks===1||$clicks===2)?'a-on':$clicks>0?'a-off':''">⬆ push</div><div style="flex:1;"></div><div class="a-nd" :class="$clicks===6?'a-on':$clicks>0?'a-off':''"><div class="a-ic">👔</div><div class="a-lb">Product Owner</div><div class="a-sb">Approve / Reject</div></div></div></div><div class="a-cap"><span v-if="$clicks===0" style="color:#8b949e;font-weight:400;">→ para recorrer el flujo etapa por etapa</span><span v-if="$clicks===1" style="color:#10b981;">① Dev escribe código · QA escribe specs de Cypress · ambos hacen commit y push</span><span v-if="$clicks===2" style="color:#10b981;">② GitHub recibe el push y dispara automáticamente el trigger CI/CD</span><span v-if="$clicks===3" style="color:#10b981;">③ GitHub Actions lee el YAML y orquesta todos los pasos del pipeline</span><span v-if="$clicks===4" style="color:#10b981;">④ Build de la app React + Vite y deploy automático en GitHub Pages</span><span v-if="$clicks===5" style="color:#10b981;">⑤ Cypress ejecuta los 6 specs en modo headless contra la app desplegada</span><span v-if="$clicks===6" style="color:#10b981;">⑥ Cypress Cloud registra resultados · GitHub Projects gestiona los issues automáticamente</span></div></div>
 
 ---
 
@@ -490,7 +490,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 
 <div>
   <div style="font-size:2.8em; margin-bottom:8px;">⚡</div>
-  <h1 style="color:#00ff88 !important; font-size:1.8em !important; margin-bottom:10px;">DEMO<br>EN VIVO</h1>
+  <h1 style="color:#10b981 !important; font-size:1.8em !important; margin-bottom:10px;">DEMO<br>EN VIVO</h1>
   <p class="muted small" style="margin-bottom:18px;">Lo que verán es exactamente la hipótesis validada en tiempo real.</p>
 
   <div class="demo-step"><span class="step-n">01</span> Abrir GitHub Actions → <strong>Run workflow</strong></div>
@@ -503,7 +503,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 </div>
 
 <div>
-  <img src="./img-cypress-ide.png" style="width:100%; border-radius:8px; border:1px solid #00ff8850; box-shadow:0 0 20px #00ff8820;" />
+  <img src="./img-cypress-ide.png" style="width:100%; border-radius:8px; border:1px solid #10b98150; box-shadow:0 0 20px #10b98120;" />
   <div class="muted" style="font-size:0.68em; text-align:center; margin-top:6px;">
     Cypress ejecutando TC-002 · checkout.happy.cy.js · ✓ 1 passing (4s)
   </div>
@@ -539,7 +539,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 
 </div>
 
-<div v-click class="card" style="margin-top:10px; border-left:3px solid #00ff88; border-radius:0 8px 8px 0;">
+<div v-click class="card" style="margin-top:10px; border-left:3px solid #10b981; border-radius:0 8px 8px 0;">
   <p class="small" style="margin:0;"><span class="muted">Alcance del estudio:</span> Estudio exploratorio de viabilidad. Los resultados demuestran consistencia dentro de las 5 iteraciones y son base para investigación futura con muestras de mayor tamaño.</p>
 </div>
 
@@ -666,22 +666,22 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 
 <div style="margin-top:12px; display:flex; flex-direction:column; gap:10px;">
 
-<div v-click class="card" style="border-left:3px solid #00ff88; border-radius:0 8px 8px 0; display:flex; gap:14px; align-items:flex-start;">
+<div v-click class="card" style="border-left:3px solid #10b981; border-radius:0 8px 8px 0; display:flex; gap:14px; align-items:flex-start;">
   <div style="font-size:1.4em; flex-shrink:0;">✅</div>
   <p class="small" style="margin:0;"><span class="accent">La hipótesis fue confirmada.</span> La automatización integrada en CI/CD mejora la calidad del software de forma medible, reproducible y sostenible. Los datos lo prueban: −87% en tiempo, 100% en cobertura y detección.</p>
 </div>
 
-<div v-click class="card" style="border-left:3px solid #00ff88; border-radius:0 8px 8px 0; display:flex; gap:14px; align-items:flex-start;">
+<div v-click class="card" style="border-left:3px solid #10b981; border-radius:0 8px 8px 0; display:flex; gap:14px; align-items:flex-start;">
   <div style="font-size:1.4em; flex-shrink:0;">🆓</div>
   <p class="small" style="margin:0;"><span class="accent">Herramientas open-source son suficientes.</span> Cypress + GitHub Actions + GitHub Pages permiten implementar prácticas de ingeniería de calidad profesional con costo cero.</p>
 </div>
 
-<div v-click class="card" style="border-left:3px solid #00ff88; border-radius:0 8px 8px 0; display:flex; gap:14px; align-items:flex-start;">
+<div v-click class="card" style="border-left:3px solid #10b981; border-radius:0 8px 8px 0; display:flex; gap:14px; align-items:flex-start;">
   <div style="font-size:1.4em; flex-shrink:0;">♾️</div>
   <p class="small" style="margin:0;"><span class="accent">El modelo es replicable.</span> Aplicable a cualquier sistema web con flujos transaccionales críticos: e-commerce, fintech, SaaS, retail.</p>
 </div>
 
-<div v-click class="card" style="border-left:3px solid #00ff88; border-radius:0 8px 8px 0; display:flex; gap:14px; align-items:flex-start;">
+<div v-click class="card" style="border-left:3px solid #10b981; border-radius:0 8px 8px 0; display:flex; gap:14px; align-items:flex-start;">
   <div style="font-size:1.4em; flex-shrink:0;">📉</div>
   <p class="small" style="margin:0;"><span class="accent">El testing manual no escala.</span> Lento, de baja cobertura, no trazable. La automatización resolvió las tres debilidades identificadas en el diagnóstico inicial.</p>
 </div>
@@ -736,7 +736,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 <div style="text-align:center;">
 
 <div style="font-size:3em; margin-bottom:10px;">🎓</div>
-<h1 style="color:#00ff88 !important; font-size:2em !important; margin-bottom:6px;">¡Muchas Gracias!</h1>
+<h1 style="color:#10b981 !important; font-size:2em !important; margin-bottom:6px;">¡Muchas Gracias!</h1>
 <p class="muted" style="margin-bottom:26px;">
   Luciano Castro · Matías Primitz &nbsp;·&nbsp;
   <span class="small">Tutora: Lic. Natalia Mira</span>
@@ -744,13 +744,13 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; max-width:560px; margin:0 auto 20px auto;">
   <div class="url-box" style="text-align:left;">
-    📦 github.com/<span style="color:#00ff88;">lucianocastr</span>/ticketeraTesis
+    📦 github.com/<span style="color:#10b981;">lucianocastr</span>/ticketeraTesis
   </div>
   <div class="url-box" style="text-align:left;">
-    🌐 lucianocastr.github.io/<span style="color:#00ff88;">ticketeraTesis</span>/
+    🌐 lucianocastr.github.io/<span style="color:#10b981;">ticketeraTesis</span>/
   </div>
   <div class="url-box" style="text-align:left; grid-column:span 2;">
-    📊 cloud.cypress.io/projects/<span style="color:#00ff88;">mfnt8h</span>/runs
+    📊 cloud.cypress.io/projects/<span style="color:#10b981;">mfnt8h</span>/runs
   </div>
 </div>
 
