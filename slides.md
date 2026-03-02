@@ -225,14 +225,17 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
   <div class="card" style="text-align:center;">
     <div class="metric-val">43%</div>
     <div class="metric-label">cobertura promedio<br>con testing manual</div>
+    <div style="font-size:0.58em; color:#58a6ff; margin-top:4px;">medición propia — baseline</div>
   </div>
   <div class="card" style="text-align:center;">
     <div class="metric-val">20%</div>
     <div class="metric-label">defectos detectados<br>antes de producción</div>
+    <div style="font-size:0.58em; color:#58a6ff; margin-top:4px;">medición propia — baseline</div>
   </div>
   <div class="card" style="text-align:center;">
     <div class="metric-val">&lt;50%</div>
     <div class="metric-label">reproducibilidad<br>de ejecuciones manuales</div>
+    <div style="font-size:0.58em; color:#58a6ff; margin-top:4px;">medición propia — baseline</div>
   </div>
 </div>
 
@@ -287,7 +290,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 
 <div style="text-align:center; max-width:720px; margin:0 auto;">
 
-<div class="muted small" style="letter-spacing:2px; margin-bottom:16px;">HIPÓTESIS DE TRABAJO</div>
+<div class="muted small" style="letter-spacing:2px; margin-bottom:16px;">02 · HIPÓTESIS DE TRABAJO</div>
 
 <p style="font-size:1.25em; line-height:1.7; color:#e6edf3;">
   La integración sistemática de pruebas funcionales y de regresión automatizadas
@@ -341,7 +344,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
   <span class="accent" style="font-weight:700;">OE3</span> &nbsp;Diseñar estrategia de pruebas por cobertura, criticidad y riesgo
 </div>
 <div v-click class="card small">
-  <span class="accent" style="font-weight:700;">OE4</span> &nbsp;Implementar prototipo funcional con Cypress + GitHub Actions
+  <span class="accent" style="font-weight:700;">OE4</span> &nbsp;Implementar solución funcional con Cypress + GitHub Actions
 </div>
 <div v-click class="card small">
   <span class="accent" style="font-weight:700;">OE5</span> &nbsp;Validar efectividad mediante métricas y simulaciones de regresión
@@ -353,45 +356,50 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 </div>
 
 ---
+
+# 02 · Alcance y Limitaciones
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:16px;">
+
+<div>
+<div class="card-blue small" style="margin-bottom:10px;">
+  <div class="blue" style="font-weight:700; margin-bottom:6px;">✔ Dentro del alcance</div>
+  <ul style="margin:0; padding-left:1.1em;">
+    <li>Pruebas funcionales E2E sobre flujos transaccionales críticos</li>
+    <li>Pipeline CI/CD completo en entorno cloud (GitHub)</li>
+    <li>Comparación cuantitativa manual vs. automatizado</li>
+    <li>Alineación con ISO/IEC 25010:2023</li>
+    <li>Estrategia documentada y replicable</li>
+  </ul>
+</div>
+</div>
+
+<div>
+<div class="card-red small" style="margin-bottom:10px;">
+  <div class="red" style="font-weight:700; margin-bottom:6px;">✗ Fuera del alcance</div>
+  <ul style="margin:0; padding-left:1.1em;">
+    <li>Pruebas unitarias y de integración</li>
+    <li>Pruebas de performance y carga</li>
+    <li>Sistema legacy o de terceros</li>
+    <li>Validación con muestra estadísticamente significativa</li>
+    <li>Ambiente cloud empresarial (AWS / Azure / GCP)</li>
+  </ul>
+</div>
+</div>
+
+</div>
+
+<div v-click class="card" style="margin-top:10px; border-left:3px solid #58a6ff; border-radius:0 8px 8px 0;">
+  <p class="small" style="margin:0;">El sistema bajo prueba fue desarrollado por los autores con testeabilidad como requisito de diseño. Los resultados son válidos como <span class="blue">prueba de concepto</span> y base para la replicación en entornos reales.</p>
+</div>
+
+---
 clicks: 6
 ---
 
 # 02 · Arquitectura de la Solución
 
 <div style="margin-top:10px;"><div class="a-zn a-zc" style="margin-bottom:7px;"><div class="a-zn-lb" style="color:#00ff88;">☁️ CLOUD</div><div class="a-row" style="margin-bottom:9px;"><div class="a-nd" :class="$clicks===2?'a-on':$clicks>0?'a-off':''"><div class="a-ic">🐙</div><div class="a-lb">GitHub</div><div class="a-sb">Repositorio</div></div><div class="a-ar" :class="($clicks===2||$clicks===3)?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===3?'a-on':$clicks>0?'a-off':''"><div class="a-ic">⚙️</div><div class="a-lb">GitHub Actions</div><div class="a-sb">Pipeline YAML</div></div><div class="a-ar" :class="($clicks===3||$clicks===4)?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===4?'a-on':$clicks>0?'a-off':''"><div class="a-ic">⚛️</div><div class="a-lb">Build + Deploy</div><div class="a-sb">React + Vite · GitHub Pages</div></div><div style="flex:1;"></div></div><div class="a-row" style="padding-left:116px;"><div class="a-ar" style="transform:rotate(90deg);" :class="($clicks===3||$clicks===5)?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===5?'a-on':$clicks>0?'a-off':''"><div class="a-ic">🌲</div><div class="a-lb">Cypress E2E</div><div class="a-sb">6 specs · headless</div></div><div class="a-ar" :class="$clicks===6?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===6?'a-on':$clicks>0?'a-off':''"><div class="a-ic">📊</div><div class="a-lb">Cypress Cloud</div><div class="a-sb">resultados + evidencias</div></div><div class="a-ar" :class="$clicks===6?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===6?'a-on':$clicks>0?'a-off':''"><div class="a-ic">📋</div><div class="a-lb">GitHub Projects</div><div class="a-sb">issues auto-gestionados</div></div></div></div><div class="a-zn a-zl"><div class="a-zn-lb" style="color:#58a6ff;">🖥️ LOCAL</div><div class="a-row"><div class="a-nd" :class="$clicks===1?'a-on':$clicks>0?'a-off':''"><div class="a-ic">👨‍💻</div><div class="a-lb">Equipo Dev</div><div class="a-sb">commit / push</div></div><div class="a-ar" :class="$clicks===1?'a-on':$clicks>0?'a-off':''">+</div><div class="a-nd" :class="$clicks===1?'a-on':$clicks>0?'a-off':''"><div class="a-ic">🧪</div><div class="a-lb">Equipo QA</div><div class="a-sb">specs · commit / push</div></div><div class="a-ar" :class="($clicks===1||$clicks===2)?'a-on':$clicks>0?'a-off':''">⬆ push</div><div style="flex:1;"></div><div class="a-nd" :class="$clicks===6?'a-on':$clicks>0?'a-off':''"><div class="a-ic">👔</div><div class="a-lb">Product Owner</div><div class="a-sb">Approve / Reject</div></div></div></div><div class="a-cap"><span v-if="$clicks===0" style="color:#8b949e;font-weight:400;">→ para recorrer el flujo etapa por etapa</span><span v-if="$clicks===1" style="color:#00ff88;">① Dev escribe código · QA escribe specs de Cypress · ambos hacen commit y push</span><span v-if="$clicks===2" style="color:#00ff88;">② GitHub recibe el push y dispara automáticamente el trigger CI/CD</span><span v-if="$clicks===3" style="color:#00ff88;">③ GitHub Actions lee el YAML y orquesta todos los pasos del pipeline</span><span v-if="$clicks===4" style="color:#00ff88;">④ Build de la app React + Vite y deploy automático en GitHub Pages</span><span v-if="$clicks===5" style="color:#00ff88;">⑤ Cypress ejecuta los 6 specs en modo headless contra la app desplegada</span><span v-if="$clicks===6" style="color:#00ff88;">⑥ Cypress Cloud registra resultados · GitHub Projects gestiona los issues automáticamente</span></div></div>
-
----
-
-# 02 · Los 6 Casos de Prueba
-
-<div style="display:grid; grid-template-columns:1fr 1.1fr; gap:16px; margin-top:12px; align-items:start;">
-
-<div>
-  <img src="./img-cypress-cloud.png" style="width:100%; border-radius:8px; border:1px solid #30363d;" />
-  <div class="muted" style="font-size:0.7em; text-align:center; margin-top:5px;">
-    Cypress Cloud — todos los specs en una ejecución real
-  </div>
-</div>
-
-<div>
-  <table>
-    <thead><tr><th>ID</th><th>Flujo crítico</th></tr></thead>
-    <tbody>
-      <tr><td><span class="badge">TC-001</span></td><td>Login correcto e inválido</td></tr>
-      <tr><td><span class="badge">TC-002</span></td><td>Compra completa (happy path E2E)</td></tr>
-      <tr><td><span class="badge">TC-003</span></td><td>Pago rechazado + reintento exitoso</td></tr>
-      <tr><td><span class="badge">TC-004</span></td><td>Carrito: agregar, totales, vaciar</td></tr>
-      <tr><td><span class="badge">TC-005</span></td><td>Catálogo disponible post-login</td></tr>
-      <tr><td><span class="badge">TC-006</span></td><td>Sesión expirada y recuperación</td></tr>
-    </tbody>
-  </table>
-
-  <div v-click class="card-green small" style="margin-top:12px; text-align:center;">
-    <span class="accent" style="font-weight:700;">6 specs · 100% flujos críticos · ~2 min total</span>
-  </div>
-</div>
-
-</div>
 
 ---
 
@@ -441,6 +449,39 @@ jobs:
 </div>
 
 ---
+
+# 02 · Los 6 Casos de Prueba
+
+<div style="display:grid; grid-template-columns:1fr 1.1fr; gap:16px; margin-top:12px; align-items:start;">
+
+<div>
+  <img src="./img-cypress-cloud.png" style="width:100%; border-radius:8px; border:1px solid #30363d;" />
+  <div class="muted" style="font-size:0.7em; text-align:center; margin-top:5px;">
+    Cypress Cloud — todos los specs en una ejecución real
+  </div>
+</div>
+
+<div>
+  <table>
+    <thead><tr><th>ID</th><th>Flujo crítico</th></tr></thead>
+    <tbody>
+      <tr><td><span class="badge">TC-001</span></td><td>Login correcto e inválido</td></tr>
+      <tr><td><span class="badge">TC-002</span></td><td>Compra completa (happy path E2E)</td></tr>
+      <tr><td><span class="badge">TC-003</span></td><td>Pago rechazado + reintento exitoso</td></tr>
+      <tr><td><span class="badge">TC-004</span></td><td>Carrito: agregar, totales, vaciar</td></tr>
+      <tr><td><span class="badge">TC-005</span></td><td>Catálogo disponible post-login</td></tr>
+      <tr><td><span class="badge">TC-006</span></td><td>Sesión expirada y recuperación</td></tr>
+    </tbody>
+  </table>
+
+  <div v-click class="card-green small" style="margin-top:12px; text-align:center;">
+    <span class="accent" style="font-weight:700;">6 specs · 100% flujos críticos · ~2 min total</span>
+  </div>
+</div>
+
+</div>
+
+---
 layout: center
 background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 ---
@@ -468,6 +509,38 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
   </div>
 </div>
 
+</div>
+
+---
+
+# 04 · Metodología de Medición
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:14px;">
+
+<div class="card-blue small">
+  <div class="blue" style="font-weight:700; margin-bottom:8px;">Diseño experimental</div>
+  <ul style="margin:0; padding-left:1.1em;">
+    <li><strong>n = 5 iteraciones</strong> por escenario controlado</li>
+    <li>Variables independientes: tipo de testing (manual / automatizado)</li>
+    <li>Variables dependientes: tiempo, cobertura, detección, reproducibilidad</li>
+    <li>Mismos flujos ejecutados en ambas modalidades</li>
+  </ul>
+</div>
+
+<div class="card small">
+  <div class="accent" style="font-weight:700; margin-bottom:8px;">Protocolo de medición</div>
+  <ul style="margin:0; padding-left:1.1em;">
+    <li>Manual: ejecución cronometrada por los autores con guía de pasos fija</li>
+    <li>Automatizado: ejecución headless en GitHub Actions runner Ubuntu</li>
+    <li>Resultados registrados en Cypress Cloud y GitHub Actions logs</li>
+    <li>Herramienta de reporte: Mochawesome (HTML + JSON)</li>
+  </ul>
+</div>
+
+</div>
+
+<div v-click class="card" style="margin-top:10px; border-left:3px solid #00ff88; border-radius:0 8px 8px 0;">
+  <p class="small" style="margin:0;"><span class="muted">Alcance del estudio:</span> Estudio exploratorio de viabilidad. Los resultados demuestran consistencia dentro de las 5 iteraciones y son base para investigación futura con muestras de mayor tamaño.</p>
 </div>
 
 ---
@@ -697,9 +770,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 </div>
 
 <p class="muted" style="font-size:0.72em; margin-top:22px;">
-  <kbd style="background:#161b22;border:1px solid #30363d;border-radius:3px;padding:1px 5px;color:#8b949e;">→</kbd> siguiente &nbsp;·&nbsp;
-  <kbd style="background:#161b22;border:1px solid #30363d;border-radius:3px;padding:1px 5px;color:#8b949e;">F</kbd> pantalla completa &nbsp;·&nbsp;
-  <kbd style="background:#161b22;border:1px solid #30363d;border-radius:3px;padding:1px 5px;color:#8b949e;">O</kbd> vista general
+  Centro Regional Universitario Córdoba · Ingeniería en Sistemas · 2025
 </p>
 
 </div>
