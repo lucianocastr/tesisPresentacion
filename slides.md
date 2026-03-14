@@ -106,6 +106,16 @@ tr:nth-child(even) td { background:#0d1117; }
 .a-zn-lb { font-size:0.60em; font-weight:700; letter-spacing:2px; margin-bottom:8px; }
 .a-row { display:flex; align-items:center; gap:7px; }
 .a-cap { text-align:center; font-size:0.75em; font-weight:600; min-height:20px; margin-top:6px; }
+
+.bar-wrap { margin:7px 0; }
+.bar-label-row { display:flex; justify-content:space-between; margin-bottom:3px; }
+.bar-label { font-size:0.74em; color:#8b949e; }
+.bar-delta { font-size:0.74em; font-weight:800; color:#10b981; }
+.bar-track { height:20px; background:#0d1117; border-radius:4px; overflow:hidden; margin-bottom:3px; }
+.bar-fill { height:100%; border-radius:4px; display:flex; align-items:center; padding:0 8px; font-size:0.70em; font-weight:700; white-space:nowrap; animation: bar-grow 0.7s cubic-bezier(0.4,0,0.2,1) both; }
+.bar-manual { background:#2a0e0e; border:1px solid #f8514950; color:#f85149; }
+.bar-auto   { background:#071912; border:1px solid #10b98150; color:#10b981; }
+@keyframes bar-grow { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0% 0 0); } }
 </style>
 
 ---
@@ -151,7 +161,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
   <div style="font-size:1.5em; flex-shrink:0;">🔍</div>
   <div>
     <div class="accent small" style="font-weight:700; letter-spacing:.5px;">01 · PROBLEMÁTICA</div>
-    <div class="muted small">Contexto, evidencia e impacto del testing manual en sistemas transaccionales</div>
+    <div class="muted small">Contexto, evidencia, impacto y motivación del problema en sistemas transaccionales</div>
   </div>
 </div>
 
@@ -159,7 +169,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
   <div style="font-size:1.5em; flex-shrink:0;">🎯</div>
   <div>
     <div class="accent small" style="font-weight:700; letter-spacing:.5px;">02 · PROPUESTA</div>
-    <div class="muted small">Sistema bajo prueba, objetivos, hipótesis y arquitectura de la solución</div>
+    <div class="muted small">Hipótesis, objetivos, marco conceptual, sistema bajo prueba, casos de prueba y arquitectura</div>
   </div>
 </div>
 
@@ -242,44 +252,46 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
 
 ---
 
-# El Sistema Bajo Prueba
+# Por Qué Importa
 
-<div class="muted small" style="margin-bottom:14px;">
-  <span class="badge-gray">Mini Ticketera</span>&nbsp;
-  Plataforma web de venta de entradas desarrollada en React + Vite — desplegada en GitHub Pages
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:16px;">
+
+<div v-click class="card-red" style="display:flex; gap:12px; align-items:flex-start;">
+  <div style="font-size:1.5em; flex-shrink:0;">💥</div>
+  <div>
+    <div class="red small" style="font-weight:700; margin-bottom:4px;">Impacto Técnico</div>
+    <div class="muted small">Bugs en producción, regresiones funcionales e inestabilidad del sistema</div>
+  </div>
 </div>
 
-<div style="display:grid; grid-template-columns:1fr 1fr 1fr 1fr; gap:8px;">
-
-<div v-click style="text-align:center;">
-  <div class="muted small" style="margin-bottom:4px; letter-spacing:.5px;">LOGIN</div>
-  <img src="./img-app-login.png" style="width:100%; border-radius:6px; border:1px solid #30363d;" />
-  <div class="muted" style="font-size:0.65em; margin-top:4px;">TC-001 · Autenticación</div>
+<div v-click class="card-red" style="display:flex; gap:12px; align-items:flex-start;">
+  <div style="font-size:1.5em; flex-shrink:0;">💸</div>
+  <div>
+    <div class="red small" style="font-weight:700; margin-bottom:4px;">Impacto Comercial</div>
+    <div class="muted small">Pérdida de ventas, abandono de carritos y baja tasa de conversión</div>
+  </div>
 </div>
 
-<div v-click style="text-align:center;">
-  <div class="muted small" style="margin-bottom:4px; letter-spacing:.5px;">CATÁLOGO</div>
-  <img src="./img-app-catalogo.png" style="width:100%; border-radius:6px; border:1px solid #30363d;" />
-  <div class="muted" style="font-size:0.65em; margin-top:4px;">TC-005 · Disponibilidad</div>
+<div v-click class="card-red" style="display:flex; gap:12px; align-items:flex-start;">
+  <div style="font-size:1.5em; flex-shrink:0;">📉</div>
+  <div>
+    <div class="red small" style="font-weight:700; margin-bottom:4px;">Impacto Reputacional</div>
+    <div class="muted small">Pérdida de confianza del usuario, daño de marca y crisis públicas</div>
+  </div>
 </div>
 
-<div v-click style="text-align:center;">
-  <div class="muted small" style="margin-bottom:4px; letter-spacing:.5px;">CHECKOUT</div>
-  <img src="./img-app-checkout.png" style="width:100%; border-radius:6px; border:1px solid #30363d;" />
-  <div class="muted" style="font-size:0.65em; margin-top:4px;">TC-002/003 · Compra & Pago</div>
-</div>
-
-<div v-click style="text-align:center;">
-  <div class="muted small" style="margin-bottom:4px; letter-spacing:.5px;">CONFIRMACIÓN</div>
-  <img src="./img-app-confirmacion.png" style="width:100%; border-radius:6px; border:1px solid #30363d;" />
-  <div class="muted" style="font-size:0.65em; margin-top:4px;">TC-002 · Happy path</div>
+<div v-click class="card-red" style="display:flex; gap:12px; align-items:flex-start;">
+  <div style="font-size:1.5em; flex-shrink:0;">⏳</div>
+  <div>
+    <div class="red small" style="font-weight:700; margin-bottom:4px;">Impacto Operativo</div>
+    <div class="muted small">Entregas lentas, sobrecarga de QA manual y dificultad de escalado</div>
+  </div>
 </div>
 
 </div>
 
-<div v-click style="margin-top:14px; display:flex; gap:10px; align-items:center;">
-  <div class="url-box" style="flex:1;">🌐&nbsp; https://lucianocastr.github.io/ticketeraTesis/</div>
-  <div class="url-box" style="flex:1;">📦&nbsp; github.com/lucianocastr/ticketeraTesis</div>
+<div v-click class="card" style="margin-top:12px; border-left:3px solid #f85149; border-radius:0 8px 8px 0;">
+  <p class="small" style="margin:0;"><span class="red">La pregunta central:</span> ¿Puede una estrategia sistemática de automatización resolver estas cuatro dimensiones del problema de forma medible y sostenible?</p>
 </div>
 
 ---
@@ -289,7 +301,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 
 <div style="text-align:center; max-width:720px; margin:0 auto;">
 
-<div class="muted small" style="letter-spacing:2px; margin-bottom:16px;">02 · HIPÓTESIS DE TRABAJO</div>
+<div class="muted small" style="letter-spacing:2px; margin-bottom:16px;">HIPÓTESIS DE TRABAJO</div>
 
 <p style="font-size:1.25em; line-height:1.7; color:#e6edf3;">
   La integración sistemática de pruebas funcionales y de regresión automatizadas
@@ -352,6 +364,76 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
   <span class="accent" style="font-weight:700;">OE6</span> &nbsp;Documentar estrategia replicable a otros entornos equivalentes
 </div>
 
+</div>
+
+---
+
+# Marco Conceptual
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:16px;">
+
+<div v-click class="card-blue small">
+  <div class="blue" style="font-weight:700; margin-bottom:6px;">📐 ISO/IEC 25010:2023</div>
+  <div class="muted">Modelo de calidad del producto software. Características medibles: <span class="blue">Adecuación Funcional, Fiabilidad, Eficiencia de Desempeño, Mantenibilidad, Seguridad y Flexibilidad</span>.</div>
+</div>
+
+<div v-click class="card small">
+  <div class="accent" style="font-weight:700; margin-bottom:6px;">⚙️ CI/CD</div>
+  <div class="muted">Pipeline automatizado: build, deploy y tests ante cada push. Reduce el riesgo de integración y habilita entregas continuas y auditables.</div>
+</div>
+
+<div v-click class="card small">
+  <div class="accent" style="font-weight:700; margin-bottom:6px;">🌲 Testing E2E — Cypress</div>
+  <div class="muted">Pruebas que simulan flujos reales del usuario en el navegador. Interceptación de APIs, screenshots, videos y reportes Mochawesome automatizados.</div>
+</div>
+
+<div v-click class="card-green small">
+  <div class="accent" style="font-weight:700; margin-bottom:6px;">🔁 Automatización de Pruebas</div>
+  <div class="muted">Repetibilidad, cobertura consistente, trazabilidad commit→test→issue y eliminación del esfuerzo humano en validación continua.</div>
+</div>
+
+</div>
+
+---
+
+# El Sistema Bajo Prueba
+
+<div class="muted small" style="margin-bottom:14px;">
+  <span class="badge-gray">Mini Ticketera</span>&nbsp;
+  Plataforma web de venta de entradas desarrollada en React + Vite — desplegada en GitHub Pages
+</div>
+
+<div style="display:grid; grid-template-columns:1fr 1fr 1fr 1fr; gap:8px;">
+
+<div v-click style="text-align:center;">
+  <div class="muted small" style="margin-bottom:4px; letter-spacing:.5px;">LOGIN</div>
+  <img src="./img-app-login.png" style="width:100%; border-radius:6px; border:1px solid #30363d;" />
+  <div class="muted" style="font-size:0.65em; margin-top:4px;">TC-001 · Autenticación</div>
+</div>
+
+<div v-click style="text-align:center;">
+  <div class="muted small" style="margin-bottom:4px; letter-spacing:.5px;">CATÁLOGO</div>
+  <img src="./img-app-catalogo.png" style="width:100%; border-radius:6px; border:1px solid #30363d;" />
+  <div class="muted" style="font-size:0.65em; margin-top:4px;">TC-005 · Disponibilidad</div>
+</div>
+
+<div v-click style="text-align:center;">
+  <div class="muted small" style="margin-bottom:4px; letter-spacing:.5px;">CHECKOUT</div>
+  <img src="./img-app-checkout.png" style="width:100%; border-radius:6px; border:1px solid #30363d;" />
+  <div class="muted" style="font-size:0.65em; margin-top:4px;">TC-002/003 · Compra & Pago</div>
+</div>
+
+<div v-click style="text-align:center;">
+  <div class="muted small" style="margin-bottom:4px; letter-spacing:.5px;">CONFIRMACIÓN</div>
+  <img src="./img-app-confirmacion.png" style="width:100%; border-radius:6px; border:1px solid #30363d;" />
+  <div class="muted" style="font-size:0.65em; margin-top:4px;">TC-002 · Happy path</div>
+</div>
+
+</div>
+
+<div v-click style="margin-top:14px; display:flex; gap:10px; align-items:center;">
+  <div class="url-box" style="flex:1;">🌐&nbsp; https://lucianocastr.github.io/ticketeraTesis/</div>
+  <div class="url-box" style="flex:1;">📦&nbsp; github.com/lucianocastr/ticketeraTesis</div>
 </div>
 
 ---
@@ -423,6 +505,40 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
   </div>
 </div>
 
+</div>
+
+---
+
+# Implementación — Buenas Prácticas Aplicadas
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:16px;">
+
+<div v-click class="card small">
+  <div class="accent" style="font-weight:700; margin-bottom:6px;">🎯 Selectores estables</div>
+  <div class="muted small" style="margin-bottom:8px;">Atributos <code>data-cy</code> desacoplados del diseño — eliminan fragilidad ante cambios de UI</div>
+  <code style="font-size:0.75em; color:#10b981;">cy.get('[data-cy=btn-checkout]')</code>
+</div>
+
+<div v-click class="card small">
+  <div class="accent" style="font-weight:700; margin-bottom:6px;">♻️ Comandos custom reutilizables</div>
+  <div class="muted small" style="margin-bottom:8px;">Lógica de setup encapsulada — evita duplicación entre specs</div>
+  <code style="font-size:0.75em; color:#10b981;">cy.login() &nbsp;·&nbsp; cy.addToCart()</code>
+</div>
+
+<div v-click class="card small">
+  <div class="accent" style="font-weight:700; margin-bottom:6px;">📝 Patrón Given / When / Then</div>
+  <div class="muted small">Estructura legible y alineada a BDD — facilita revisión y mantenimiento de los specs</div>
+</div>
+
+<div v-click class="card small">
+  <div class="accent" style="font-weight:700; margin-bottom:6px;">🔀 Intercepción de red</div>
+  <div class="muted small">Mocking con <code>cy.intercept()</code> para simular pagos rechazados y sesiones expiradas de forma determinística</div>
+</div>
+
+</div>
+
+<div v-click class="card-green small" style="margin-top:10px; text-align:center;">
+  Prácticas adoptadas desde el inicio — la <span class="accent">testeabilidad como requisito de diseño</span>
 </div>
 
 ---
@@ -520,73 +636,49 @@ clicks: 5
 
 # Resultados
 
-<div style="display:grid; grid-template-columns:1.2fr 1fr; gap:14px; margin-top:10px; align-items:start;">
+<div style="max-width:720px; margin:12px auto 0 auto;">
 
-<div>
-  <table>
-    <thead><tr><th>Indicador</th><th>Manual</th><th>Automatizado</th><th>Δ</th></tr></thead>
-    <tbody>
-      <tr>
-        <td>Tiempo por ciclo</td>
-        <td>~15 min</td>
-        <td>~2 min</td>
-        <td><span class="accent">−87%</span></td>
-      </tr>
-      <tr>
-        <td>Casos ejecutados</td>
-        <td class="red">43%</td>
-        <td class="accent">100%</td>
-        <td><span class="accent">+57 pp</span></td>
-      </tr>
-      <tr>
-        <td>Detección pre-deploy</td>
-        <td class="red">20%</td>
-        <td class="accent">100%</td>
-        <td><span class="accent">+80 pp</span></td>
-      </tr>
-      <tr>
-        <td>Esfuerzo humano</td>
-        <td>15 min</td>
-        <td>3 min</td>
-        <td><span class="accent">−80%</span></td>
-      </tr>
-      <tr>
-        <td>Reproducibilidad</td>
-        <td class="red">&lt;50%</td>
-        <td class="accent">100%</td>
-        <td><span class="accent">+50 pp</span></td>
-      </tr>
-      <tr>
-        <td>Trazabilidad</td>
-        <td class="muted">baja / manual</td>
-        <td><span class="accent">versionada</span></td>
-        <td><span class="accent">✓</span></td>
-      </tr>
-    </tbody>
-  </table>
-
-  <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-top:12px;">
-    <div v-click class="card" style="text-align:center;">
-      <div class="metric-val">−87%</div>
-      <div class="metric-label">tiempo</div>
-    </div>
-    <div v-click class="card" style="text-align:center;">
-      <div class="metric-val">100%</div>
-      <div class="metric-label">cobertura</div>
-    </div>
-    <div v-click class="card" style="text-align:center;">
-      <div class="metric-val">−80%</div>
-      <div class="metric-label">esfuerzo</div>
-    </div>
+  <div v-click class="bar-wrap">
+    <div class="bar-label-row"><span class="bar-label">Tiempo por ciclo</span><span class="bar-delta">−87%</span></div>
+    <div class="bar-track"><div class="bar-fill bar-manual" style="width:100%;">15 min</div></div>
+    <div class="bar-track"><div class="bar-fill bar-auto"   style="width:13%;">2 min</div></div>
   </div>
-</div>
 
-<div>
-  <img src="./img-cypress-cloud.png" style="width:100%; border-radius:8px; border:1px solid #30363d; margin-bottom:10px;" />
-  <div v-click class="card-green small" style="text-align:center;">
-    <span class="badge">n = 5</span>&nbsp; iteraciones controladas por escenario
+  <div v-click class="bar-wrap">
+    <div class="bar-label-row"><span class="bar-label">Cobertura de casos críticos</span><span class="bar-delta">+57 pp</span></div>
+    <div class="bar-track"><div class="bar-fill bar-manual" style="width:43%;">43%</div></div>
+    <div class="bar-track"><div class="bar-fill bar-auto"   style="width:100%;">100%</div></div>
   </div>
-</div>
+
+  <div v-click class="bar-wrap">
+    <div class="bar-label-row"><span class="bar-label">Detección pre-deploy</span><span class="bar-delta">+80 pp</span></div>
+    <div class="bar-track"><div class="bar-fill bar-manual" style="width:20%;">20%</div></div>
+    <div class="bar-track"><div class="bar-fill bar-auto"   style="width:100%;">100%</div></div>
+  </div>
+
+  <div v-click class="bar-wrap">
+    <div class="bar-label-row"><span class="bar-label">Esfuerzo humano total (n=5)</span><span class="bar-delta">−80%</span></div>
+    <div class="bar-track"><div class="bar-fill bar-manual" style="width:100%;">75 min</div></div>
+    <div class="bar-track"><div class="bar-fill bar-auto"   style="width:20%;">15 min</div></div>
+  </div>
+
+  <div v-click class="bar-wrap">
+    <div class="bar-label-row"><span class="bar-label">Reproducibilidad</span><span class="bar-delta">+50 pp</span></div>
+    <div class="bar-track"><div class="bar-fill bar-manual" style="width:50%;">&lt;50%</div></div>
+    <div class="bar-track"><div class="bar-fill bar-auto"   style="width:100%;">100%</div></div>
+  </div>
+
+  <div style="display:flex; gap:14px; margin-top:12px; align-items:center; justify-content:center;">
+    <div style="display:flex; align-items:center; gap:5px;">
+      <div style="width:14px; height:14px; background:#2a0e0e; border:1px solid #f8514950; border-radius:3px;"></div>
+      <span class="muted small">Testing manual</span>
+    </div>
+    <div style="display:flex; align-items:center; gap:5px;">
+      <div style="width:14px; height:14px; background:#071912; border:1px solid #10b98150; border-radius:3px;"></div>
+      <span class="muted small">Automatizado</span>
+    </div>
+    <span class="badge" style="margin-left:16px;">n = 5 iteraciones</span>
+  </div>
 
 </div>
 
