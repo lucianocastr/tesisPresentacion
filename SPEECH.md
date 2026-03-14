@@ -107,11 +107,11 @@ De las características que define la norma, identificamos seis que son directam
 
 ## [LUCIANO] — /15 Resultados
 
-"Los números hablan solos, pero hay dos cosas para entender antes de leerlos. Primero: cuando decimos porcentaje, medimos una reducción proporcional sobre un valor absoluto — el tiempo. Cuando decimos puntos porcentuales, estamos comparando dos tasas — cobertura, detección, reproducibilidad. Son cosas distintas conceptualmente.
+"Estos son promedios de cinco corridas registradas — no estimaciones.
 
-Segundo: estos son promedios de cinco corridas registradas. No son estimaciones.
+El tiempo por ciclo bajó un 87%: de 15 minutos a 2. La cobertura de flujos críticos pasó del 43% al 100%. La detección de defectos antes del deploy pasó del 20% al 100%. El esfuerzo humano se redujo un 80%. Y las ejecuciones pasaron de ser impredecibles a ser 100% reproducibles.
 
-El tiempo por ciclo bajó de 15 minutos a 2 — lo que antes era una tarea, ahora pasa mientras se hace otra cosa. La cobertura subió 57 puntos, la detección pre-deploy subió 80 puntos, el esfuerzo humano bajó un 80%, y las ejecuciones pasaron a ser 100% reproducibles. Ese es el delta entre testing manual y automatizado sobre el mismo sistema."
+Cada uno de esos números tiene un antes y un después medido sobre el mismo sistema, con el mismo protocolo."
 
 ---
 
