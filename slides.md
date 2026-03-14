@@ -387,11 +387,6 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
   </div>
 </div>
 
-<div v-click style="margin-top:28px; display:flex; align-items:center; justify-content:center; gap:12px; padding:14px 28px; border:2px solid #10b981; border-radius:12px; background:rgba(16,185,129,0.08); animation:fade-in 0.5s ease both;">
-  <div class="i-ph-seal-check-light" style="width:1.8em; height:1.8em; color:#10b981; flex-shrink:0;" />
-  <span style="font-size:1.05em; font-weight:700; color:#10b981; letter-spacing:1px;">HIPÓTESIS CONFIRMADA</span>
-  <span class="muted small" style="margin-left:4px;">— resultados en slides /14 y /15</span>
-</div>
 
 </div>
 
