@@ -156,31 +156,38 @@ layout: cover
 background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
 ---
 
-<div class="text-center">
+<div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:space-between; padding:2.5em 3em;">
 
-<div class="mb-3">
-  <img src="./logo.jpeg" style="height:68px; border-radius:50%; box-shadow:0 0 0 3px #10b98140; animation: enter-scale 0.8s ease both;" />
-</div>
-
-<div class="muted small" style="letter-spacing:2px; margin-bottom:10px; animation: fade-in 0.8s ease 0.2s both;">TRABAJO DE GRADO · INGENIERÍA EN SISTEMAS</div>
-
-<h1 style="font-size:1.25em !important; line-height:1.55; color:#10b981 !important; font-weight:700; margin-bottom:20px; animation: enter-up 0.8s ease 0.4s both;">
-  Estrategia de Automatización de Pruebas Funcionales y de Regresión<br>
-  para la Mejora de la Calidad del Software en Entornos Cloud
-</h1>
-
-<div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; max-width:480px; margin:0 auto; animation: enter-up 0.8s ease 0.6s both;">
-  <div class="card">
-    <div class="muted small" style="letter-spacing:1px; margin-bottom:5px;">ESTUDIANTES</div>
-    <div style="font-weight:600;">Luciano Castro</div>
-    <div style="font-weight:600;">Matías Primitz</div>
+  <!-- TOP: logo + institución -->
+  <div style="display:flex; flex-direction:column; align-items:center; gap:10px; animation: enter-down 0.8s ease both;">
+    <img src="./logo.jpeg" style="height:72px; border-radius:50%; box-shadow:0 0 0 3px #10b98140;" />
+    <div style="text-align:center; line-height:1.3;">
+      <div style="font-weight:700; font-size:0.85em; color:#e2e8f0;">Centro Regional Universitario Córdoba</div>
+      <div class="muted small" style="letter-spacing:1.5px; margin-top:3px;">TRABAJO DE GRADO · INGENIERÍA EN SISTEMAS</div>
+    </div>
   </div>
-  <div class="card">
-    <div class="muted small" style="letter-spacing:1px; margin-bottom:5px;">TUTORA</div>
-    <div style="font-weight:600;">Lic. Natalia Mira</div>
-    <div class="muted small" style="margin-top:5px;">Ingeniería en Sistemas · 2026</div>
+
+  <!-- CENTER: título -->
+  <div style="text-align:center; animation: fade-in 0.8s ease 0.3s both;">
+    <h1 style="font-size:1.3em !important; line-height:1.6; color:#10b981 !important; font-weight:700; margin:0;">
+      Estrategia de Automatización de Pruebas Funcionales y de Regresión<br>
+      para la Mejora de la Calidad del Software en Entornos Cloud
+    </h1>
   </div>
-</div>
+
+  <!-- BOTTOM: autores + tutora -->
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; width:100%; max-width:500px; animation: enter-up 0.8s ease 0.6s both;">
+    <div class="card" style="text-align:center;">
+      <div class="muted small" style="letter-spacing:1px; margin-bottom:6px;">ESTUDIANTES</div>
+      <div style="font-weight:600;">Luciano Castro</div>
+      <div style="font-weight:600;">Matías Primitz</div>
+    </div>
+    <div class="card" style="text-align:center;">
+      <div class="muted small" style="letter-spacing:1px; margin-bottom:6px;">TUTORA</div>
+      <div style="font-weight:600;">Lic. Natalia Mira</div>
+      <div class="muted small" style="margin-top:5px;">2026</div>
+    </div>
+  </div>
 
 </div>
 
@@ -237,7 +244,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
 
 <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:12px; margin-top:8px;">
 
-<div v-click class="card-red" style="display:flex; flex-direction:column; align-items:center; text-align:center; min-height:130px; justify-content:space-between;">
+<div v-click class="card-red" style="display:flex; flex-direction:column; align-items:center; text-align:center; min-height:130px; justify-content:space-between; transition:all 0.4s ease;" :style="$clicks===1 ? 'box-shadow:0 0 20px rgba(248,81,73,0.4); border-color:rgba(248,81,73,0.6);' : ''">
   <div style="display:flex; align-items:center; gap:6px; margin-bottom:4px;">
     <span class="i-ph-buildings-light" style="width:1.1em; height:1.1em; color:#f85149;" />
     <span class="badge-red">industria</span>
@@ -247,7 +254,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
   <div style="font-size:0.56em; color:#f8514980; margin-top:3px;">World Quality Report 2023-24</div>
 </div>
 
-<div v-click class="card-red" style="display:flex; flex-direction:column; align-items:center; text-align:center; min-height:130px; justify-content:space-between;">
+<div v-click class="card-red" style="display:flex; flex-direction:column; align-items:center; text-align:center; min-height:130px; justify-content:space-between; transition:all 0.4s ease;" :style="$clicks===2 ? 'box-shadow:0 0 20px rgba(248,81,73,0.4); border-color:rgba(248,81,73,0.6);' : ''">
   <div style="display:flex; align-items:center; gap:6px; margin-bottom:4px;">
     <span class="i-ph-currency-dollar-light" style="width:1.1em; height:1.1em; color:#f85149;" />
     <span class="badge-red">costo</span>
@@ -257,7 +264,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
   <div style="font-size:0.56em; color:#f8514980; margin-top:3px;">PractiTest · State of Testing 2023</div>
 </div>
 
-<div v-click class="card-red" style="display:flex; flex-direction:column; align-items:center; text-align:center; min-height:130px; justify-content:space-between;">
+<div v-click class="card-red" style="display:flex; flex-direction:column; align-items:center; text-align:center; min-height:130px; justify-content:space-between; transition:all 0.4s ease;" :style="$clicks===3 ? 'box-shadow:0 0 20px rgba(248,81,73,0.4); border-color:rgba(248,81,73,0.6);' : ''">
   <div style="display:flex; align-items:center; gap:6px; margin-bottom:4px;">
     <span class="i-ph-link-simple-light" style="width:1.1em; height:1.1em; color:#f85149;" />
     <span class="badge-red">adopción</span>
@@ -269,11 +276,11 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
 
 </div>
 
-<div class="muted" style="font-size:0.62em; letter-spacing:2px; font-weight:600; margin-top:14px;">MEDICIÓN PROPIA — BASELINE</div>
+<div v-click class="muted" style="font-size:0.62em; letter-spacing:2px; font-weight:600; margin-top:14px;">MEDICIÓN PROPIA — BASELINE</div>
 
 <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:12px; margin-top:8px;">
 
-<div v-click class="card-red" style="display:flex; flex-direction:column; align-items:center; text-align:center; min-height:130px; justify-content:space-between;">
+<div v-click class="card-red" style="display:flex; flex-direction:column; align-items:center; text-align:center; min-height:130px; justify-content:space-between; transition:all 0.4s ease;" :style="$clicks===5 ? 'box-shadow:0 0 20px rgba(248,81,73,0.4); border-color:rgba(248,81,73,0.6);' : ''">
   <div style="display:flex; align-items:center; gap:6px; margin-bottom:4px;">
     <span class="i-ph-magnifying-glass-light" style="width:1.1em; height:1.1em; color:#f85149;" />
     <span class="badge-red">cobertura</span>
@@ -282,7 +289,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
   <div class="muted" style="font-size:0.72em; margin-top:4px;">cobertura promedio con testing manual</div>
 </div>
 
-<div v-click class="card-red" style="display:flex; flex-direction:column; align-items:center; text-align:center; min-height:130px; justify-content:space-between;">
+<div v-click class="card-red" style="display:flex; flex-direction:column; align-items:center; text-align:center; min-height:130px; justify-content:space-between; transition:all 0.4s ease;" :style="$clicks===6 ? 'box-shadow:0 0 20px rgba(248,81,73,0.4); border-color:rgba(248,81,73,0.6);' : ''">
   <div style="display:flex; align-items:center; gap:6px; margin-bottom:4px;">
     <span class="i-ph-bug-light" style="width:1.1em; height:1.1em; color:#f85149;" />
     <span class="badge-red">defectos</span>
@@ -291,7 +298,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
   <div class="muted" style="font-size:0.72em; margin-top:4px;">defectos detectados antes de producción</div>
 </div>
 
-<div v-click class="card-red" style="display:flex; flex-direction:column; align-items:center; text-align:center; min-height:130px; justify-content:space-between;">
+<div v-click class="card-red" style="display:flex; flex-direction:column; align-items:center; text-align:center; min-height:130px; justify-content:space-between; transition:all 0.4s ease;" :style="$clicks===7 ? 'box-shadow:0 0 20px rgba(248,81,73,0.4); border-color:rgba(248,81,73,0.6);' : ''">
   <div style="display:flex; align-items:center; gap:6px; margin-bottom:4px;">
     <span class="i-ph-arrows-clockwise-light" style="width:1.1em; height:1.1em; color:#f85149;" />
     <span class="badge-red">reproducibilidad</span>
@@ -304,11 +311,11 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
 
 ---
 
-# Por Qué Importa
+# ¿Por qué importa?
 
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:16px;">
 
-<div v-click class="card-red" style="display:flex; gap:12px; align-items:flex-start;">
+<div v-click class="card-red" style="display:flex; gap:12px; align-items:flex-start; transition:all 0.4s ease;" :style="$clicks===1 ? 'box-shadow:0 0 20px rgba(248,81,73,0.4); border-color:rgba(248,81,73,0.6);' : ''">
   <div class="i-ph-warning-light" style="width:1.5em; height:1.5em; flex-shrink:0; color:#f85149;" />
   <div>
     <div class="red small" style="font-weight:700; margin-bottom:4px;">Impacto Técnico</div>
@@ -316,7 +323,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
   </div>
 </div>
 
-<div v-click class="card-red" style="display:flex; gap:12px; align-items:flex-start;">
+<div v-click class="card-red" style="display:flex; gap:12px; align-items:flex-start; transition:all 0.4s ease;" :style="$clicks===2 ? 'box-shadow:0 0 20px rgba(248,81,73,0.4); border-color:rgba(248,81,73,0.6);' : ''">
   <div class="i-ph-coins-light" style="width:1.5em; height:1.5em; flex-shrink:0; color:#f85149;" />
   <div>
     <div class="red small" style="font-weight:700; margin-bottom:4px;">Impacto Comercial</div>
@@ -324,7 +331,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
   </div>
 </div>
 
-<div v-click class="card-red" style="display:flex; gap:12px; align-items:flex-start;">
+<div v-click class="card-red" style="display:flex; gap:12px; align-items:flex-start; transition:all 0.4s ease;" :style="$clicks===3 ? 'box-shadow:0 0 20px rgba(248,81,73,0.4); border-color:rgba(248,81,73,0.6);' : ''">
   <div class="i-ph-trend-down-light" style="width:1.5em; height:1.5em; flex-shrink:0; color:#f85149;" />
   <div>
     <div class="red small" style="font-weight:700; margin-bottom:4px;">Impacto Reputacional</div>
@@ -332,7 +339,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
   </div>
 </div>
 
-<div v-click class="card-red" style="display:flex; gap:12px; align-items:flex-start;">
+<div v-click class="card-red" style="display:flex; gap:12px; align-items:flex-start; transition:all 0.4s ease;" :style="$clicks===4 ? 'box-shadow:0 0 20px rgba(248,81,73,0.4); border-color:rgba(248,81,73,0.6);' : ''">
   <div class="i-ph-hourglass-medium-light" style="width:1.5em; height:1.5em; flex-shrink:0; color:#f85149;" />
   <div>
     <div class="red small" style="font-weight:700; margin-bottom:4px;">Impacto Operativo</div>
@@ -378,6 +385,12 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
     <div class="accent small" style="font-weight:700; margin-top:4px;">Sostenible</div>
     <div class="muted small">versionado junto al código,<br>sin esfuerzo adicional</div>
   </div>
+</div>
+
+<div v-click style="margin-top:28px; display:flex; align-items:center; justify-content:center; gap:12px; padding:14px 28px; border:2px solid #10b981; border-radius:12px; background:rgba(16,185,129,0.08); animation:fade-in 0.5s ease both;">
+  <div class="i-ph-seal-check-light" style="width:1.8em; height:1.8em; color:#10b981; flex-shrink:0;" />
+  <span style="font-size:1.05em; font-weight:700; color:#10b981; letter-spacing:1px;">HIPÓTESIS CONFIRMADA</span>
+  <span class="muted small" style="margin-left:4px;">— resultados en slides /14 y /15</span>
 </div>
 
 </div>
@@ -426,26 +439,44 @@ transition: slide-left
 
 # Marco Conceptual
 
-<div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:16px;">
-
-<div v-click class="card-blue small">
-  <div class="blue" style="font-weight:700; margin-bottom:6px;"><span class="i-ph-compass-tool-light" style="width:1em; height:1em; color:#58a6ff;" /> ISO/IEC 25010:2023</div>
-  <div class="muted">Modelo de calidad del producto software. Características medibles: <span class="blue">Adecuación Funcional, Fiabilidad, Eficiencia de Desempeño, Mantenibilidad, Seguridad y Flexibilidad</span>.</div>
+<div v-click class="card-blue small" style="margin-top:10px; display:flex; gap:12px; align-items:flex-start;">
+  <span class="i-ph-compass-tool-light" style="width:1.4em; height:1.4em; flex-shrink:0; color:#58a6ff; margin-top:2px;" />
+  <div>
+    <div class="blue" style="font-weight:700; margin-bottom:4px;">ISO/IEC 25010:2023 — Modelo de Calidad del Producto Software</div>
+    <div class="muted small">Estándar internacional que define las características medibles de calidad de un sistema software. Marco de referencia elegido por su aplicabilidad directa a sistemas web transaccionales y su vigencia normativa.</div>
+  </div>
 </div>
 
-<div v-click class="card small">
-  <div class="accent" style="font-weight:700; margin-bottom:6px;"><span class="i-ph-gear-six-light" style="width:1em; height:1em; color:#10b981;" /> CI/CD</div>
-  <div class="muted">Pipeline automatizado: build, deploy y tests ante cada push. Reduce el riesgo de integración y habilita entregas continuas y auditables.</div>
+<div style="display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-top:10px;">
+
+<div v-click class="card small" style="transition:all 0.4s ease;" :style="$clicks===2 ? 'box-shadow:0 0 16px rgba(88,166,255,0.3); border-color:rgba(88,166,255,0.5);' : ''">
+  <div class="blue small" style="font-weight:700; margin-bottom:3px;">Adecuación Funcional</div>
+  <div class="muted small">El software cumple las funciones para las que fue diseñado con exactitud y completitud.</div>
 </div>
 
-<div v-click class="card small">
-  <div class="accent" style="font-weight:700; margin-bottom:6px;"><span class="i-ph-tree-evergreen-light" style="width:1em; height:1em; color:#10b981;" /> Testing E2E — Cypress</div>
-  <div class="muted">Pruebas que simulan flujos reales del usuario en el navegador. Interceptación de APIs, screenshots, videos y reportes Mochawesome automatizados.</div>
+<div v-click class="card small" style="transition:all 0.4s ease;" :style="$clicks===3 ? 'box-shadow:0 0 16px rgba(88,166,255,0.3); border-color:rgba(88,166,255,0.5);' : ''">
+  <div class="blue small" style="font-weight:700; margin-bottom:3px;">Fiabilidad</div>
+  <div class="muted small">Capacidad de mantener el nivel de desempeño bajo condiciones definidas durante un período determinado.</div>
 </div>
 
-<div v-click class="card-green small">
-  <div class="accent" style="font-weight:700; margin-bottom:6px;"><span class="i-ph-repeat-light" style="width:1em; height:1em; color:#10b981;" /> Automatización de Pruebas</div>
-  <div class="muted">Repetibilidad, cobertura consistente, trazabilidad commit→test→issue y eliminación del esfuerzo humano en validación continua.</div>
+<div v-click class="card small" style="transition:all 0.4s ease;" :style="$clicks===4 ? 'box-shadow:0 0 16px rgba(88,166,255,0.3); border-color:rgba(88,166,255,0.5);' : ''">
+  <div class="blue small" style="font-weight:700; margin-bottom:3px;">Eficiencia de Desempeño</div>
+  <div class="muted small">Rendimiento relativo a los recursos utilizados en condiciones establecidas.</div>
+</div>
+
+<div v-click class="card small" style="transition:all 0.4s ease;" :style="$clicks===5 ? 'box-shadow:0 0 16px rgba(88,166,255,0.3); border-color:rgba(88,166,255,0.5);' : ''">
+  <div class="blue small" style="font-weight:700; margin-bottom:3px;">Mantenibilidad</div>
+  <div class="muted small">Facilidad con la que el sistema puede ser modificado, actualizado y corregido.</div>
+</div>
+
+<div v-click class="card small" style="transition:all 0.4s ease;" :style="$clicks===6 ? 'box-shadow:0 0 16px rgba(88,166,255,0.3); border-color:rgba(88,166,255,0.5);' : ''">
+  <div class="blue small" style="font-weight:700; margin-bottom:3px;">Seguridad</div>
+  <div class="muted small">Protección de información y datos contra accesos no autorizados o manipulación indebida.</div>
+</div>
+
+<div v-click class="card small" style="transition:all 0.4s ease;" :style="$clicks===7 ? 'box-shadow:0 0 16px rgba(88,166,255,0.3); border-color:rgba(88,166,255,0.5);' : ''">
+  <div class="blue small" style="font-weight:700; margin-bottom:3px;">Flexibilidad</div>
+  <div class="muted small">Capacidad de adaptarse a diferentes entornos, configuraciones o requisitos cambiantes.</div>
 </div>
 
 </div>
@@ -562,51 +593,13 @@ transition: slide-left
     </tbody>
   </table>
 
-  <div v-click class="card-green small" style="margin-top:12px; text-align:center;">
-    <span class="accent" style="font-weight:700;">6 specs · 100% flujos críticos · ~2 min total</span>
-  </div>
 </div>
 
 </div>
+
+<!-- SLIDE HIDDEN temporalmente: Implementación — Buenas Prácticas Aplicadas -->
 
 ---
-transition: slide-left
----
-
-# Implementación — Buenas Prácticas Aplicadas
-
-<div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:16px;">
-
-<div v-click class="card small">
-  <div class="accent" style="font-weight:700; margin-bottom:6px;"><span class="i-ph-crosshair-light" style="width:1em; height:1em; color:#10b981;" /> Selectores estables</div>
-  <div class="muted small" style="margin-bottom:8px;">Atributos <code>data-cy</code> desacoplados del diseño — eliminan fragilidad ante cambios de UI</div>
-  <code style="font-size:0.75em; color:#10b981;">cy.get('[data-cy=btn-checkout]')</code>
-</div>
-
-<div v-click class="card small">
-  <div class="accent" style="font-weight:700; margin-bottom:6px;"><span class="i-ph-recycle-light" style="width:1em; height:1em; color:#10b981;" /> Comandos custom reutilizables</div>
-  <div class="muted small" style="margin-bottom:8px;">Lógica de setup encapsulada — evita duplicación entre specs</div>
-  <code style="font-size:0.75em; color:#10b981;">cy.login() &nbsp;·&nbsp; cy.addToCart()</code>
-</div>
-
-<div v-click class="card small">
-  <div class="accent" style="font-weight:700; margin-bottom:6px;"><span class="i-ph-note-pencil-light" style="width:1em; height:1em; color:#10b981;" /> Patrón Given / When / Then</div>
-  <div class="muted small">Estructura legible y alineada a BDD — facilita revisión y mantenimiento de los specs</div>
-</div>
-
-<div v-click class="card small">
-  <div class="accent" style="font-weight:700; margin-bottom:6px;"><span class="i-ph-shuffle-light" style="width:1em; height:1em; color:#10b981;" /> Intercepción de red</div>
-  <div class="muted small">Mocking con <code>cy.intercept()</code> para simular pagos rechazados y sesiones expiradas de forma determinística</div>
-</div>
-
-</div>
-
-<div v-click class="card-green small" style="margin-top:10px; text-align:center;">
-  Prácticas adoptadas desde el inicio — la <span class="accent">testeabilidad como requisito de diseño</span>
-</div>
-
----
-clicks: 2
 transition: slide-left
 ---
 
@@ -621,7 +614,7 @@ transition: slide-left
     :style="$clicks===0 ? 'color:#10b981;' : 'color:#30363d;'">→</div>
   <div class="card-green small" style="flex:1; text-align:center; padding:8px 10px; transition:all 0.3s;"
     :style="$clicks===1 ? 'border-color:#10b981;box-shadow:0 0 10px #10b981aa;' : 'opacity:0.35;'">
-    <span class="accent" style="font-weight:700;">STEP 2</span> · Deploy
+    <span class="accent" style="font-weight:700;">STEP 2</span> · Deploy · Staging
   </div>
   <div style="font-size:1.3em; transition:color 0.3s;"
     :style="$clicks===1 ? 'color:#10b981;' : 'color:#30363d;'">→</div>
@@ -631,11 +624,10 @@ transition: slide-left
   </div>
 </div>
 
-```yaml {1-11|13-16|18-22}
+```yaml {1-10|12-15|17-21}
 name: CI/CD — Deploy & E2E Tests
 on:
   push:       { branches: [main] }
-  workflow_dispatch:   # disparo manual
 
 jobs:
   build:
@@ -647,9 +639,9 @@ jobs:
   deploy:
     needs: build
     steps:
-      - uses: peaceiris/actions-gh-pages@v3
+      - uses: actions/deploy-pages@v4
 
-  cypress-e2e:
+  e2e:
     needs: deploy
     steps:
       - run: npx cypress run --browser chrome --record
@@ -664,7 +656,7 @@ transition: slide-left
 <h1 v-if="$clicks===0">Arquitectura de la Solución</h1>
 <h1 v-if="$clicks>=1" style="color:#10b981; font-size:1.4em;"><span class="i-ph-lightning-light" style="width:1em; height:1em;" /> Arquitectura de la Solución — Demo en tiempo real</h1>
 
-<div style="margin-top:10px;"><div class="a-zn a-zc" style="margin-bottom:7px;"><div class="a-zn-lb" style="color:#10b981;"><span class="i-ph-cloud-light" style="width:1em; height:1em; color:#10b981;" /> CLOUD</div><div class="a-row" style="margin-bottom:9px;"><div class="a-nd" :class="$clicks===2?'a-on':$clicks>0?'a-off':''"><div class="a-ic"><span class="i-ph-github-logo-light" style="width:1.35em; height:1.35em;" /></div><div class="a-lb">GitHub</div><div class="a-sb">Repositorio</div></div><div class="a-ar" :class="($clicks===2||$clicks===3)?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===3?'a-on':$clicks>0?'a-off':''"><div class="a-ic"><span class="i-ph-gear-six-light" style="width:1.35em; height:1.35em;" /></div><div class="a-lb">GitHub Actions</div><div class="a-sb">Pipeline YAML</div></div><div class="a-ar" :class="($clicks===3||$clicks===4)?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===4?'a-on':$clicks>0?'a-off':''"><div class="a-ic"><span class="i-ph-atom-light" style="width:1.35em; height:1.35em;" /></div><div class="a-lb">Build + Deploy</div><div class="a-sb">React + Vite · GitHub Pages</div></div><div style="flex:1;"></div></div><div class="a-row" style="padding-left:116px;"><div class="a-ar" style="transform:rotate(90deg);" :class="($clicks===3||$clicks===5)?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===5?'a-on':$clicks>0?'a-off':''"><div class="a-ic"><span class="i-ph-tree-evergreen-light" style="width:1.35em; height:1.35em;" /></div><div class="a-lb">Cypress E2E</div><div class="a-sb">6 specs · headless</div></div><div class="a-ar" :class="$clicks===5?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===5?'a-on':$clicks>0?'a-off':''"><div class="a-ic"><span class="i-ph-chart-bar-light" style="width:1.35em; height:1.35em;" /></div><div class="a-lb">Cypress Cloud</div><div class="a-sb">resultados + evidencias</div></div><div class="a-ar" :class="$clicks===5?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===5?'a-on':$clicks>0?'a-off':''"><div class="a-ic"><span class="i-ph-clipboard-text-light" style="width:1.35em; height:1.35em;" /></div><div class="a-lb">GitHub Projects</div><div class="a-sb">issues auto-gestionados</div></div></div></div><div class="a-zn a-zl"><div class="a-zn-lb" style="color:#58a6ff;"><span class="i-ph-desktop-light" style="width:1em; height:1em; color:#58a6ff;" /> LOCAL</div><div class="a-row"><div class="a-nd" :class="$clicks===1?'a-on':$clicks>0?'a-off':''"><div class="a-ic"><span class="i-ph-code-light" style="width:1.35em; height:1.35em;" /></div><div class="a-lb">Equipo Dev</div><div class="a-sb">commit / push</div></div><div class="a-ar" :class="$clicks===1?'a-on':$clicks>0?'a-off':''">+</div><div class="a-nd" :class="$clicks===1?'a-on':$clicks>0?'a-off':''"><div class="a-ic"><span class="i-ph-flask-light" style="width:1.35em; height:1.35em;" /></div><div class="a-lb">Equipo QA</div><div class="a-sb">specs · commit / push</div></div><div class="a-ar" :class="($clicks===1||$clicks===2)?'a-on':$clicks>0?'a-off':''"><span class="i-ph-arrow-up-light" style="width:0.9em; height:0.9em;" /> push</div><div style="flex:1;"></div><div class="a-nd" :class="$clicks===5?'a-on':$clicks>0?'a-off':''"><div class="a-ic"><span class="i-ph-user-circle-light" style="width:1.35em; height:1.35em;" /></div><div class="a-lb">Product Owner</div><div class="a-sb">Approve / Reject</div></div></div></div><div class="a-cap"><span v-if="$clicks===0" style="color:#8b949e;font-weight:400;">Arquitectura completa de la solución</span><span v-if="$clicks===1" style="color:#10b981;">① Dev escribe código · QA escribe specs de Cypress · ambos hacen commit y push</span><span v-if="$clicks===2" style="color:#10b981;">② GitHub recibe el push y dispara automáticamente el trigger CI/CD</span><span v-if="$clicks===3" style="color:#10b981;">③ GitHub Actions lee el YAML y orquesta todos los pasos del pipeline</span><span v-if="$clicks===4" style="color:#10b981;">④ Build de la app React + Vite y deploy automático en GitHub Pages</span><span v-if="$clicks===5" style="color:#10b981;">⑤ Cypress ejecuta los 6 specs · Cypress Cloud registra resultados · GitHub Projects gestiona los issues automáticamente</span></div></div>
+<div style="margin-top:10px;"><div class="a-zn a-zc" style="margin-bottom:7px;"><div class="a-zn-lb" style="color:#10b981;"><span class="i-ph-cloud-light" style="width:1em; height:1em; color:#10b981;" /> CLOUD</div><div class="a-row" style="margin-bottom:9px;"><div class="a-nd" :class="$clicks===2?'a-on':$clicks>0?'a-off':''"><div class="a-ic"><span class="i-ph-github-logo-light" style="width:1.35em; height:1.35em;" /></div><div class="a-lb">GitHub</div><div class="a-sb">Repositorio</div></div><div class="a-ar" :class="($clicks===2||$clicks===3)?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===3?'a-on':$clicks>0?'a-off':''"><div class="a-ic"><img src="./img-logo-github-actions.svg" style="width:1.35em; height:1.35em; filter:brightness(0) invert(1);" /></div><div class="a-lb">GitHub Actions</div><div class="a-sb">Pipeline YAML</div></div><div class="a-ar" :class="($clicks===3||$clicks===4)?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===4?'a-on':$clicks>0?'a-off':''"><div class="a-ic"><span class="i-ph-atom-light" style="width:1.35em; height:1.35em;" /></div><div class="a-lb">Build + Deploy</div><div class="a-sb">React + Vite · GitHub Pages</div></div><div style="flex:1;"></div></div><div class="a-row" style="padding-left:116px;"><div class="a-ar" style="transform:rotate(90deg);" :class="($clicks===3||$clicks===5)?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===5?'a-on':$clicks>0?'a-off':''"><div class="a-ic"><img src="./img-logo-cypress.svg" style="width:1.35em; height:1.35em; filter:brightness(0) invert(1);" /></div><div class="a-lb">Cypress E2E</div><div class="a-sb">6 specs · headless</div></div><div class="a-ar" :class="$clicks===5?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===5?'a-on':$clicks>0?'a-off':''"><div class="a-ic" style="display:flex;gap:2px;justify-content:center;align-items:center;"><img src="./img-logo-cypress.svg" style="width:1.1em; height:1.1em; filter:brightness(0) invert(1);" /><span class="i-ph-cloud-light" style="width:1.1em; height:1.1em;" /></div><div class="a-lb">Cypress Cloud</div><div class="a-sb">resultados + evidencias</div></div><div class="a-ar" :class="$clicks===5?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===5?'a-on':$clicks>0?'a-off':''"><div class="a-ic" style="display:flex;gap:2px;justify-content:center;align-items:center;"><span class="i-ph-github-logo-light" style="width:1.1em; height:1.1em;" /><span class="i-ph-kanban-light" style="width:1.1em; height:1.1em;" /></div><div class="a-lb">GitHub Projects</div><div class="a-sb">issues auto-gestionados</div></div></div></div><div class="a-zn a-zl"><div class="a-zn-lb" style="color:#58a6ff;"><span class="i-ph-desktop-light" style="width:1em; height:1em; color:#58a6ff;" /> LOCAL</div><div class="a-row"><div class="a-nd" :class="$clicks===1?'a-on':$clicks>0?'a-off':''"><div class="a-ic"><span class="i-ph-code-light" style="width:1.35em; height:1.35em;" /></div><div class="a-lb">Equipo Dev</div><div class="a-sb">commit / push</div></div><div class="a-ar" :class="$clicks===1?'a-on':$clicks>0?'a-off':''">+</div><div class="a-nd" :class="$clicks===1?'a-on':$clicks>0?'a-off':''"><div class="a-ic" style="display:flex;gap:2px;justify-content:center;"><span class="i-ph-magnifying-glass-light" style="width:1.1em; height:1.1em;" /><span class="i-ph-bug-beetle-light" style="width:1.1em; height:1.1em;" /></div><div class="a-lb">Equipo QA</div><div class="a-sb">specs · commit / push</div></div><div class="a-ar" :class="($clicks===1||$clicks===2)?'a-on':$clicks>0?'a-off':''"><span class="i-ph-arrow-up-light" style="width:0.9em; height:0.9em;" /> push</div><div style="flex:1;"></div><div class="a-nd" :class="$clicks===5?'a-on':$clicks>0?'a-off':''"><div class="a-ic"><span class="i-ph-user-circle-light" style="width:1.35em; height:1.35em;" /></div><div class="a-lb">Product Owner</div><div class="a-sb">Approve / Reject</div></div></div></div><div class="a-cap"><span v-if="$clicks===1" style="color:#10b981;">① Dev escribe código · QA escribe specs de Cypress · ambos hacen commit y push</span><span v-if="$clicks===2" style="color:#10b981;">② GitHub recibe el push y dispara automáticamente el trigger CI/CD</span><span v-if="$clicks===3" style="color:#10b981;">③ GitHub Actions lee el YAML y orquesta todos los pasos del pipeline</span><span v-if="$clicks===4" style="color:#10b981;">④ Build de la app React + Vite y deploy automático en GitHub Pages</span><span v-if="$clicks===5" style="color:#10b981;">⑤ Cypress ejecuta los 6 specs · Cypress Cloud registra resultados · GitHub Projects gestiona los issues automáticamente</span></div></div>
 
 ---
 
@@ -823,10 +815,10 @@ transition: slide-left
 
 # Contribuciones del Trabajo
 
-<div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; margin-top:18px;">
+<div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin-top:10px;">
 
-<div v-click class="card-blue" style="display:flex; flex-direction:column; gap:8px;">
-  <div style="text-align:center;"><span class="i-ph-graduation-cap-light" style="width:1.5em; height:1.5em; color:#58a6ff;" /></div>
+<div v-click class="card-blue" style="display:flex; flex-direction:column; gap:5px; transition:all 0.4s ease;" :style="$clicks===1 ? 'box-shadow:0 0 20px rgba(88,166,255,0.35); border-color:rgba(88,166,255,0.5);' : ''">
+  <div style="text-align:center;"><span class="i-ph-graduation-cap-light" style="width:1.4em; height:1.4em; color:#58a6ff;" /></div>
   <div class="blue small" style="font-weight:700; text-align:center; letter-spacing:.5px;">A NIVEL ACADÉMICO</div>
   <ul class="muted small" style="margin:0; padding-left:1.1em;">
     <li>Evidencia concreta de cómo ISO/IEC 25010 se operacionaliza mediante automatización</li>
@@ -834,12 +826,12 @@ transition: slide-left
     <li>Caso de estudio replicable para cátedras o investigaciones futuras</li>
   </ul>
   <div class="card" style="margin-top:auto; font-size:0.72em; color:#58a6ff; border-color:#58a6ff40;">
-    Evidencia empírica de cómo ISO/IEC 25010 se operacionaliza: de norma abstracta a métricas reales y reproducibles
+    De norma abstracta a métricas reales y reproducibles
   </div>
 </div>
 
-<div v-click class="card-green" style="display:flex; flex-direction:column; gap:8px;">
-  <div style="text-align:center;"><span class="i-ph-gear-six-light" style="width:1.5em; height:1.5em; color:#10b981;" /></div>
+<div v-click class="card-green" style="display:flex; flex-direction:column; gap:5px; transition:all 0.4s ease;" :style="$clicks===2 ? 'box-shadow:0 0 20px rgba(16,185,129,0.35); border-color:rgba(16,185,129,0.5);' : ''">
+  <div style="text-align:center;"><span class="i-ph-gear-six-light" style="width:1.4em; height:1.4em; color:#10b981;" /></div>
   <div class="accent small" style="font-weight:700; text-align:center; letter-spacing:.5px;">A NIVEL TÉCNICO</div>
   <ul class="muted small" style="margin:0; padding-left:1.1em;">
     <li>Pipeline CI/CD orientado a <strong>calidad</strong>, no solo a despliegue</li>
@@ -852,8 +844,8 @@ transition: slide-left
   </div>
 </div>
 
-<div v-click class="card" style="display:flex; flex-direction:column; gap:8px; border-color:#f0883e;">
-  <div style="text-align:center;"><span class="i-ph-briefcase-light" style="width:1.5em; height:1.5em; color:#f0883e;" /></div>
+<div v-click class="card" style="display:flex; flex-direction:column; gap:5px; border-color:#f0883e; transition:all 0.4s ease;" :style="$clicks===3 ? 'box-shadow:0 0 20px rgba(240,136,62,0.35); border-color:rgba(240,136,62,0.6);' : 'border-color:#f0883e40;'">
+  <div style="text-align:center;"><span class="i-ph-briefcase-light" style="width:1.4em; height:1.4em; color:#f0883e;" /></div>
   <div style="color:#f0883e; font-weight:700; font-size:0.82em; text-align:center; letter-spacing:.5px;">A NIVEL PROFESIONAL</div>
   <ul class="muted small" style="margin:0; padding-left:1.1em;">
     <li>Modelo replicable a cualquier sistema transaccional</li>
@@ -861,7 +853,7 @@ transition: slide-left
     <li>DevOps + QA = reducción de tiempos, riesgos y costos</li>
   </ul>
   <div class="card" style="margin-top:auto; font-size:0.72em; color:#f0883e; border-color:#f0883e40;">
-    Modelo documentado y paquete de replicación listo para adoptar en cualquier equipo
+    Modelo documentado y paquete de replicación listo para adoptar
   </div>
 </div>
 
@@ -935,16 +927,23 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 
 <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:10px; max-width:460px; margin:0 auto;">
   <div class="card small" style="text-align:center;">
-    <div><span class="i-ph-tree-evergreen-light" style="width:1.2em; height:1.2em; color:#10b981;" /></div><div class="muted">Cypress</div>
+    <div style="height:1.8em; display:flex; justify-content:center; align-items:center;"><img src="./img-logo-cypress.svg" style="width:1.4em; height:1.4em;" /></div>
+    <div class="muted">Cypress</div>
   </div>
   <div class="card small" style="text-align:center;">
-    <div><span class="i-ph-lightning-light" style="width:1.2em; height:1.2em; color:#10b981;" /></div><div class="muted">GitHub Actions</div>
+    <div style="height:1.8em; display:flex; justify-content:center; align-items:center;"><img src="./img-logo-github-actions.svg" style="width:1.4em; height:1.4em;" /></div>
+    <div class="muted">GitHub Actions</div>
   </div>
   <div class="card small" style="text-align:center;">
-    <div><span class="i-ph-atom-light" style="width:1.2em; height:1.2em; color:#10b981;" /></div><div class="muted">React + Vite</div>
+    <div style="height:1.8em; display:flex; justify-content:center; align-items:center; gap:3px;">
+      <img src="./img-logo-react.svg" style="width:1.2em; height:1.2em;" />
+      <img src="./img-logo-vitejs.svg" style="width:1.2em; height:1.2em;" />
+    </div>
+    <div class="muted">React + Vite</div>
   </div>
   <div class="card small" style="text-align:center;">
-    <div><span class="i-ph-clipboard-text-light" style="width:1.2em; height:1.2em; color:#10b981;" /></div><div class="muted">ISO/IEC 25010</div>
+    <div style="height:1.8em; display:flex; justify-content:center; align-items:center;"><span class="i-ph-seal-check-light" style="width:1.4em; height:1.4em; color:#8b949e;" /></div>
+    <div class="muted">ISO/IEC 25010</div>
   </div>
 </div>
 
