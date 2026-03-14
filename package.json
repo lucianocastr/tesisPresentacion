@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "@iconify-json/ph": "^1.2.2",
+    "@slidev/cli": "^52.14.1",
+    "@slidev/theme-default": "^0.25.0"
+  }
+}

@@ -11,6 +11,7 @@ fonts:
 ---
 
 <style>
+[class*="i-ph-"] { display:inline-block; vertical-align:-0.125em; }
 .slidev-layout {
   background: #0d1117 !important;
   color: #e6edf3;
@@ -29,58 +30,64 @@ fonts:
 .small   { font-size: 0.82em; }
 
 .card {
-  background: #161b22;
-  border: 1px solid #30363d;
-  border-radius: 8px;
-  padding: 12px 16px;
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  padding: 14px 18px;
 }
 .card-green {
-  background: #071912;
-  border: 1px solid #10b981;
-  border-radius: 8px;
-  padding: 12px 16px;
+  background: rgba(16,185,129,0.06);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(16,185,129,0.18);
+  border-radius: 18px;
+  padding: 14px 18px;
 }
 .card-blue {
-  background: #071020;
-  border: 1px solid #58a6ff;
-  border-radius: 8px;
-  padding: 12px 16px;
+  background: rgba(88,166,255,0.06);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(88,166,255,0.18);
+  border-radius: 18px;
+  padding: 14px 18px;
 }
 .card-red {
-  background: #1c0a09;
-  border: 1px solid #f85149;
-  border-radius: 8px;
-  padding: 12px 16px;
+  background: rgba(248,81,73,0.06);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(248,81,73,0.18);
+  border-radius: 18px;
+  padding: 14px 18px;
 }
 
 .metric-val   { font-size: 2.2em; font-weight: 800; color: #10b981; line-height: 1.1; }
 .metric-label { font-size: 0.75em; color: #8b949e; margin-top: 3px; }
 
-.badge       { display:inline-block; background:#10b981; color:#0d1117; font-size:0.68em; font-weight:700; padding:2px 7px; border-radius:20px; letter-spacing:.4px; }
-.badge-blue  { display:inline-block; background:#58a6ff; color:#0d1117; font-size:0.68em; font-weight:700; padding:2px 7px; border-radius:20px; }
-.badge-red   { display:inline-block; background:#f85149; color:#fff;    font-size:0.68em; font-weight:700; padding:2px 7px; border-radius:20px; }
-.badge-gray  { display:inline-block; background:#30363d; color:#e6edf3; font-size:0.68em; font-weight:600; padding:2px 7px; border-radius:20px; }
+.badge       { display:inline-block; background:rgba(16,185,129,0.15); color:#10b981; font-size:0.68em; font-weight:700; padding:3px 10px; border-radius:20px; letter-spacing:.4px; }
+.badge-blue  { display:inline-block; background:rgba(88,166,255,0.15); color:#58a6ff; font-size:0.68em; font-weight:700; padding:3px 10px; border-radius:20px; }
+.badge-red   { display:inline-block; background:rgba(248,81,73,0.15); color:#f85149; font-size:0.68em; font-weight:700; padding:3px 10px; border-radius:20px; }
+.badge-gray  { display:inline-block; background:rgba(255,255,255,0.08); color:#8b949e; font-size:0.68em; font-weight:600; padding:3px 10px; border-radius:20px; }
 
 table { width:100%; border-collapse:collapse; font-size:0.83em; }
-th { background:#161b22; color:#10b981; padding:7px 11px; border:1px solid #30363d; text-align:left; }
-td { padding:7px 11px; border:1px solid #21262d; color:#e6edf3; }
+th { background:rgba(16,185,129,0.06); color:#10b981; padding:7px 11px; border:1px solid rgba(255,255,255,0.08); text-align:left; }
+td { padding:7px 11px; border:1px solid rgba(255,255,255,0.06); color:#e6edf3; }
 tr:nth-child(even) td { background:#0d1117; }
 
 .demo-step {
-  background:#161b22;
-  border-left:3px solid #10b981;
+  background:rgba(16,185,129,0.06);
+  backdrop-filter:blur(20px);
+  border-left:3px solid rgba(16,185,129,0.4);
   padding:8px 14px;
   margin:5px 0;
-  border-radius:0 6px 6px 0;
+  border-radius:0 14px 14px 0;
   font-size:0.85em;
 }
 .step-n { color:#10b981; font-weight:700; margin-right:6px; }
 
 .url-box {
-  background:#161b22;
-  border:1px solid #30363d;
-  border-radius:6px;
-  padding:6px 14px;
+  background:rgba(255,255,255,0.04);
+  backdrop-filter:blur(20px);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:14px;
+  padding:8px 14px;
   font-family:'Fira Code', monospace;
   font-size:0.78em;
   color:#58a6ff;
@@ -88,21 +95,21 @@ tr:nth-child(even) td { background:#0d1117; }
 
 .a-nd {
   display:flex; flex-direction:column; align-items:center; justify-content:center;
-  background:#161b22; border:1px solid #30363d; border-radius:8px;
+  background:rgba(255,255,255,0.04); backdrop-filter:blur(20px); border:1px solid rgba(255,255,255,0.08); border-radius:14px;
   padding:7px 12px; text-align:center; flex-shrink:0; min-width:88px;
   transition: all 0.32s ease;
 }
 .a-ic { font-size:1.35em; margin-bottom:2px; }
 .a-lb { color:#e6edf3; font-weight:700; font-size:0.70em; line-height:1.2; }
 .a-sb { color:#8b949e; font-size:0.62em; line-height:1.3; margin-top:1px; }
-.a-nd.a-on { border-color:#10b981 !important; background:#071912 !important; box-shadow:0 0 18px #10b98155; transform:scale(1.10); z-index:5; }
+.a-nd.a-on { border-color:rgba(16,185,129,0.4) !important; background:rgba(16,185,129,0.1) !important; box-shadow:0 0 24px rgba(16,185,129,0.2); transform:scale(1.10); z-index:5; }
 .a-nd.a-off { opacity:0.12; transform:scale(0.95); }
 .a-ar { color:#30363d; font-size:1.05em; flex-shrink:0; transition:color 0.32s; line-height:1; }
 .a-ar.a-on { color:#10b981; }
 .a-ar.a-off { opacity:0.08; }
-.a-zn { border-radius:10px; padding:10px 14px; border:1px solid; }
-.a-zc { background:#07120eaa; border-color:#10b98120; }
-.a-zl { background:#07090f; border-color:#58a6ff20; }
+.a-zn { border-radius:18px; padding:10px 14px; border:1px solid; backdrop-filter:blur(20px); }
+.a-zc { background:rgba(16,185,129,0.04); border-color:rgba(16,185,129,0.12); }
+.a-zl { background:rgba(88,166,255,0.04); border-color:rgba(88,166,255,0.12); }
 .a-zn-lb { font-size:0.60em; font-weight:700; letter-spacing:2px; margin-bottom:8px; }
 .a-row { display:flex; align-items:center; gap:7px; }
 .a-cap { text-align:center; font-size:0.75em; font-weight:600; min-height:20px; margin-top:6px; }
@@ -111,11 +118,37 @@ tr:nth-child(even) td { background:#0d1117; }
 .bar-label-row { display:flex; justify-content:space-between; margin-bottom:3px; }
 .bar-label { font-size:0.74em; color:#8b949e; }
 .bar-delta { font-size:0.74em; font-weight:800; color:#10b981; }
-.bar-track { height:20px; background:#0d1117; border-radius:4px; overflow:hidden; margin-bottom:3px; }
-.bar-fill { height:100%; border-radius:4px; display:flex; align-items:center; padding:0 8px; font-size:0.70em; font-weight:700; white-space:nowrap; animation: bar-grow 0.7s cubic-bezier(0.4,0,0.2,1) both; }
-.bar-manual { background:#2a0e0e; border:1px solid #f8514950; color:#f85149; }
-.bar-auto   { background:#071912; border:1px solid #10b98150; color:#10b981; }
+.bar-track { height:20px; background:rgba(255,255,255,0.03); border-radius:10px; overflow:hidden; margin-bottom:3px; }
+.bar-fill { height:100%; border-radius:10px; display:flex; align-items:center; padding:0 8px; font-size:0.70em; font-weight:700; white-space:nowrap; animation: bar-grow 0.7s cubic-bezier(0.4,0,0.2,1) both; }
+.bar-manual { background:rgba(248,81,73,0.12); border:1px solid rgba(248,81,73,0.2); color:#f85149; }
+.bar-auto   { background:rgba(16,185,129,0.12); border:1px solid rgba(16,185,129,0.2); color:#10b981; }
 @keyframes bar-grow { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0% 0 0); } }
+
+@keyframes enter-up {
+  from { opacity:0; transform:translateY(18px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+@keyframes enter-scale {
+  from { opacity:0; transform:scale(0.92); }
+  to   { opacity:1; transform:scale(1); }
+}
+@keyframes metric-pop {
+  0%   { opacity:0; transform:scale(0.5); }
+  70%  { transform:scale(1.08); }
+  100% { opacity:1; transform:scale(1); }
+}
+@keyframes fade-in {
+  from { opacity:0; }
+  to   { opacity:1; }
+}
+
+.slidev-vclick-target {
+  transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.slidev-vclick-hidden {
+  opacity: 0 !important;
+  transform: translateY(14px);
+}
 </style>
 
 ---
@@ -126,17 +159,17 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
 <div class="text-center">
 
 <div class="mb-3">
-  <img src="./logo.jpeg" style="height:68px; border-radius:50%; box-shadow:0 0 0 3px #10b98140;" />
+  <img src="./logo.jpeg" style="height:68px; border-radius:50%; box-shadow:0 0 0 3px #10b98140; animation: enter-scale 0.8s ease both;" />
 </div>
 
-<div class="muted small" style="letter-spacing:2px; margin-bottom:10px;">TRABAJO DE GRADO · INGENIERÍA EN SISTEMAS</div>
+<div class="muted small" style="letter-spacing:2px; margin-bottom:10px; animation: fade-in 0.8s ease 0.2s both;">TRABAJO DE GRADO · INGENIERÍA EN SISTEMAS</div>
 
-<h1 style="font-size:1.25em !important; line-height:1.55; color:#10b981 !important; font-weight:700; margin-bottom:20px;">
+<h1 style="font-size:1.25em !important; line-height:1.55; color:#10b981 !important; font-weight:700; margin-bottom:20px; animation: enter-up 0.8s ease 0.4s both;">
   Estrategia de Automatización de Pruebas Funcionales y de Regresión<br>
   para la Mejora de la Calidad del Software en Entornos Cloud
 </h1>
 
-<div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; max-width:480px; margin:0 auto;">
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; max-width:480px; margin:0 auto; animation: enter-up 0.8s ease 0.6s both;">
   <div class="card">
     <div class="muted small" style="letter-spacing:1px; margin-bottom:5px;">ESTUDIANTES</div>
     <div style="font-weight:600;">Luciano Castro</div>
@@ -158,7 +191,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:20px;">
 
 <div v-click class="card-green" style="display:flex; gap:12px; align-items:flex-start;">
-  <div style="font-size:1.5em; flex-shrink:0;">🔍</div>
+  <div class="i-ph-magnifying-glass-light" style="width:1.5em; height:1.5em; flex-shrink:0; color:#10b981;" />
   <div>
     <div class="accent small" style="font-weight:700; letter-spacing:.5px;">01 · PROBLEMÁTICA</div>
     <div class="muted small">Contexto, evidencia, impacto y motivación del problema en sistemas transaccionales</div>
@@ -166,7 +199,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
 </div>
 
 <div v-click class="card-green" style="display:flex; gap:12px; align-items:flex-start;">
-  <div style="font-size:1.5em; flex-shrink:0;">🎯</div>
+  <div class="i-ph-crosshair-light" style="width:1.5em; height:1.5em; flex-shrink:0; color:#10b981;" />
   <div>
     <div class="accent small" style="font-weight:700; letter-spacing:.5px;">02 · PROPUESTA</div>
     <div class="muted small">Hipótesis, objetivos, marco conceptual, sistema bajo prueba, casos de prueba y arquitectura</div>
@@ -174,7 +207,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
 </div>
 
 <div v-click class="card-green" style="display:flex; gap:12px; align-items:flex-start;">
-  <div style="font-size:1.5em; flex-shrink:0;">⚡</div>
+  <div class="i-ph-lightning-light" style="width:1.5em; height:1.5em; flex-shrink:0; color:#10b981;" />
   <div>
     <div class="accent small" style="font-weight:700; letter-spacing:.5px;">03 · DEMO EN VIVO</div>
     <div class="muted small">Recorrido en vivo por la arquitectura: pipeline CI/CD y Cypress ejecutando ante el tribunal</div>
@@ -182,7 +215,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
 </div>
 
 <div v-click class="card-green" style="display:flex; gap:12px; align-items:flex-start;">
-  <div style="font-size:1.5em; flex-shrink:0;">📊</div>
+  <div class="i-ph-chart-bar-light" style="width:1.5em; height:1.5em; flex-shrink:0; color:#10b981;" />
   <div>
     <div class="accent small" style="font-weight:700; letter-spacing:.5px;">04 · RESULTADOS</div>
     <div class="muted small">Métricas comparativas manual vs. automatizado — validación ISO/IEC 25010</div>
@@ -190,7 +223,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
 </div>
 
 <div v-click class="card-green" style="grid-column:span 2; display:flex; gap:12px; align-items:center; justify-content:center;">
-  <div style="font-size:1.5em;">✅</div>
+  <div class="i-ph-check-circle-light" style="width:1.5em; height:1.5em; color:#10b981;" />
   <div class="accent small" style="font-weight:700; letter-spacing:.5px;">05 · CONCLUSIONES Y PREGUNTAS</div>
 </div>
 
@@ -200,52 +233,71 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
 
 # La Problemática
 
-<div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:16px;">
+<div class="muted" style="font-size:0.62em; letter-spacing:2px; font-weight:600; margin-top:14px;">EVIDENCIA DE LA INDUSTRIA</div>
 
-<div>
+<div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:12px; margin-top:8px;">
 
-<div v-click class="card-red" style="margin-bottom:10px;">
-  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
-    <span class="red" style="font-size:0.82em; font-weight:700;">World Quality Report 2023-24</span>
+<div v-click class="card-red" style="display:flex; flex-direction:column; align-items:center; text-align:center; min-height:130px; justify-content:space-between;">
+  <div style="display:flex; align-items:center; gap:6px; margin-bottom:4px;">
+    <span class="i-ph-buildings-light" style="width:1.1em; height:1.1em; color:#f85149;" />
     <span class="badge-red">industria</span>
   </div>
-  <p class="small">El <span class="accent">60% de las organizaciones</span> reporta que la falta de automatización es su principal obstáculo para entrega continua.</p>
+  <div style="font-size:1.8em; font-weight:800; color:#f85149; line-height:1.1;">60%</div>
+  <div class="muted" style="font-size:0.72em; margin-top:4px;">de las organizaciones sin automatización para entrega continua</div>
+  <div style="font-size:0.56em; color:#f8514980; margin-top:3px;">World Quality Report 2023-24</div>
 </div>
 
-<div v-click class="card-red" style="margin-bottom:10px;">
-  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
-    <span class="red" style="font-size:0.82em; font-weight:700;">PractiTest · State of Testing 2023</span>
+<div v-click class="card-red" style="display:flex; flex-direction:column; align-items:center; text-align:center; min-height:130px; justify-content:space-between;">
+  <div style="display:flex; align-items:center; gap:6px; margin-bottom:4px;">
+    <span class="i-ph-currency-dollar-light" style="width:1.1em; height:1.1em; color:#f85149;" />
     <span class="badge-red">costo</span>
   </div>
-  <p class="small">Un defecto en producción cuesta <span class="accent">6× más</span> que uno detectado durante el desarrollo.</p>
+  <div style="font-size:1.8em; font-weight:800; color:#f85149; line-height:1.1;">6× más</div>
+  <div class="muted" style="font-size:0.72em; margin-top:4px;">cuesta un defecto en producción vs. en desarrollo</div>
+  <div style="font-size:0.56em; color:#f8514980; margin-top:3px;">PractiTest · State of Testing 2023</div>
 </div>
 
-<div v-click class="card-red">
-  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
-    <span class="red" style="font-size:0.82em; font-weight:700;">ISTQB 2023</span>
+<div v-click class="card-red" style="display:flex; flex-direction:column; align-items:center; text-align:center; min-height:130px; justify-content:space-between;">
+  <div style="display:flex; align-items:center; gap:6px; margin-bottom:4px;">
+    <span class="i-ph-link-simple-light" style="width:1.1em; height:1.1em; color:#f85149;" />
     <span class="badge-red">adopción</span>
   </div>
-  <p class="small">Solo el <span class="accent">26% de equipos</span> tiene automatización integrada en su pipeline de CI/CD.</p>
+  <div style="font-size:1.8em; font-weight:800; color:#f85149; line-height:1.1;">26%</div>
+  <div class="muted" style="font-size:0.72em; margin-top:4px;">de equipos con automatización integrada en CI/CD</div>
+  <div style="font-size:0.56em; color:#f8514980; margin-top:3px;">ISTQB 2023</div>
 </div>
 
 </div>
 
-<div v-click style="display:flex; flex-direction:column; gap:10px; justify-content:center;">
-  <div class="card-red" style="text-align:center;">
-    <div class="metric-val" style="color:#f85149;">43%</div>
-    <div class="metric-label">cobertura promedio<br>con testing manual</div>
-    <div style="font-size:0.58em; color:#f85149; margin-top:4px;">medición propia — baseline</div>
+<div class="muted" style="font-size:0.62em; letter-spacing:2px; font-weight:600; margin-top:14px;">MEDICIÓN PROPIA — BASELINE</div>
+
+<div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:12px; margin-top:8px;">
+
+<div v-click class="card-red" style="display:flex; flex-direction:column; align-items:center; text-align:center; min-height:130px; justify-content:space-between;">
+  <div style="display:flex; align-items:center; gap:6px; margin-bottom:4px;">
+    <span class="i-ph-magnifying-glass-light" style="width:1.1em; height:1.1em; color:#f85149;" />
+    <span class="badge-red">cobertura</span>
   </div>
-  <div class="card-red" style="text-align:center;">
-    <div class="metric-val" style="color:#f85149;">20%</div>
-    <div class="metric-label">defectos detectados<br>antes de producción</div>
-    <div style="font-size:0.58em; color:#f85149; margin-top:4px;">medición propia — baseline</div>
+  <div style="font-size:1.8em; font-weight:800; color:#f85149; line-height:1.1;">43%</div>
+  <div class="muted" style="font-size:0.72em; margin-top:4px;">cobertura promedio con testing manual</div>
+</div>
+
+<div v-click class="card-red" style="display:flex; flex-direction:column; align-items:center; text-align:center; min-height:130px; justify-content:space-between;">
+  <div style="display:flex; align-items:center; gap:6px; margin-bottom:4px;">
+    <span class="i-ph-bug-light" style="width:1.1em; height:1.1em; color:#f85149;" />
+    <span class="badge-red">defectos</span>
   </div>
-  <div class="card-red" style="text-align:center;">
-    <div class="metric-val" style="color:#f85149;">&lt;50%</div>
-    <div class="metric-label">reproducibilidad<br>de ejecuciones manuales</div>
-    <div style="font-size:0.58em; color:#f85149; margin-top:4px;">medición propia — baseline</div>
+  <div style="font-size:1.8em; font-weight:800; color:#f85149; line-height:1.1;">20%</div>
+  <div class="muted" style="font-size:0.72em; margin-top:4px;">defectos detectados antes de producción</div>
+</div>
+
+<div v-click class="card-red" style="display:flex; flex-direction:column; align-items:center; text-align:center; min-height:130px; justify-content:space-between;">
+  <div style="display:flex; align-items:center; gap:6px; margin-bottom:4px;">
+    <span class="i-ph-arrows-clockwise-light" style="width:1.1em; height:1.1em; color:#f85149;" />
+    <span class="badge-red">reproducibilidad</span>
   </div>
+  <div style="font-size:1.8em; font-weight:800; color:#f85149; line-height:1.1;">&lt;50%</div>
+  <div class="muted" style="font-size:0.72em; margin-top:4px;">reproducibilidad de ejecuciones manuales</div>
 </div>
 
 </div>
@@ -257,7 +309,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:16px;">
 
 <div v-click class="card-red" style="display:flex; gap:12px; align-items:flex-start;">
-  <div style="font-size:1.5em; flex-shrink:0;">💥</div>
+  <div class="i-ph-warning-light" style="width:1.5em; height:1.5em; flex-shrink:0; color:#f85149;" />
   <div>
     <div class="red small" style="font-weight:700; margin-bottom:4px;">Impacto Técnico</div>
     <div class="muted small">Bugs en producción, regresiones funcionales e inestabilidad del sistema</div>
@@ -265,7 +317,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
 </div>
 
 <div v-click class="card-red" style="display:flex; gap:12px; align-items:flex-start;">
-  <div style="font-size:1.5em; flex-shrink:0;">💸</div>
+  <div class="i-ph-coins-light" style="width:1.5em; height:1.5em; flex-shrink:0; color:#f85149;" />
   <div>
     <div class="red small" style="font-weight:700; margin-bottom:4px;">Impacto Comercial</div>
     <div class="muted small">Pérdida de ventas, abandono de carritos y baja tasa de conversión</div>
@@ -273,7 +325,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
 </div>
 
 <div v-click class="card-red" style="display:flex; gap:12px; align-items:flex-start;">
-  <div style="font-size:1.5em; flex-shrink:0;">📉</div>
+  <div class="i-ph-trend-down-light" style="width:1.5em; height:1.5em; flex-shrink:0; color:#f85149;" />
   <div>
     <div class="red small" style="font-weight:700; margin-bottom:4px;">Impacto Reputacional</div>
     <div class="muted small">Pérdida de confianza del usuario, daño de marca y crisis públicas</div>
@@ -281,7 +333,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
 </div>
 
 <div v-click class="card-red" style="display:flex; gap:12px; align-items:flex-start;">
-  <div style="font-size:1.5em; flex-shrink:0;">⏳</div>
+  <div class="i-ph-hourglass-medium-light" style="width:1.5em; height:1.5em; flex-shrink:0; color:#f85149;" />
   <div>
     <div class="red small" style="font-weight:700; margin-bottom:4px;">Impacto Operativo</div>
     <div class="muted small">Entregas lentas, sobrecarga de QA manual y dificultad de escalado</div>
@@ -301,9 +353,9 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 
 <div style="text-align:center; max-width:720px; margin:0 auto;">
 
-<div class="muted small" style="letter-spacing:2px; margin-bottom:16px;">HIPÓTESIS DE TRABAJO</div>
+<div class="muted small" style="letter-spacing:2px; margin-bottom:16px; animation: fade-in 0.6s ease both;">HIPÓTESIS DE TRABAJO</div>
 
-<p style="font-size:1.25em; line-height:1.7; color:#e6edf3;">
+<p style="font-size:1.25em; line-height:1.7; color:#e6edf3; animation: enter-up 0.8s ease 0.3s both;">
   La integración sistemática de pruebas funcionales y de regresión automatizadas
   dentro de un pipeline CI/CD en entornos cloud
   <span class="accent">mejora de forma medible, reproducible y sostenible</span>
@@ -312,17 +364,17 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 
 <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:28px;">
   <div v-click class="card-green" style="text-align:center;">
-    <div style="font-size:1.6em;">📏</div>
+    <div class="i-ph-ruler-light" style="width:1.6em; height:1.6em; color:#10b981;" />
     <div class="accent small" style="font-weight:700; margin-top:4px;">Medible</div>
     <div class="muted small">métricas de tiempo,<br>cobertura y defectos</div>
   </div>
   <div v-click class="card-green" style="text-align:center;">
-    <div style="font-size:1.6em;">🔁</div>
+    <div class="i-ph-repeat-light" style="width:1.6em; height:1.6em; color:#10b981;" />
     <div class="accent small" style="font-weight:700; margin-top:4px;">Reproducible</div>
     <div class="muted small">mismos resultados en<br>cada ejecución</div>
   </div>
   <div v-click class="card-green" style="text-align:center;">
-    <div style="font-size:1.6em;">♻️</div>
+    <div class="i-ph-recycle-light" style="width:1.6em; height:1.6em; color:#10b981;" />
     <div class="accent small" style="font-weight:700; margin-top:4px;">Sostenible</div>
     <div class="muted small">versionado junto al código,<br>sin esfuerzo adicional</div>
   </div>
@@ -330,6 +382,8 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 
 </div>
 
+---
+transition: slide-left
 ---
 
 # Objetivo General
@@ -367,33 +421,37 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 </div>
 
 ---
+transition: slide-left
+---
 
 # Marco Conceptual
 
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:16px;">
 
 <div v-click class="card-blue small">
-  <div class="blue" style="font-weight:700; margin-bottom:6px;">📐 ISO/IEC 25010:2023</div>
+  <div class="blue" style="font-weight:700; margin-bottom:6px;"><span class="i-ph-compass-tool-light" style="width:1em; height:1em; color:#58a6ff;" /> ISO/IEC 25010:2023</div>
   <div class="muted">Modelo de calidad del producto software. Características medibles: <span class="blue">Adecuación Funcional, Fiabilidad, Eficiencia de Desempeño, Mantenibilidad, Seguridad y Flexibilidad</span>.</div>
 </div>
 
 <div v-click class="card small">
-  <div class="accent" style="font-weight:700; margin-bottom:6px;">⚙️ CI/CD</div>
+  <div class="accent" style="font-weight:700; margin-bottom:6px;"><span class="i-ph-gear-six-light" style="width:1em; height:1em; color:#10b981;" /> CI/CD</div>
   <div class="muted">Pipeline automatizado: build, deploy y tests ante cada push. Reduce el riesgo de integración y habilita entregas continuas y auditables.</div>
 </div>
 
 <div v-click class="card small">
-  <div class="accent" style="font-weight:700; margin-bottom:6px;">🌲 Testing E2E — Cypress</div>
+  <div class="accent" style="font-weight:700; margin-bottom:6px;"><span class="i-ph-tree-evergreen-light" style="width:1em; height:1em; color:#10b981;" /> Testing E2E — Cypress</div>
   <div class="muted">Pruebas que simulan flujos reales del usuario en el navegador. Interceptación de APIs, screenshots, videos y reportes Mochawesome automatizados.</div>
 </div>
 
 <div v-click class="card-green small">
-  <div class="accent" style="font-weight:700; margin-bottom:6px;">🔁 Automatización de Pruebas</div>
+  <div class="accent" style="font-weight:700; margin-bottom:6px;"><span class="i-ph-repeat-light" style="width:1em; height:1em; color:#10b981;" /> Automatización de Pruebas</div>
   <div class="muted">Repetibilidad, cobertura consistente, trazabilidad commit→test→issue y eliminación del esfuerzo humano en validación continua.</div>
 </div>
 
 </div>
 
+---
+transition: slide-left
 ---
 
 # El Sistema Bajo Prueba
@@ -407,35 +465,37 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 
 <div v-click style="text-align:center;">
   <div class="muted small" style="margin-bottom:4px; letter-spacing:.5px;">LOGIN</div>
-  <img src="./img-app-login.png" style="width:100%; border-radius:6px; border:1px solid #30363d;" />
+  <img src="./img-app-login.png" style="width:100%; height:180px; object-fit:cover; object-position:top; border-radius:6px; border:1px solid #30363d;" />
   <div class="muted" style="font-size:0.65em; margin-top:4px;">TC-001 · Autenticación</div>
 </div>
 
 <div v-click style="text-align:center;">
   <div class="muted small" style="margin-bottom:4px; letter-spacing:.5px;">CATÁLOGO</div>
-  <img src="./img-app-catalogo.png" style="width:100%; border-radius:6px; border:1px solid #30363d;" />
+  <img src="./img-app-catalogo.png" style="width:100%; height:180px; object-fit:cover; object-position:top; border-radius:6px; border:1px solid #30363d;" />
   <div class="muted" style="font-size:0.65em; margin-top:4px;">TC-005 · Disponibilidad</div>
 </div>
 
 <div v-click style="text-align:center;">
   <div class="muted small" style="margin-bottom:4px; letter-spacing:.5px;">CHECKOUT</div>
-  <img src="./img-app-checkout.png" style="width:100%; border-radius:6px; border:1px solid #30363d;" />
+  <img src="./img-app-checkout.png" style="width:100%; height:180px; object-fit:cover; object-position:top; border-radius:6px; border:1px solid #30363d;" />
   <div class="muted" style="font-size:0.65em; margin-top:4px;">TC-002/003 · Compra & Pago</div>
 </div>
 
 <div v-click style="text-align:center;">
   <div class="muted small" style="margin-bottom:4px; letter-spacing:.5px;">CONFIRMACIÓN</div>
-  <img src="./img-app-confirmacion.png" style="width:100%; border-radius:6px; border:1px solid #30363d;" />
+  <img src="./img-app-confirmacion.png" style="width:100%; height:180px; object-fit:cover; object-position:top; border-radius:6px; border:1px solid #30363d;" />
   <div class="muted" style="font-size:0.65em; margin-top:4px;">TC-002 · Happy path</div>
 </div>
 
 </div>
 
-<div v-click style="margin-top:14px; display:flex; gap:10px; align-items:center;">
-  <div class="url-box" style="flex:1;">🌐&nbsp; https://lucianocastr.github.io/ticketeraTesis/</div>
-  <div class="url-box" style="flex:1;">📦&nbsp; github.com/lucianocastr/ticketeraTesis</div>
+<div v-click style="margin-top:14px; display:flex; gap:10px; align-items:stretch;">
+  <div class="url-box" style="flex:1; display:flex; align-items:center;"><span class="i-ph-globe-light" style="width:1em; height:1em; flex-shrink:0; color:#58a6ff;" />&nbsp; https://lucianocastr.github.io/ticketeraTesis/</div>
+  <div class="url-box" style="flex:1; display:flex; align-items:center;"><span class="i-ph-package-light" style="width:1em; height:1em; flex-shrink:0; color:#58a6ff;" />&nbsp; github.com/lucianocastr/ticketeraTesis</div>
 </div>
 
+---
+transition: slide-left
 ---
 
 # Alcance y Limitaciones
@@ -444,7 +504,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 
 <div>
 <div class="card-blue small" style="margin-bottom:10px;">
-  <div class="blue" style="font-weight:700; margin-bottom:6px;">✔ Dentro del alcance</div>
+  <div class="blue" style="font-weight:700; margin-bottom:6px;"><span class="i-ph-check-light" style="width:1em; height:1em; color:#58a6ff;" /> Dentro del alcance</div>
   <ul style="margin:0; padding-left:1.1em;">
     <li>Pruebas funcionales E2E sobre flujos transaccionales críticos</li>
     <li>Pipeline CI/CD completo en entorno cloud (GitHub)</li>
@@ -457,7 +517,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 
 <div>
 <div class="card-red small" style="margin-bottom:10px;">
-  <div class="red" style="font-weight:700; margin-bottom:6px;">✗ Fuera del alcance</div>
+  <div class="red" style="font-weight:700; margin-bottom:6px;"><span class="i-ph-x-light" style="width:1em; height:1em; color:#f85149;" /> Fuera del alcance</div>
   <ul style="margin:0; padding-left:1.1em;">
     <li>Pruebas unitarias y de integración</li>
     <li>Pruebas de performance y carga</li>
@@ -474,6 +534,8 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
   <p class="small" style="margin:0;">El sistema bajo prueba fue desarrollado por los autores con testeabilidad como requisito de diseño. Los resultados son válidos como <span class="blue">prueba de concepto</span> y base para la replicación en entornos reales.</p>
 </div>
 
+---
+transition: slide-left
 ---
 
 # Los 6 Casos de Prueba
@@ -508,30 +570,32 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 </div>
 
 ---
+transition: slide-left
+---
 
 # Implementación — Buenas Prácticas Aplicadas
 
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:16px;">
 
 <div v-click class="card small">
-  <div class="accent" style="font-weight:700; margin-bottom:6px;">🎯 Selectores estables</div>
+  <div class="accent" style="font-weight:700; margin-bottom:6px;"><span class="i-ph-crosshair-light" style="width:1em; height:1em; color:#10b981;" /> Selectores estables</div>
   <div class="muted small" style="margin-bottom:8px;">Atributos <code>data-cy</code> desacoplados del diseño — eliminan fragilidad ante cambios de UI</div>
   <code style="font-size:0.75em; color:#10b981;">cy.get('[data-cy=btn-checkout]')</code>
 </div>
 
 <div v-click class="card small">
-  <div class="accent" style="font-weight:700; margin-bottom:6px;">♻️ Comandos custom reutilizables</div>
+  <div class="accent" style="font-weight:700; margin-bottom:6px;"><span class="i-ph-recycle-light" style="width:1em; height:1em; color:#10b981;" /> Comandos custom reutilizables</div>
   <div class="muted small" style="margin-bottom:8px;">Lógica de setup encapsulada — evita duplicación entre specs</div>
   <code style="font-size:0.75em; color:#10b981;">cy.login() &nbsp;·&nbsp; cy.addToCart()</code>
 </div>
 
 <div v-click class="card small">
-  <div class="accent" style="font-weight:700; margin-bottom:6px;">📝 Patrón Given / When / Then</div>
+  <div class="accent" style="font-weight:700; margin-bottom:6px;"><span class="i-ph-note-pencil-light" style="width:1em; height:1em; color:#10b981;" /> Patrón Given / When / Then</div>
   <div class="muted small">Estructura legible y alineada a BDD — facilita revisión y mantenimiento de los specs</div>
 </div>
 
 <div v-click class="card small">
-  <div class="accent" style="font-weight:700; margin-bottom:6px;">🔀 Intercepción de red</div>
+  <div class="accent" style="font-weight:700; margin-bottom:6px;"><span class="i-ph-shuffle-light" style="width:1em; height:1em; color:#10b981;" /> Intercepción de red</div>
   <div class="muted small">Mocking con <code>cy.intercept()</code> para simular pagos rechazados y sesiones expiradas de forma determinística</div>
 </div>
 
@@ -543,6 +607,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 
 ---
 clicks: 2
+transition: slide-left
 ---
 
 # Pipeline CI/CD
@@ -593,12 +658,13 @@ jobs:
 
 ---
 clicks: 5
+transition: slide-left
 ---
 
 <h1 v-if="$clicks===0">Arquitectura de la Solución</h1>
-<h1 v-if="$clicks>=1" style="color:#10b981; font-size:1.4em;">⚡ Arquitectura de la Solución — Demo en tiempo real</h1>
+<h1 v-if="$clicks>=1" style="color:#10b981; font-size:1.4em;"><span class="i-ph-lightning-light" style="width:1em; height:1em;" /> Arquitectura de la Solución — Demo en tiempo real</h1>
 
-<div style="margin-top:10px;"><div class="a-zn a-zc" style="margin-bottom:7px;"><div class="a-zn-lb" style="color:#10b981;">☁️ CLOUD</div><div class="a-row" style="margin-bottom:9px;"><div class="a-nd" :class="$clicks===2?'a-on':$clicks>0?'a-off':''"><div class="a-ic">🐙</div><div class="a-lb">GitHub</div><div class="a-sb">Repositorio</div></div><div class="a-ar" :class="($clicks===2||$clicks===3)?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===3?'a-on':$clicks>0?'a-off':''"><div class="a-ic">⚙️</div><div class="a-lb">GitHub Actions</div><div class="a-sb">Pipeline YAML</div></div><div class="a-ar" :class="($clicks===3||$clicks===4)?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===4?'a-on':$clicks>0?'a-off':''"><div class="a-ic">⚛️</div><div class="a-lb">Build + Deploy</div><div class="a-sb">React + Vite · GitHub Pages</div></div><div style="flex:1;"></div></div><div class="a-row" style="padding-left:116px;"><div class="a-ar" style="transform:rotate(90deg);" :class="($clicks===3||$clicks===5)?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===5?'a-on':$clicks>0?'a-off':''"><div class="a-ic">🌲</div><div class="a-lb">Cypress E2E</div><div class="a-sb">6 specs · headless</div></div><div class="a-ar" :class="$clicks===5?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===5?'a-on':$clicks>0?'a-off':''"><div class="a-ic">📊</div><div class="a-lb">Cypress Cloud</div><div class="a-sb">resultados + evidencias</div></div><div class="a-ar" :class="$clicks===5?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===5?'a-on':$clicks>0?'a-off':''"><div class="a-ic">📋</div><div class="a-lb">GitHub Projects</div><div class="a-sb">issues auto-gestionados</div></div></div></div><div class="a-zn a-zl"><div class="a-zn-lb" style="color:#58a6ff;">🖥️ LOCAL</div><div class="a-row"><div class="a-nd" :class="$clicks===1?'a-on':$clicks>0?'a-off':''"><div class="a-ic">👨‍💻</div><div class="a-lb">Equipo Dev</div><div class="a-sb">commit / push</div></div><div class="a-ar" :class="$clicks===1?'a-on':$clicks>0?'a-off':''">+</div><div class="a-nd" :class="$clicks===1?'a-on':$clicks>0?'a-off':''"><div class="a-ic">🧪</div><div class="a-lb">Equipo QA</div><div class="a-sb">specs · commit / push</div></div><div class="a-ar" :class="($clicks===1||$clicks===2)?'a-on':$clicks>0?'a-off':''">⬆ push</div><div style="flex:1;"></div><div class="a-nd" :class="$clicks===5?'a-on':$clicks>0?'a-off':''"><div class="a-ic">👔</div><div class="a-lb">Product Owner</div><div class="a-sb">Approve / Reject</div></div></div></div><div class="a-cap"><span v-if="$clicks===0" style="color:#8b949e;font-weight:400;">Arquitectura completa de la solución</span><span v-if="$clicks===1" style="color:#10b981;">① Dev escribe código · QA escribe specs de Cypress · ambos hacen commit y push</span><span v-if="$clicks===2" style="color:#10b981;">② GitHub recibe el push y dispara automáticamente el trigger CI/CD</span><span v-if="$clicks===3" style="color:#10b981;">③ GitHub Actions lee el YAML y orquesta todos los pasos del pipeline</span><span v-if="$clicks===4" style="color:#10b981;">④ Build de la app React + Vite y deploy automático en GitHub Pages</span><span v-if="$clicks===5" style="color:#10b981;">⑤ Cypress ejecuta los 6 specs · Cypress Cloud registra resultados · GitHub Projects gestiona los issues automáticamente</span></div></div>
+<div style="margin-top:10px;"><div class="a-zn a-zc" style="margin-bottom:7px;"><div class="a-zn-lb" style="color:#10b981;"><span class="i-ph-cloud-light" style="width:1em; height:1em; color:#10b981;" /> CLOUD</div><div class="a-row" style="margin-bottom:9px;"><div class="a-nd" :class="$clicks===2?'a-on':$clicks>0?'a-off':''"><div class="a-ic"><span class="i-ph-github-logo-light" style="width:1.35em; height:1.35em;" /></div><div class="a-lb">GitHub</div><div class="a-sb">Repositorio</div></div><div class="a-ar" :class="($clicks===2||$clicks===3)?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===3?'a-on':$clicks>0?'a-off':''"><div class="a-ic"><span class="i-ph-gear-six-light" style="width:1.35em; height:1.35em;" /></div><div class="a-lb">GitHub Actions</div><div class="a-sb">Pipeline YAML</div></div><div class="a-ar" :class="($clicks===3||$clicks===4)?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===4?'a-on':$clicks>0?'a-off':''"><div class="a-ic"><span class="i-ph-atom-light" style="width:1.35em; height:1.35em;" /></div><div class="a-lb">Build + Deploy</div><div class="a-sb">React + Vite · GitHub Pages</div></div><div style="flex:1;"></div></div><div class="a-row" style="padding-left:116px;"><div class="a-ar" style="transform:rotate(90deg);" :class="($clicks===3||$clicks===5)?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===5?'a-on':$clicks>0?'a-off':''"><div class="a-ic"><span class="i-ph-tree-evergreen-light" style="width:1.35em; height:1.35em;" /></div><div class="a-lb">Cypress E2E</div><div class="a-sb">6 specs · headless</div></div><div class="a-ar" :class="$clicks===5?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===5?'a-on':$clicks>0?'a-off':''"><div class="a-ic"><span class="i-ph-chart-bar-light" style="width:1.35em; height:1.35em;" /></div><div class="a-lb">Cypress Cloud</div><div class="a-sb">resultados + evidencias</div></div><div class="a-ar" :class="$clicks===5?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===5?'a-on':$clicks>0?'a-off':''"><div class="a-ic"><span class="i-ph-clipboard-text-light" style="width:1.35em; height:1.35em;" /></div><div class="a-lb">GitHub Projects</div><div class="a-sb">issues auto-gestionados</div></div></div></div><div class="a-zn a-zl"><div class="a-zn-lb" style="color:#58a6ff;"><span class="i-ph-desktop-light" style="width:1em; height:1em; color:#58a6ff;" /> LOCAL</div><div class="a-row"><div class="a-nd" :class="$clicks===1?'a-on':$clicks>0?'a-off':''"><div class="a-ic"><span class="i-ph-code-light" style="width:1.35em; height:1.35em;" /></div><div class="a-lb">Equipo Dev</div><div class="a-sb">commit / push</div></div><div class="a-ar" :class="$clicks===1?'a-on':$clicks>0?'a-off':''">+</div><div class="a-nd" :class="$clicks===1?'a-on':$clicks>0?'a-off':''"><div class="a-ic"><span class="i-ph-flask-light" style="width:1.35em; height:1.35em;" /></div><div class="a-lb">Equipo QA</div><div class="a-sb">specs · commit / push</div></div><div class="a-ar" :class="($clicks===1||$clicks===2)?'a-on':$clicks>0?'a-off':''"><span class="i-ph-arrow-up-light" style="width:0.9em; height:0.9em;" /> push</div><div style="flex:1;"></div><div class="a-nd" :class="$clicks===5?'a-on':$clicks>0?'a-off':''"><div class="a-ic"><span class="i-ph-user-circle-light" style="width:1.35em; height:1.35em;" /></div><div class="a-lb">Product Owner</div><div class="a-sb">Approve / Reject</div></div></div></div><div class="a-cap"><span v-if="$clicks===0" style="color:#8b949e;font-weight:400;">Arquitectura completa de la solución</span><span v-if="$clicks===1" style="color:#10b981;">① Dev escribe código · QA escribe specs de Cypress · ambos hacen commit y push</span><span v-if="$clicks===2" style="color:#10b981;">② GitHub recibe el push y dispara automáticamente el trigger CI/CD</span><span v-if="$clicks===3" style="color:#10b981;">③ GitHub Actions lee el YAML y orquesta todos los pasos del pipeline</span><span v-if="$clicks===4" style="color:#10b981;">④ Build de la app React + Vite y deploy automático en GitHub Pages</span><span v-if="$clicks===5" style="color:#10b981;">⑤ Cypress ejecuta los 6 specs · Cypress Cloud registra resultados · GitHub Projects gestiona los issues automáticamente</span></div></div>
 
 ---
 
@@ -689,32 +755,32 @@ clicks: 5
 <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; margin-top:18px;">
 
 <div v-click class="card-green">
-  <div class="accent small" style="font-weight:700; margin-bottom:5px;">✓ Adecuación Funcional</div>
+  <div class="accent small" style="font-weight:700; margin-bottom:5px;"><span class="i-ph-check-light" style="width:0.9em; height:0.9em; color:#10b981;" /> Adecuación Funcional</div>
   <div class="muted small">100% flujos críticos validados: login, compra, checkout, carrito, sesión.</div>
 </div>
 
 <div v-click class="card-green">
-  <div class="accent small" style="font-weight:700; margin-bottom:5px;">✓ Fiabilidad</div>
+  <div class="accent small" style="font-weight:700; margin-bottom:5px;"><span class="i-ph-check-light" style="width:0.9em; height:0.9em; color:#10b981;" /> Fiabilidad</div>
   <div class="muted small">Ejecución reproducible en cloud sin variaciones ni falsos positivos.</div>
 </div>
 
 <div v-click class="card-green">
-  <div class="accent small" style="font-weight:700; margin-bottom:5px;">✓ Eficiencia de Desempeño</div>
+  <div class="accent small" style="font-weight:700; margin-bottom:5px;"><span class="i-ph-check-light" style="width:0.9em; height:0.9em; color:#10b981;" /> Eficiencia de Desempeño</div>
   <div class="muted small">Reducción del 87% en tiempo y 80% en esfuerzo operativo por ciclo.</div>
 </div>
 
 <div v-click class="card-green">
-  <div class="accent small" style="font-weight:700; margin-bottom:5px;">✓ Mantenibilidad</div>
+  <div class="accent small" style="font-weight:700; margin-bottom:5px;"><span class="i-ph-check-light" style="width:0.9em; height:0.9em; color:#10b981;" /> Mantenibilidad</div>
   <div class="muted small">Specs versionadas con el código; actualizadas automáticamente en el pipeline.</div>
 </div>
 
 <div v-click class="card-green">
-  <div class="accent small" style="font-weight:700; margin-bottom:5px;">✓ Seguridad</div>
+  <div class="accent small" style="font-weight:700; margin-bottom:5px;"><span class="i-ph-check-light" style="width:0.9em; height:0.9em; color:#10b981;" /> Seguridad</div>
   <div class="muted small">TC-006 valida sesiones expiradas y bloqueos de acceso no autorizado.</div>
 </div>
 
 <div v-click class="card-green">
-  <div class="accent small" style="font-weight:700; margin-bottom:5px;">✓ Flexibilidad</div>
+  <div class="accent small" style="font-weight:700; margin-bottom:5px;"><span class="i-ph-check-light" style="width:0.9em; height:0.9em; color:#10b981;" /> Flexibilidad</div>
   <div class="muted small">Estrategia documentada y replicable a cualquier sistema web transaccional.</div>
 </div>
 
@@ -732,22 +798,22 @@ clicks: 5
 <div style="margin-top:12px; display:flex; flex-direction:column; gap:10px;">
 
 <div v-click class="card" style="border-left:3px solid #10b981; border-radius:0 8px 8px 0; display:flex; gap:14px; align-items:flex-start;">
-  <div style="font-size:1.4em; flex-shrink:0;">✅</div>
+  <div class="i-ph-check-circle-light" style="width:1.4em; height:1.4em; flex-shrink:0; color:#10b981;" />
   <p class="small" style="margin:0;"><span class="accent">La hipótesis fue confirmada.</span> La automatización integrada en CI/CD mejora la calidad del software de forma medible, reproducible y sostenible. Los datos lo prueban: −87% en tiempo, 100% en cobertura y detección.</p>
 </div>
 
 <div v-click class="card" style="border-left:3px solid #10b981; border-radius:0 8px 8px 0; display:flex; gap:14px; align-items:flex-start;">
-  <div style="font-size:1.4em; flex-shrink:0;">🆓</div>
+  <div class="i-ph-lock-key-open-light" style="width:1.4em; height:1.4em; flex-shrink:0; color:#10b981;" />
   <p class="small" style="margin:0;"><span class="accent">Herramientas open-source son suficientes.</span> Cypress + GitHub Actions + GitHub Pages permiten implementar prácticas de ingeniería de calidad profesional con costo cero.</p>
 </div>
 
 <div v-click class="card" style="border-left:3px solid #10b981; border-radius:0 8px 8px 0; display:flex; gap:14px; align-items:flex-start;">
-  <div style="font-size:1.4em; flex-shrink:0;">♾️</div>
+  <div class="i-ph-infinity-light" style="width:1.4em; height:1.4em; flex-shrink:0; color:#10b981;" />
   <p class="small" style="margin:0;"><span class="accent">El modelo es replicable.</span> Aplicable a cualquier sistema web con flujos transaccionales críticos: e-commerce, fintech, SaaS, retail.</p>
 </div>
 
 <div v-click class="card" style="border-left:3px solid #10b981; border-radius:0 8px 8px 0; display:flex; gap:14px; align-items:flex-start;">
-  <div style="font-size:1.4em; flex-shrink:0;">📉</div>
+  <div class="i-ph-trend-down-light" style="width:1.4em; height:1.4em; flex-shrink:0; color:#10b981;" />
   <p class="small" style="margin:0;"><span class="accent">El testing manual no escala.</span> Lento, de baja cobertura, no trazable. La automatización resolvió las tres debilidades identificadas en el diagnóstico inicial.</p>
 </div>
 
@@ -760,7 +826,7 @@ clicks: 5
 <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; margin-top:18px;">
 
 <div v-click class="card-blue" style="display:flex; flex-direction:column; gap:8px;">
-  <div style="font-size:1.5em; text-align:center;">🎓</div>
+  <div style="text-align:center;"><span class="i-ph-graduation-cap-light" style="width:1.5em; height:1.5em; color:#58a6ff;" /></div>
   <div class="blue small" style="font-weight:700; text-align:center; letter-spacing:.5px;">A NIVEL ACADÉMICO</div>
   <ul class="muted small" style="margin:0; padding-left:1.1em;">
     <li>Evidencia concreta de cómo ISO/IEC 25010 se operacionaliza mediante automatización</li>
@@ -773,7 +839,7 @@ clicks: 5
 </div>
 
 <div v-click class="card-green" style="display:flex; flex-direction:column; gap:8px;">
-  <div style="font-size:1.5em; text-align:center;">⚙️</div>
+  <div style="text-align:center;"><span class="i-ph-gear-six-light" style="width:1.5em; height:1.5em; color:#10b981;" /></div>
   <div class="accent small" style="font-weight:700; text-align:center; letter-spacing:.5px;">A NIVEL TÉCNICO</div>
   <ul class="muted small" style="margin:0; padding-left:1.1em;">
     <li>Pipeline CI/CD orientado a <strong>calidad</strong>, no solo a despliegue</li>
@@ -787,7 +853,7 @@ clicks: 5
 </div>
 
 <div v-click class="card" style="display:flex; flex-direction:column; gap:8px; border-color:#f0883e;">
-  <div style="font-size:1.5em; text-align:center;">💼</div>
+  <div style="text-align:center;"><span class="i-ph-briefcase-light" style="width:1.5em; height:1.5em; color:#f0883e;" /></div>
   <div style="color:#f0883e; font-weight:700; font-size:0.82em; text-align:center; letter-spacing:.5px;">A NIVEL PROFESIONAL</div>
   <ul class="muted small" style="margin:0; padding-left:1.1em;">
     <li>Modelo replicable a cualquier sistema transaccional</li>
@@ -808,7 +874,7 @@ clicks: 5
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:18px;">
 
 <div v-click class="card" style="display:flex; gap:12px;">
-  <div style="font-size:1.4em; flex-shrink:0;">🔬</div>
+  <div class="i-ph-test-tube-light" style="width:1.4em; height:1.4em; flex-shrink:0; color:#58a6ff;" />
   <div>
     <div class="blue small" style="font-weight:700; margin-bottom:4px;">Pruebas no funcionales</div>
     <div class="muted small">Performance, carga y seguridad automatizados (k6, Lighthouse CI, OWASP ZAP)</div>
@@ -816,7 +882,7 @@ clicks: 5
 </div>
 
 <div v-click class="card" style="display:flex; gap:12px;">
-  <div style="font-size:1.4em; flex-shrink:0;">🤖</div>
+  <div class="i-ph-robot-light" style="width:1.4em; height:1.4em; flex-shrink:0; color:#58a6ff;" />
   <div>
     <div class="blue small" style="font-weight:700; margin-bottom:4px;">IA en QA</div>
     <div class="muted small">Generación dinámica de casos de prueba y predicción de defectos con LLMs</div>
@@ -824,7 +890,7 @@ clicks: 5
 </div>
 
 <div v-click class="card" style="display:flex; gap:12px;">
-  <div style="font-size:1.4em; flex-shrink:0;">📊</div>
+  <div class="i-ph-chart-bar-light" style="width:1.4em; height:1.4em; flex-shrink:0; color:#58a6ff;" />
   <div>
     <div class="blue small" style="font-weight:700; margin-bottom:4px;">Dashboards en tiempo real</div>
     <div class="muted small">Monitoreo continuo con métricas históricas e integración a sistemas de alertas</div>
@@ -832,7 +898,7 @@ clicks: 5
 </div>
 
 <div v-click class="card" style="display:flex; gap:12px;">
-  <div style="font-size:1.4em; flex-shrink:0;">🛡️</div>
+  <div class="i-ph-shield-light" style="width:1.4em; height:1.4em; flex-shrink:0; color:#58a6ff;" />
   <div>
     <div class="blue small" style="font-weight:700; margin-bottom:4px;">Análisis estático integrado</div>
     <div class="muted small">SonarQube y CodeQL como gates de calidad dentro del mismo pipeline</div>
@@ -848,37 +914,37 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 
 <div style="text-align:center;">
 
-<div style="font-size:3em; margin-bottom:10px;">🎓</div>
-<h1 style="color:#10b981 !important; font-size:2em !important; margin-bottom:6px;">¡Muchas Gracias!</h1>
-<p class="muted" style="margin-bottom:26px;">
+<div style="margin-bottom:10px; animation: enter-scale 0.8s ease both;"><span class="i-ph-graduation-cap-light" style="width:3em; height:3em; color:#10b981;" /></div>
+<h1 style="color:#10b981 !important; font-size:2em !important; margin-bottom:6px; animation: enter-up 0.7s ease 0.3s both;">¡Muchas Gracias!</h1>
+<p class="muted" style="margin-bottom:26px; animation: fade-in 0.8s ease 0.5s both;">
   Luciano Castro · Matías Primitz &nbsp;·&nbsp;
   <span class="small">Tutora: Lic. Natalia Mira</span>
 </p>
 
-<div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; max-width:560px; margin:0 auto 20px auto;">
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; max-width:560px; margin:0 auto 20px auto; animation: enter-up 0.8s ease 0.7s both;">
   <div class="url-box" style="text-align:left;">
-    📦 github.com/<span style="color:#10b981;">lucianocastr</span>/ticketeraTesis
+    <span class="i-ph-package-light" style="width:1em; height:1em; color:#58a6ff;" /> github.com/<span style="color:#10b981;">lucianocastr</span>/ticketeraTesis
   </div>
   <div class="url-box" style="text-align:left;">
-    🌐 lucianocastr.github.io/<span style="color:#10b981;">ticketeraTesis</span>/
+    <span class="i-ph-globe-light" style="width:1em; height:1em; color:#58a6ff;" /> lucianocastr.github.io/<span style="color:#10b981;">ticketeraTesis</span>/
   </div>
   <div class="url-box" style="text-align:left; grid-column:span 2;">
-    📊 cloud.cypress.io/projects/<span style="color:#10b981;">mfnt8h</span>/runs
+    <span class="i-ph-chart-bar-light" style="width:1em; height:1em; color:#58a6ff;" /> cloud.cypress.io/projects/<span style="color:#10b981;">mfnt8h</span>/runs
   </div>
 </div>
 
 <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:10px; max-width:460px; margin:0 auto;">
   <div class="card small" style="text-align:center;">
-    <div style="font-size:1.2em;">🌲</div><div class="muted">Cypress</div>
+    <div><span class="i-ph-tree-evergreen-light" style="width:1.2em; height:1.2em; color:#10b981;" /></div><div class="muted">Cypress</div>
   </div>
   <div class="card small" style="text-align:center;">
-    <div style="font-size:1.2em;">⚡</div><div class="muted">GitHub Actions</div>
+    <div><span class="i-ph-lightning-light" style="width:1.2em; height:1.2em; color:#10b981;" /></div><div class="muted">GitHub Actions</div>
   </div>
   <div class="card small" style="text-align:center;">
-    <div style="font-size:1.2em;">⚛️</div><div class="muted">React + Vite</div>
+    <div><span class="i-ph-atom-light" style="width:1.2em; height:1.2em; color:#10b981;" /></div><div class="muted">React + Vite</div>
   </div>
   <div class="card small" style="text-align:center;">
-    <div style="font-size:1.2em;">📋</div><div class="muted">ISO/IEC 25010</div>
+    <div><span class="i-ph-clipboard-text-light" style="width:1.2em; height:1.2em; color:#10b981;" /></div><div class="muted">ISO/IEC 25010</div>
   </div>
 </div>
 
