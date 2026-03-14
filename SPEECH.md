@@ -58,7 +58,7 @@ De las características que define la norma, identificamos seis que son directam
 
 ## [LUCIANO] — /9 El Sistema Bajo Prueba
 
-"Necesitábamos un sistema real sobre el que aplicar la estrategia. Desarrollamos Mini Ticketera: una aplicación de venta de entradas con los flujos que tiene cualquier e-commerce — login, catálogo, carrito, checkout, confirmación. Está desplegada en producción, los dos links en pantalla son funcionales ahora mismo."
+"Necesitábamos un sistema real sobre el que aplicar la estrategia. Desarrollamos Mini Ticketera: una aplicación de venta de entradas con los flujos que tiene cualquier e-commerce — login, catálogo, carrito, checkout, confirmación. Está desplegada en producción, los dos links en pantalla son funcionales."
 
 ---
 
