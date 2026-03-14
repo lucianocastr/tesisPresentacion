@@ -121,11 +121,10 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
 
 <div class="muted small" style="letter-spacing:2px; margin-bottom:10px;">TRABAJO DE GRADO · INGENIERÍA EN SISTEMAS</div>
 
-<h1 style="font-size:1.55em !important; line-height:1.35; color:#fff !important; font-weight:800; margin-bottom:6px;">
-  Estrategia de Automatización de<br>
-  <span style="color:#10b981;">Pruebas Funcionales y de Regresión</span>
+<h1 style="font-size:1.25em !important; line-height:1.55; color:#10b981 !important; font-weight:700; margin-bottom:20px;">
+  Estrategia de Automatización de Pruebas Funcionales y de Regresión<br>
+  para la Mejora de la Calidad del Software en Entornos Cloud
 </h1>
-<p class="muted" style="font-size:0.9em; margin-bottom:26px;">para la mejora de la calidad del software en entornos cloud</p>
 
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; max-width:480px; margin:0 auto;">
   <div class="card">
@@ -136,7 +135,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
   <div class="card">
     <div class="muted small" style="letter-spacing:1px; margin-bottom:5px;">TUTORA</div>
     <div style="font-weight:600;">Lic. Natalia Mira</div>
-    <div class="muted small" style="margin-top:5px;">Ingeniería en Sistemas · 2025</div>
+    <div class="muted small" style="margin-top:5px;">Ingeniería en Sistemas · 2026</div>
   </div>
 </div>
 
@@ -168,7 +167,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
   <div style="font-size:1.5em; flex-shrink:0;">⚡</div>
   <div>
     <div class="accent small" style="font-weight:700; letter-spacing:.5px;">03 · DEMO EN VIVO</div>
-    <div class="muted small">Pipeline CI/CD y Cypress ejecutando en tiempo real ante el tribunal</div>
+    <div class="muted small">Recorrido en vivo por la arquitectura: pipeline CI/CD y Cypress ejecutando ante el tribunal</div>
   </div>
 </div>
 
@@ -189,7 +188,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
 
 ---
 
-# 01 · La Problemática
+# La Problemática
 
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:16px;">
 
@@ -222,20 +221,20 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
 </div>
 
 <div v-click style="display:flex; flex-direction:column; gap:10px; justify-content:center;">
-  <div class="card" style="text-align:center;">
-    <div class="metric-val">43%</div>
+  <div class="card-red" style="text-align:center;">
+    <div class="metric-val" style="color:#f85149;">43%</div>
     <div class="metric-label">cobertura promedio<br>con testing manual</div>
-    <div style="font-size:0.58em; color:#58a6ff; margin-top:4px;">medición propia — baseline</div>
+    <div style="font-size:0.58em; color:#f85149; margin-top:4px;">medición propia — baseline</div>
   </div>
-  <div class="card" style="text-align:center;">
-    <div class="metric-val">20%</div>
+  <div class="card-red" style="text-align:center;">
+    <div class="metric-val" style="color:#f85149;">20%</div>
     <div class="metric-label">defectos detectados<br>antes de producción</div>
-    <div style="font-size:0.58em; color:#58a6ff; margin-top:4px;">medición propia — baseline</div>
+    <div style="font-size:0.58em; color:#f85149; margin-top:4px;">medición propia — baseline</div>
   </div>
-  <div class="card" style="text-align:center;">
-    <div class="metric-val">&lt;50%</div>
+  <div class="card-red" style="text-align:center;">
+    <div class="metric-val" style="color:#f85149;">&lt;50%</div>
     <div class="metric-label">reproducibilidad<br>de ejecuciones manuales</div>
-    <div style="font-size:0.58em; color:#58a6ff; margin-top:4px;">medición propia — baseline</div>
+    <div style="font-size:0.58em; color:#f85149; margin-top:4px;">medición propia — baseline</div>
   </div>
 </div>
 
@@ -243,7 +242,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
 
 ---
 
-# 02 · El Sistema Bajo Prueba
+# El Sistema Bajo Prueba
 
 <div class="muted small" style="margin-bottom:14px;">
   <span class="badge-gray">Mini Ticketera</span>&nbsp;
@@ -321,7 +320,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 
 ---
 
-# 02 · Objetivo General
+# Objetivo General
 
 <div v-click class="card-blue" style="margin: 12px 0; padding:16px 20px;">
   <p style="font-size:0.92em; line-height:1.6; margin:0;">
@@ -357,7 +356,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 
 ---
 
-# 02 · Alcance y Limitaciones
+# Alcance y Limitaciones
 
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:16px;">
 
@@ -394,63 +393,8 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 </div>
 
 ---
-clicks: 6
----
 
-# 02 · Arquitectura de la Solución
-
-<div style="margin-top:10px;"><div class="a-zn a-zc" style="margin-bottom:7px;"><div class="a-zn-lb" style="color:#10b981;">☁️ CLOUD</div><div class="a-row" style="margin-bottom:9px;"><div class="a-nd" :class="$clicks===2?'a-on':$clicks>0?'a-off':''"><div class="a-ic">🐙</div><div class="a-lb">GitHub</div><div class="a-sb">Repositorio</div></div><div class="a-ar" :class="($clicks===2||$clicks===3)?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===3?'a-on':$clicks>0?'a-off':''"><div class="a-ic">⚙️</div><div class="a-lb">GitHub Actions</div><div class="a-sb">Pipeline YAML</div></div><div class="a-ar" :class="($clicks===3||$clicks===4)?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===4?'a-on':$clicks>0?'a-off':''"><div class="a-ic">⚛️</div><div class="a-lb">Build + Deploy</div><div class="a-sb">React + Vite · GitHub Pages</div></div><div style="flex:1;"></div></div><div class="a-row" style="padding-left:116px;"><div class="a-ar" style="transform:rotate(90deg);" :class="($clicks===3||$clicks===5)?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===5?'a-on':$clicks>0?'a-off':''"><div class="a-ic">🌲</div><div class="a-lb">Cypress E2E</div><div class="a-sb">6 specs · headless</div></div><div class="a-ar" :class="$clicks===6?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===6?'a-on':$clicks>0?'a-off':''"><div class="a-ic">📊</div><div class="a-lb">Cypress Cloud</div><div class="a-sb">resultados + evidencias</div></div><div class="a-ar" :class="$clicks===6?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===6?'a-on':$clicks>0?'a-off':''"><div class="a-ic">📋</div><div class="a-lb">GitHub Projects</div><div class="a-sb">issues auto-gestionados</div></div></div></div><div class="a-zn a-zl"><div class="a-zn-lb" style="color:#58a6ff;">🖥️ LOCAL</div><div class="a-row"><div class="a-nd" :class="$clicks===1?'a-on':$clicks>0?'a-off':''"><div class="a-ic">👨‍💻</div><div class="a-lb">Equipo Dev</div><div class="a-sb">commit / push</div></div><div class="a-ar" :class="$clicks===1?'a-on':$clicks>0?'a-off':''">+</div><div class="a-nd" :class="$clicks===1?'a-on':$clicks>0?'a-off':''"><div class="a-ic">🧪</div><div class="a-lb">Equipo QA</div><div class="a-sb">specs · commit / push</div></div><div class="a-ar" :class="($clicks===1||$clicks===2)?'a-on':$clicks>0?'a-off':''">⬆ push</div><div style="flex:1;"></div><div class="a-nd" :class="$clicks===6?'a-on':$clicks>0?'a-off':''"><div class="a-ic">👔</div><div class="a-lb">Product Owner</div><div class="a-sb">Approve / Reject</div></div></div></div><div class="a-cap"><span v-if="$clicks===0" style="color:#8b949e;font-weight:400;">→ para recorrer el flujo etapa por etapa</span><span v-if="$clicks===1" style="color:#10b981;">① Dev escribe código · QA escribe specs de Cypress · ambos hacen commit y push</span><span v-if="$clicks===2" style="color:#10b981;">② GitHub recibe el push y dispara automáticamente el trigger CI/CD</span><span v-if="$clicks===3" style="color:#10b981;">③ GitHub Actions lee el YAML y orquesta todos los pasos del pipeline</span><span v-if="$clicks===4" style="color:#10b981;">④ Build de la app React + Vite y deploy automático en GitHub Pages</span><span v-if="$clicks===5" style="color:#10b981;">⑤ Cypress ejecuta los 6 specs en modo headless contra la app desplegada</span><span v-if="$clicks===6" style="color:#10b981;">⑥ Cypress Cloud registra resultados · GitHub Projects gestiona los issues automáticamente</span></div></div>
-
----
-
-# 02 · Pipeline CI/CD
-
-<div style="display:grid; grid-template-columns:1.1fr 1fr; gap:14px; margin-top:8px; align-items:start;">
-
-```yaml {1-5|7-15|17-28|all}
-name: CI/CD — Deploy & E2E Tests
-
-on:
-  push:       { branches: [main] }
-  workflow_dispatch:   # disparo manual
-
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with: { node-version: 18 }
-      - run: npm ci && npm run build
-      - uses: peaceiris/actions-gh-pages@v3
-
-  cypress-e2e:
-    needs: build-and-deploy
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: cypress-io/github-action@v6
-        with:
-          browser: chrome
-          record: true
-        env:
-          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-      - uses: actions/upload-artifact@v4
-        with: { name: mochawesome-report, path: cypress/reports/ }
-```
-
-<div>
-  <img src="./img-github-actions.png" style="width:100%; border-radius:8px; border:1px solid #30363d; margin-bottom:10px;" />
-  <div v-click class="card-green small" style="text-align:center;">
-    Job <span class="accent">e2e: succeeded</span> · 3 pasos: build → deploy → test
-  </div>
-</div>
-
-</div>
-
----
-
-# 02 · Los 6 Casos de Prueba
+# Los 6 Casos de Prueba
 
 <div style="display:grid; grid-template-columns:1fr 1.1fr; gap:16px; margin-top:12px; align-items:start;">
 
@@ -482,38 +426,67 @@ jobs:
 </div>
 
 ---
-layout: center
-background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
+clicks: 2
 ---
 
-<div style="display:grid; grid-template-columns:1fr 1.3fr; gap:20px; align-items:center; max-width:860px; margin:0 auto;">
+# Pipeline CI/CD
 
-<div>
-  <div style="font-size:2.8em; margin-bottom:8px;">⚡</div>
-  <h1 style="color:#10b981 !important; font-size:1.8em !important; margin-bottom:10px;">DEMO<br>EN VIVO</h1>
-  <p class="muted small" style="margin-bottom:18px;">Lo que verán es exactamente la hipótesis validada en tiempo real.</p>
-
-  <div class="demo-step"><span class="step-n">01</span> Abrir GitHub Actions → <strong>Run workflow</strong></div>
-  <div class="demo-step"><span class="step-n">02</span> Observar jobs: <strong>build → deploy → e2e</strong></div>
-  <div class="demo-step"><span class="step-n">03</span> Ver Cypress ejecutando los 6 specs</div>
-  <div class="demo-step"><span class="step-n">04</span> Abrir reporte <strong>Mochawesome</strong> del artefacto</div>
-  <div class="demo-step"><span class="step-n">05</span> Ver dashboard en <strong>Cypress Cloud</strong></div>
-
-  <div class="url-box small" style="margin-top:14px;">github.com/lucianocastr/ticketeraTesis/actions</div>
-</div>
-
-<div>
-  <img src="./img-cypress-ide.png" style="width:100%; border-radius:8px; border:1px solid #10b98150; box-shadow:0 0 20px #10b98120;" />
-  <div class="muted" style="font-size:0.68em; text-align:center; margin-top:6px;">
-    Cypress ejecutando TC-002 · checkout.happy.cy.js · ✓ 1 passing (4s)
+<div style="display:flex; gap:10px; margin-bottom:12px; align-items:center;">
+  <div class="card-green small" style="flex:1; text-align:center; padding:8px 10px; transition:all 0.3s;"
+    :style="$clicks===0 ? 'border-color:#10b981;box-shadow:0 0 10px #10b981aa;' : 'opacity:0.35;'">
+    <span class="accent" style="font-weight:700;">STEP 1</span> · Build
+  </div>
+  <div style="font-size:1.3em; transition:color 0.3s;"
+    :style="$clicks===0 ? 'color:#10b981;' : 'color:#30363d;'">→</div>
+  <div class="card-green small" style="flex:1; text-align:center; padding:8px 10px; transition:all 0.3s;"
+    :style="$clicks===1 ? 'border-color:#10b981;box-shadow:0 0 10px #10b981aa;' : 'opacity:0.35;'">
+    <span class="accent" style="font-weight:700;">STEP 2</span> · Deploy
+  </div>
+  <div style="font-size:1.3em; transition:color 0.3s;"
+    :style="$clicks===1 ? 'color:#10b981;' : 'color:#30363d;'">→</div>
+  <div class="card-green small" style="flex:1; text-align:center; padding:8px 10px; transition:all 0.3s;"
+    :style="$clicks===2 ? 'border-color:#10b981;box-shadow:0 0 10px #10b981aa;' : 'opacity:0.35;'">
+    <span class="accent" style="font-weight:700;">STEP 3</span> · E2E Tests
   </div>
 </div>
 
-</div>
+```yaml {1-11|13-16|18-22}
+name: CI/CD — Deploy & E2E Tests
+on:
+  push:       { branches: [main] }
+  workflow_dispatch:   # disparo manual
+
+jobs:
+  build:
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm ci && npm run build
+      - uses: actions/upload-pages-artifact@v3
+
+  deploy:
+    needs: build
+    steps:
+      - uses: peaceiris/actions-gh-pages@v3
+
+  cypress-e2e:
+    needs: deploy
+    steps:
+      - run: npx cypress run --browser chrome --record
+      - uses: actions/upload-artifact@v4
+```
+
+---
+clicks: 5
+---
+
+<h1 v-if="$clicks===0">Arquitectura de la Solución</h1>
+<h1 v-if="$clicks>=1" style="color:#10b981; font-size:1.4em;">⚡ Arquitectura de la Solución — Demo en tiempo real</h1>
+
+<div style="margin-top:10px;"><div class="a-zn a-zc" style="margin-bottom:7px;"><div class="a-zn-lb" style="color:#10b981;">☁️ CLOUD</div><div class="a-row" style="margin-bottom:9px;"><div class="a-nd" :class="$clicks===2?'a-on':$clicks>0?'a-off':''"><div class="a-ic">🐙</div><div class="a-lb">GitHub</div><div class="a-sb">Repositorio</div></div><div class="a-ar" :class="($clicks===2||$clicks===3)?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===3?'a-on':$clicks>0?'a-off':''"><div class="a-ic">⚙️</div><div class="a-lb">GitHub Actions</div><div class="a-sb">Pipeline YAML</div></div><div class="a-ar" :class="($clicks===3||$clicks===4)?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===4?'a-on':$clicks>0?'a-off':''"><div class="a-ic">⚛️</div><div class="a-lb">Build + Deploy</div><div class="a-sb">React + Vite · GitHub Pages</div></div><div style="flex:1;"></div></div><div class="a-row" style="padding-left:116px;"><div class="a-ar" style="transform:rotate(90deg);" :class="($clicks===3||$clicks===5)?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===5?'a-on':$clicks>0?'a-off':''"><div class="a-ic">🌲</div><div class="a-lb">Cypress E2E</div><div class="a-sb">6 specs · headless</div></div><div class="a-ar" :class="$clicks===5?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===5?'a-on':$clicks>0?'a-off':''"><div class="a-ic">📊</div><div class="a-lb">Cypress Cloud</div><div class="a-sb">resultados + evidencias</div></div><div class="a-ar" :class="$clicks===5?'a-on':$clicks>0?'a-off':''">→</div><div class="a-nd" :class="$clicks===5?'a-on':$clicks>0?'a-off':''"><div class="a-ic">📋</div><div class="a-lb">GitHub Projects</div><div class="a-sb">issues auto-gestionados</div></div></div></div><div class="a-zn a-zl"><div class="a-zn-lb" style="color:#58a6ff;">🖥️ LOCAL</div><div class="a-row"><div class="a-nd" :class="$clicks===1?'a-on':$clicks>0?'a-off':''"><div class="a-ic">👨‍💻</div><div class="a-lb">Equipo Dev</div><div class="a-sb">commit / push</div></div><div class="a-ar" :class="$clicks===1?'a-on':$clicks>0?'a-off':''">+</div><div class="a-nd" :class="$clicks===1?'a-on':$clicks>0?'a-off':''"><div class="a-ic">🧪</div><div class="a-lb">Equipo QA</div><div class="a-sb">specs · commit / push</div></div><div class="a-ar" :class="($clicks===1||$clicks===2)?'a-on':$clicks>0?'a-off':''">⬆ push</div><div style="flex:1;"></div><div class="a-nd" :class="$clicks===5?'a-on':$clicks>0?'a-off':''"><div class="a-ic">👔</div><div class="a-lb">Product Owner</div><div class="a-sb">Approve / Reject</div></div></div></div><div class="a-cap"><span v-if="$clicks===0" style="color:#8b949e;font-weight:400;">Arquitectura completa de la solución</span><span v-if="$clicks===1" style="color:#10b981;">① Dev escribe código · QA escribe specs de Cypress · ambos hacen commit y push</span><span v-if="$clicks===2" style="color:#10b981;">② GitHub recibe el push y dispara automáticamente el trigger CI/CD</span><span v-if="$clicks===3" style="color:#10b981;">③ GitHub Actions lee el YAML y orquesta todos los pasos del pipeline</span><span v-if="$clicks===4" style="color:#10b981;">④ Build de la app React + Vite y deploy automático en GitHub Pages</span><span v-if="$clicks===5" style="color:#10b981;">⑤ Cypress ejecuta los 6 specs · Cypress Cloud registra resultados · GitHub Projects gestiona los issues automáticamente</span></div></div>
 
 ---
 
-# 04 · Metodología de Medición
+# Metodología de Medición
 
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:14px;">
 
@@ -545,7 +518,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 
 ---
 
-# 04 · Resultados
+# Resultados
 
 <div style="display:grid; grid-template-columns:1.2fr 1fr; gap:14px; margin-top:10px; align-items:start;">
 
@@ -619,7 +592,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 
 ---
 
-# 04 · Validación ISO/IEC 25010:2023
+# Validación ISO/IEC 25010:2023
 
 <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; margin-top:18px;">
 
@@ -662,7 +635,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 
 ---
 
-# 05 · Conclusiones
+# Conclusiones
 
 <div style="margin-top:12px; display:flex; flex-direction:column; gap:10px;">
 
@@ -690,7 +663,55 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 
 ---
 
-# 05 · Líneas Futuras de Mejora
+# Contribuciones del Trabajo
+
+<div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; margin-top:18px;">
+
+<div v-click class="card-blue" style="display:flex; flex-direction:column; gap:8px;">
+  <div style="font-size:1.5em; text-align:center;">🎓</div>
+  <div class="blue small" style="font-weight:700; text-align:center; letter-spacing:.5px;">A NIVEL ACADÉMICO</div>
+  <ul class="muted small" style="margin:0; padding-left:1.1em;">
+    <li>Evidencia concreta de cómo ISO/IEC 25010 se operacionaliza mediante automatización</li>
+    <li>Puente documentado entre norma teórica e implementación real</li>
+    <li>Caso de estudio replicable para cátedras o investigaciones futuras</li>
+  </ul>
+  <div class="card" style="margin-top:auto; font-size:0.72em; color:#58a6ff; border-color:#58a6ff40;">
+    Evidencia empírica de cómo ISO/IEC 25010 se operacionaliza: de norma abstracta a métricas reales y reproducibles
+  </div>
+</div>
+
+<div v-click class="card-green" style="display:flex; flex-direction:column; gap:8px;">
+  <div style="font-size:1.5em; text-align:center;">⚙️</div>
+  <div class="accent small" style="font-weight:700; text-align:center; letter-spacing:.5px;">A NIVEL TÉCNICO</div>
+  <ul class="muted small" style="margin:0; padding-left:1.1em;">
+    <li>Pipeline CI/CD orientado a <strong>calidad</strong>, no solo a despliegue</li>
+    <li>Automatización de apertura/cierre de issues según resultado de tests</li>
+    <li>Evidencia objetiva y auditable: manual vs. automatizado</li>
+    <li>Stack open-source con nivel de ingeniería profesional</li>
+  </ul>
+  <div class="card" style="margin-top:auto; font-size:0.72em; color:#10b981; border-color:#10b98140;">
+    Herramientas open-source, prácticas de ingeniería profesional
+  </div>
+</div>
+
+<div v-click class="card" style="display:flex; flex-direction:column; gap:8px; border-color:#f0883e;">
+  <div style="font-size:1.5em; text-align:center;">💼</div>
+  <div style="color:#f0883e; font-weight:700; font-size:0.82em; text-align:center; letter-spacing:.5px;">A NIVEL PROFESIONAL</div>
+  <ul class="muted small" style="margin:0; padding-left:1.1em;">
+    <li>Modelo replicable a cualquier sistema transaccional</li>
+    <li>Adoptable por equipos con distinto nivel de madurez técnica</li>
+    <li>DevOps + QA = reducción de tiempos, riesgos y costos</li>
+  </ul>
+  <div class="card" style="margin-top:auto; font-size:0.72em; color:#f0883e; border-color:#f0883e40;">
+    Modelo documentado y paquete de replicación listo para adoptar en cualquier equipo
+  </div>
+</div>
+
+</div>
+
+---
+
+# Líneas Futuras de Mejora
 
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:18px;">
 
@@ -770,7 +791,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 </div>
 
 <p class="muted" style="font-size:0.72em; margin-top:22px;">
-  Centro Regional Universitario Córdoba · Ingeniería en Sistemas · 2025
+  Centro Regional Universitario Córdoba · Ingeniería en Sistemas · 2026
 </p>
 
 </div>
