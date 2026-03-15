@@ -529,7 +529,7 @@ transition: slide-left
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:16px;">
 
 <div>
-<div class="card-blue small" style="margin-bottom:10px;">
+<div class="card-blue small" style="margin-bottom:10px; height:100%;">
   <div class="blue" style="font-weight:700; margin-bottom:6px;"><span class="i-ph-check-light" style="width:1em; height:1em; color:#58a6ff;" /> Dentro del alcance</div>
   <ul style="margin:0; padding-left:1.1em;">
     <li>Pruebas funcionales E2E sobre flujos transaccionales críticos</li>
@@ -542,7 +542,7 @@ transition: slide-left
 </div>
 
 <div>
-<div class="card-red small" style="margin-bottom:10px;">
+<div class="card-red small" style="margin-bottom:10px; height:100%;">
   <div class="red" style="font-weight:700; margin-bottom:6px;"><span class="i-ph-x-light" style="width:1em; height:1em; color:#f85149;" /> Fuera del alcance</div>
   <ul style="margin:0; padding-left:1.1em;">
     <li>Pruebas unitarias y de integración</li>
