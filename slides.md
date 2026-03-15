@@ -197,7 +197,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
 
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:20px;">
 
-<div v-click class="card-green" style="display:flex; gap:12px; align-items:flex-start;">
+<div class="card-green" style="display:flex; gap:12px; align-items:flex-start;">
   <div class="i-ph-magnifying-glass-light" style="width:1.5em; height:1.5em; flex-shrink:0; color:#10b981;" />
   <div>
     <div class="accent small" style="font-weight:700; letter-spacing:.5px;">01 · PROBLEMÁTICA</div>
@@ -205,7 +205,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
   </div>
 </div>
 
-<div v-click class="card-green" style="display:flex; gap:12px; align-items:flex-start;">
+<div class="card-green" style="display:flex; gap:12px; align-items:flex-start;">
   <div class="i-ph-crosshair-light" style="width:1.5em; height:1.5em; flex-shrink:0; color:#10b981;" />
   <div>
     <div class="accent small" style="font-weight:700; letter-spacing:.5px;">02 · PROPUESTA</div>
@@ -213,7 +213,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
   </div>
 </div>
 
-<div v-click class="card-green" style="display:flex; gap:12px; align-items:flex-start;">
+<div class="card-green" style="display:flex; gap:12px; align-items:flex-start;">
   <div class="i-ph-lightning-light" style="width:1.5em; height:1.5em; flex-shrink:0; color:#10b981;" />
   <div>
     <div class="accent small" style="font-weight:700; letter-spacing:.5px;">03 · DEMO EN VIVO</div>
@@ -221,7 +221,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
   </div>
 </div>
 
-<div v-click class="card-green" style="display:flex; gap:12px; align-items:flex-start;">
+<div class="card-green" style="display:flex; gap:12px; align-items:flex-start;">
   <div class="i-ph-chart-bar-light" style="width:1.5em; height:1.5em; flex-shrink:0; color:#10b981;" />
   <div>
     <div class="accent small" style="font-weight:700; letter-spacing:.5px;">04 · RESULTADOS</div>
@@ -229,7 +229,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
   </div>
 </div>
 
-<div v-click class="card-green" style="grid-column:span 2; display:flex; gap:12px; align-items:center; justify-content:center;">
+<div class="card-green" style="grid-column:span 2; display:flex; gap:12px; align-items:center; justify-content:center;">
   <div class="i-ph-check-circle-light" style="width:1.5em; height:1.5em; color:#10b981;" />
   <div class="accent small" style="font-weight:700; letter-spacing:.5px;">05 · CONCLUSIONES Y PREGUNTAS</div>
 </div>
@@ -244,7 +244,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
 
 <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:12px; margin-top:8px;">
 
-<div v-click class="card-red" style="display:flex; flex-direction:column; align-items:center; text-align:center; min-height:130px; justify-content:space-between; transition:all 0.4s ease;" :style="$clicks===1 ? 'box-shadow:0 0 20px rgba(248,81,73,0.4); border-color:rgba(248,81,73,0.6);' : ''">
+<div class="card-red" style="display:flex; flex-direction:column; align-items:center; text-align:center; min-height:130px; justify-content:space-between; transition:all 0.4s ease;" :style="$clicks===1 ? 'box-shadow:0 0 20px rgba(248,81,73,0.4); border-color:rgba(248,81,73,0.6);' : ''">
   <div style="display:flex; align-items:center; gap:6px; margin-bottom:4px;">
     <span class="i-ph-buildings-light" style="width:1.1em; height:1.1em; color:#f85149;" />
     <span class="badge-red">industria</span>
@@ -254,7 +254,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
   <div style="font-size:0.56em; color:#f8514980; margin-top:3px;">World Quality Report 2023-24</div>
 </div>
 
-<div v-click class="card-red" style="display:flex; flex-direction:column; align-items:center; text-align:center; min-height:130px; justify-content:space-between; transition:all 0.4s ease;" :style="$clicks===2 ? 'box-shadow:0 0 20px rgba(248,81,73,0.4); border-color:rgba(248,81,73,0.6);' : ''">
+<div class="card-red" style="display:flex; flex-direction:column; align-items:center; text-align:center; min-height:130px; justify-content:space-between; transition:all 0.4s ease;" :style="$clicks===2 ? 'box-shadow:0 0 20px rgba(248,81,73,0.4); border-color:rgba(248,81,73,0.6);' : ''">
   <div style="display:flex; align-items:center; gap:6px; margin-bottom:4px;">
     <span class="i-ph-currency-dollar-light" style="width:1.1em; height:1.1em; color:#f85149;" />
     <span class="badge-red">costo</span>
@@ -264,7 +264,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
   <div style="font-size:0.56em; color:#f8514980; margin-top:3px;">PractiTest · State of Testing 2023</div>
 </div>
 
-<div v-click class="card-red" style="display:flex; flex-direction:column; align-items:center; text-align:center; min-height:130px; justify-content:space-between; transition:all 0.4s ease;" :style="$clicks===3 ? 'box-shadow:0 0 20px rgba(248,81,73,0.4); border-color:rgba(248,81,73,0.6);' : ''">
+<div class="card-red" style="display:flex; flex-direction:column; align-items:center; text-align:center; min-height:130px; justify-content:space-between; transition:all 0.4s ease;" :style="$clicks===3 ? 'box-shadow:0 0 20px rgba(248,81,73,0.4); border-color:rgba(248,81,73,0.6);' : ''">
   <div style="display:flex; align-items:center; gap:6px; margin-bottom:4px;">
     <span class="i-ph-link-simple-light" style="width:1.1em; height:1.1em; color:#f85149;" />
     <span class="badge-red">adopción</span>
@@ -276,11 +276,11 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
 
 </div>
 
-<div v-click class="muted" style="font-size:0.62em; letter-spacing:2px; font-weight:600; margin-top:14px;">MEDICIÓN PROPIA — BASELINE</div>
+<div class="muted" style="font-size:0.62em; letter-spacing:2px; font-weight:600; margin-top:14px;">MEDICIÓN PROPIA — BASELINE</div>
 
 <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:12px; margin-top:8px;">
 
-<div v-click class="card-red" style="display:flex; flex-direction:column; align-items:center; text-align:center; min-height:130px; justify-content:space-between; transition:all 0.4s ease;" :style="$clicks===5 ? 'box-shadow:0 0 20px rgba(248,81,73,0.4); border-color:rgba(248,81,73,0.6);' : ''">
+<div class="card-red" style="display:flex; flex-direction:column; align-items:center; text-align:center; min-height:130px; justify-content:space-between; transition:all 0.4s ease;" :style="$clicks===5 ? 'box-shadow:0 0 20px rgba(248,81,73,0.4); border-color:rgba(248,81,73,0.6);' : ''">
   <div style="display:flex; align-items:center; gap:6px; margin-bottom:4px;">
     <span class="i-ph-magnifying-glass-light" style="width:1.1em; height:1.1em; color:#f85149;" />
     <span class="badge-red">cobertura</span>
@@ -289,7 +289,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
   <div class="muted" style="font-size:0.72em; margin-top:4px;">cobertura promedio con testing manual</div>
 </div>
 
-<div v-click class="card-red" style="display:flex; flex-direction:column; align-items:center; text-align:center; min-height:130px; justify-content:space-between; transition:all 0.4s ease;" :style="$clicks===6 ? 'box-shadow:0 0 20px rgba(248,81,73,0.4); border-color:rgba(248,81,73,0.6);' : ''">
+<div class="card-red" style="display:flex; flex-direction:column; align-items:center; text-align:center; min-height:130px; justify-content:space-between; transition:all 0.4s ease;" :style="$clicks===6 ? 'box-shadow:0 0 20px rgba(248,81,73,0.4); border-color:rgba(248,81,73,0.6);' : ''">
   <div style="display:flex; align-items:center; gap:6px; margin-bottom:4px;">
     <span class="i-ph-bug-light" style="width:1.1em; height:1.1em; color:#f85149;" />
     <span class="badge-red">defectos</span>
@@ -298,7 +298,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
   <div class="muted" style="font-size:0.72em; margin-top:4px;">defectos detectados antes de producción</div>
 </div>
 
-<div v-click class="card-red" style="display:flex; flex-direction:column; align-items:center; text-align:center; min-height:130px; justify-content:space-between; transition:all 0.4s ease;" :style="$clicks===7 ? 'box-shadow:0 0 20px rgba(248,81,73,0.4); border-color:rgba(248,81,73,0.6);' : ''">
+<div class="card-red" style="display:flex; flex-direction:column; align-items:center; text-align:center; min-height:130px; justify-content:space-between; transition:all 0.4s ease;" :style="$clicks===7 ? 'box-shadow:0 0 20px rgba(248,81,73,0.4); border-color:rgba(248,81,73,0.6);' : ''">
   <div style="display:flex; align-items:center; gap:6px; margin-bottom:4px;">
     <span class="i-ph-arrows-clockwise-light" style="width:1.1em; height:1.1em; color:#f85149;" />
     <span class="badge-red">reproducibilidad</span>
@@ -315,7 +315,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
 
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:16px;">
 
-<div v-click class="card-red" style="display:flex; gap:12px; align-items:flex-start; transition:all 0.4s ease;" :style="$clicks===1 ? 'box-shadow:0 0 20px rgba(248,81,73,0.4); border-color:rgba(248,81,73,0.6);' : ''">
+<div class="card-red" style="display:flex; gap:12px; align-items:flex-start; transition:all 0.4s ease;" :style="$clicks===1 ? 'box-shadow:0 0 20px rgba(248,81,73,0.4); border-color:rgba(248,81,73,0.6);' : ''">
   <div class="i-ph-warning-light" style="width:1.5em; height:1.5em; flex-shrink:0; color:#f85149;" />
   <div>
     <div class="red small" style="font-weight:700; margin-bottom:4px;">Impacto Técnico</div>
@@ -323,7 +323,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
   </div>
 </div>
 
-<div v-click class="card-red" style="display:flex; gap:12px; align-items:flex-start; transition:all 0.4s ease;" :style="$clicks===2 ? 'box-shadow:0 0 20px rgba(248,81,73,0.4); border-color:rgba(248,81,73,0.6);' : ''">
+<div class="card-red" style="display:flex; gap:12px; align-items:flex-start; transition:all 0.4s ease;" :style="$clicks===2 ? 'box-shadow:0 0 20px rgba(248,81,73,0.4); border-color:rgba(248,81,73,0.6);' : ''">
   <div class="i-ph-coins-light" style="width:1.5em; height:1.5em; flex-shrink:0; color:#f85149;" />
   <div>
     <div class="red small" style="font-weight:700; margin-bottom:4px;">Impacto Comercial</div>
@@ -331,7 +331,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
   </div>
 </div>
 
-<div v-click class="card-red" style="display:flex; gap:12px; align-items:flex-start; transition:all 0.4s ease;" :style="$clicks===3 ? 'box-shadow:0 0 20px rgba(248,81,73,0.4); border-color:rgba(248,81,73,0.6);' : ''">
+<div class="card-red" style="display:flex; gap:12px; align-items:flex-start; transition:all 0.4s ease;" :style="$clicks===3 ? 'box-shadow:0 0 20px rgba(248,81,73,0.4); border-color:rgba(248,81,73,0.6);' : ''">
   <div class="i-ph-trend-down-light" style="width:1.5em; height:1.5em; flex-shrink:0; color:#f85149;" />
   <div>
     <div class="red small" style="font-weight:700; margin-bottom:4px;">Impacto Reputacional</div>
@@ -339,7 +339,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
   </div>
 </div>
 
-<div v-click class="card-red" style="display:flex; gap:12px; align-items:flex-start; transition:all 0.4s ease;" :style="$clicks===4 ? 'box-shadow:0 0 20px rgba(248,81,73,0.4); border-color:rgba(248,81,73,0.6);' : ''">
+<div class="card-red" style="display:flex; gap:12px; align-items:flex-start; transition:all 0.4s ease;" :style="$clicks===4 ? 'box-shadow:0 0 20px rgba(248,81,73,0.4); border-color:rgba(248,81,73,0.6);' : ''">
   <div class="i-ph-hourglass-medium-light" style="width:1.5em; height:1.5em; flex-shrink:0; color:#f85149;" />
   <div>
     <div class="red small" style="font-weight:700; margin-bottom:4px;">Impacto Operativo</div>
@@ -349,7 +349,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
 
 </div>
 
-<div v-click class="card" style="margin-top:12px; border-left:3px solid #f85149; border-radius:0 8px 8px 0;">
+<div class="card" style="margin-top:12px; border-left:3px solid #f85149; border-radius:0 8px 8px 0;">
   <p class="small" style="margin:0;"><span class="red">La pregunta central:</span> ¿Puede una estrategia sistemática de automatización resolver estas cuatro dimensiones del problema de forma medible y sostenible?</p>
 </div>
 
@@ -370,17 +370,17 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 </p>
 
 <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:28px;">
-  <div v-click class="card-green" style="text-align:center;">
+  <div class="card-green" style="text-align:center;">
     <div class="i-ph-ruler-light" style="width:1.6em; height:1.6em; color:#10b981;" />
     <div class="accent small" style="font-weight:700; margin-top:4px;">Medible</div>
     <div class="muted small">métricas de tiempo,<br>cobertura y defectos</div>
   </div>
-  <div v-click class="card-green" style="text-align:center;">
+  <div class="card-green" style="text-align:center;">
     <div class="i-ph-repeat-light" style="width:1.6em; height:1.6em; color:#10b981;" />
     <div class="accent small" style="font-weight:700; margin-top:4px;">Reproducible</div>
     <div class="muted small">mismos resultados en<br>cada ejecución</div>
   </div>
-  <div v-click class="card-green" style="text-align:center;">
+  <div class="card-green" style="text-align:center;">
     <div class="i-ph-recycle-light" style="width:1.6em; height:1.6em; color:#10b981;" />
     <div class="accent small" style="font-weight:700; margin-top:4px;">Sostenible</div>
     <div class="muted small">versionado junto al código,<br>sin esfuerzo adicional</div>
@@ -396,7 +396,7 @@ transition: slide-left
 
 # Objetivo General
 
-<div v-click class="card-blue" style="margin: 12px 0; padding:16px 20px;">
+<div class="card-blue" style="margin: 12px 0; padding:16px 20px;">
   <p style="font-size:0.92em; line-height:1.6; margin:0;">
     Diseñar, aplicar y validar una estrategia integral de pruebas funcionales y de regresión automatizadas,
     ejecutadas en entornos cloud, que integre las fases de
@@ -407,22 +407,22 @@ transition: slide-left
 
 <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin-top:14px;">
 
-<div v-click class="card small">
+<div class="card small">
   <span class="accent" style="font-weight:700;">OE1</span> &nbsp;Documentar impacto técnico y operativo de la ausencia de automatización
 </div>
-<div v-click class="card small">
+<div class="card small">
   <span class="accent" style="font-weight:700;">OE2</span> &nbsp;Identificar atributos de calidad afectados según ISO/IEC 25010:2023
 </div>
-<div v-click class="card small">
+<div class="card small">
   <span class="accent" style="font-weight:700;">OE3</span> &nbsp;Diseñar estrategia de pruebas por cobertura, criticidad y riesgo
 </div>
-<div v-click class="card small">
+<div class="card small">
   <span class="accent" style="font-weight:700;">OE4</span> &nbsp;Implementar solución funcional con Cypress + GitHub Actions
 </div>
-<div v-click class="card small">
+<div class="card small">
   <span class="accent" style="font-weight:700;">OE5</span> &nbsp;Validar efectividad mediante métricas y simulaciones de regresión
 </div>
-<div v-click class="card small">
+<div class="card small">
   <span class="accent" style="font-weight:700;">OE6</span> &nbsp;Documentar estrategia replicable a otros entornos equivalentes
 </div>
 
@@ -434,7 +434,7 @@ transition: slide-left
 
 # Marco Conceptual
 
-<div v-click class="card-blue small" style="margin-top:10px; display:flex; gap:12px; align-items:flex-start;">
+<div class="card-blue small" style="margin-top:10px; display:flex; gap:12px; align-items:flex-start;">
   <span class="i-ph-compass-tool-light" style="width:1.4em; height:1.4em; flex-shrink:0; color:#58a6ff; margin-top:2px;" />
   <div>
     <div class="blue" style="font-weight:700; margin-bottom:4px;">ISO/IEC 25010:2023 — Modelo de Calidad del Producto Software</div>
@@ -444,32 +444,32 @@ transition: slide-left
 
 <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-top:10px;">
 
-<div v-click class="card small" style="transition:all 0.4s ease;" :style="$clicks===2 ? 'box-shadow:0 0 16px rgba(88,166,255,0.3); border-color:rgba(88,166,255,0.5);' : ''">
+<div class="card small" style="transition:all 0.4s ease;" :style="$clicks===2 ? 'box-shadow:0 0 16px rgba(88,166,255,0.3); border-color:rgba(88,166,255,0.5);' : ''">
   <div class="blue small" style="font-weight:700; margin-bottom:3px;">Adecuación Funcional</div>
   <div class="muted small">El software cumple las funciones para las que fue diseñado con exactitud y completitud.</div>
 </div>
 
-<div v-click class="card small" style="transition:all 0.4s ease;" :style="$clicks===3 ? 'box-shadow:0 0 16px rgba(88,166,255,0.3); border-color:rgba(88,166,255,0.5);' : ''">
+<div class="card small" style="transition:all 0.4s ease;" :style="$clicks===3 ? 'box-shadow:0 0 16px rgba(88,166,255,0.3); border-color:rgba(88,166,255,0.5);' : ''">
   <div class="blue small" style="font-weight:700; margin-bottom:3px;">Fiabilidad</div>
   <div class="muted small">Capacidad de mantener el nivel de desempeño bajo condiciones definidas durante un período determinado.</div>
 </div>
 
-<div v-click class="card small" style="transition:all 0.4s ease;" :style="$clicks===4 ? 'box-shadow:0 0 16px rgba(88,166,255,0.3); border-color:rgba(88,166,255,0.5);' : ''">
+<div class="card small" style="transition:all 0.4s ease;" :style="$clicks===4 ? 'box-shadow:0 0 16px rgba(88,166,255,0.3); border-color:rgba(88,166,255,0.5);' : ''">
   <div class="blue small" style="font-weight:700; margin-bottom:3px;">Eficiencia de Desempeño</div>
   <div class="muted small">Rendimiento relativo a los recursos utilizados en condiciones establecidas.</div>
 </div>
 
-<div v-click class="card small" style="transition:all 0.4s ease;" :style="$clicks===5 ? 'box-shadow:0 0 16px rgba(88,166,255,0.3); border-color:rgba(88,166,255,0.5);' : ''">
+<div class="card small" style="transition:all 0.4s ease;" :style="$clicks===5 ? 'box-shadow:0 0 16px rgba(88,166,255,0.3); border-color:rgba(88,166,255,0.5);' : ''">
   <div class="blue small" style="font-weight:700; margin-bottom:3px;">Mantenibilidad</div>
   <div class="muted small">Facilidad con la que el sistema puede ser modificado, actualizado y corregido.</div>
 </div>
 
-<div v-click class="card small" style="transition:all 0.4s ease;" :style="$clicks===6 ? 'box-shadow:0 0 16px rgba(88,166,255,0.3); border-color:rgba(88,166,255,0.5);' : ''">
+<div class="card small" style="transition:all 0.4s ease;" :style="$clicks===6 ? 'box-shadow:0 0 16px rgba(88,166,255,0.3); border-color:rgba(88,166,255,0.5);' : ''">
   <div class="blue small" style="font-weight:700; margin-bottom:3px;">Seguridad</div>
   <div class="muted small">Protección de información y datos contra accesos no autorizados o manipulación indebida.</div>
 </div>
 
-<div v-click class="card small" style="transition:all 0.4s ease;" :style="$clicks===7 ? 'box-shadow:0 0 16px rgba(88,166,255,0.3); border-color:rgba(88,166,255,0.5);' : ''">
+<div class="card small" style="transition:all 0.4s ease;" :style="$clicks===7 ? 'box-shadow:0 0 16px rgba(88,166,255,0.3); border-color:rgba(88,166,255,0.5);' : ''">
   <div class="blue small" style="font-weight:700; margin-bottom:3px;">Flexibilidad</div>
   <div class="muted small">Capacidad de adaptarse a diferentes entornos, configuraciones o requisitos cambiantes.</div>
 </div>
@@ -489,25 +489,25 @@ transition: slide-left
 
 <div style="display:grid; grid-template-columns:1fr 1fr 1fr 1fr; gap:8px;">
 
-<div v-click style="text-align:center;">
+<div style="text-align:center;">
   <div class="muted small" style="margin-bottom:4px; letter-spacing:.5px;">LOGIN</div>
   <img src="./img-app-login.png" style="width:100%; height:180px; object-fit:cover; object-position:top; border-radius:6px; border:1px solid #30363d;" />
   <div class="muted" style="font-size:0.65em; margin-top:4px;">TC-001 · Autenticación</div>
 </div>
 
-<div v-click style="text-align:center;">
+<div style="text-align:center;">
   <div class="muted small" style="margin-bottom:4px; letter-spacing:.5px;">CATÁLOGO</div>
   <img src="./img-app-catalogo.png" style="width:100%; height:180px; object-fit:cover; object-position:top; border-radius:6px; border:1px solid #30363d;" />
   <div class="muted" style="font-size:0.65em; margin-top:4px;">TC-005 · Disponibilidad</div>
 </div>
 
-<div v-click style="text-align:center;">
+<div style="text-align:center;">
   <div class="muted small" style="margin-bottom:4px; letter-spacing:.5px;">CHECKOUT</div>
   <img src="./img-app-checkout.png" style="width:100%; height:180px; object-fit:cover; object-position:top; border-radius:6px; border:1px solid #30363d;" />
   <div class="muted" style="font-size:0.65em; margin-top:4px;">TC-002/003 · Compra & Pago</div>
 </div>
 
-<div v-click style="text-align:center;">
+<div style="text-align:center;">
   <div class="muted small" style="margin-bottom:4px; letter-spacing:.5px;">CONFIRMACIÓN</div>
   <img src="./img-app-confirmacion.png" style="width:100%; height:180px; object-fit:cover; object-position:top; border-radius:6px; border:1px solid #30363d;" />
   <div class="muted" style="font-size:0.65em; margin-top:4px;">TC-002 · Happy path</div>
@@ -515,7 +515,7 @@ transition: slide-left
 
 </div>
 
-<div v-click style="margin-top:14px; display:flex; gap:10px; align-items:stretch;">
+<div style="margin-top:14px; display:flex; gap:10px; align-items:stretch;">
   <div class="url-box" style="flex:1; display:flex; align-items:center;"><span class="i-ph-globe-light" style="width:1em; height:1em; flex-shrink:0; color:#58a6ff;" />&nbsp; https://lucianocastr.github.io/ticketeraTesis/</div>
   <div class="url-box" style="flex:1; display:flex; align-items:center;"><span class="i-ph-package-light" style="width:1em; height:1em; flex-shrink:0; color:#58a6ff;" />&nbsp; github.com/lucianocastr/ticketeraTesis</div>
 </div>
@@ -549,14 +549,13 @@ transition: slide-left
     <li>Pruebas de performance y carga</li>
     <li>Sistema legacy o de terceros</li>
     <li>Validación con muestra estadísticamente significativa</li>
-    <li>Ambiente cloud empresarial (AWS / Azure / GCP)</li>
   </ul>
 </div>
 </div>
 
 </div>
 
-<div v-click class="card" style="margin-top:10px; border-left:3px solid #58a6ff; border-radius:0 8px 8px 0;">
+<div class="card" style="margin-top:10px; border-left:3px solid #58a6ff; border-radius:0 8px 8px 0;">
   <p class="small" style="margin:0;">El sistema bajo prueba fue desarrollado por los autores con testeabilidad como requisito de diseño. Los resultados son válidos como <span class="blue">prueba de concepto</span> y base para la replicación en entornos reales.</p>
 </div>
 
@@ -681,7 +680,7 @@ transition: slide-left
 
 </div>
 
-<div v-click class="card" style="margin-top:10px; border-left:3px solid #10b981; border-radius:0 8px 8px 0;">
+<div class="card" style="margin-top:10px; border-left:3px solid #10b981; border-radius:0 8px 8px 0;">
   <p class="small" style="margin:0;"><span class="muted">Alcance del estudio:</span> Estudio exploratorio de viabilidad. Los resultados demuestran consistencia dentro de las 5 iteraciones y son base para investigación futura con muestras de mayor tamaño.</p>
 </div>
 
@@ -691,31 +690,31 @@ transition: slide-left
 
 <div style="max-width:720px; margin:12px auto 0 auto;">
 
-  <div v-click class="bar-wrap">
+  <div class="bar-wrap">
     <div class="bar-label-row"><span class="bar-label">Tiempo por ciclo</span><span class="bar-delta">−87%</span></div>
     <div class="bar-track"><div class="bar-fill bar-manual" style="width:100%;">15 min</div></div>
     <div class="bar-track"><div class="bar-fill bar-auto"   style="width:13%;">2 min</div></div>
   </div>
 
-  <div v-click class="bar-wrap">
+  <div class="bar-wrap">
     <div class="bar-label-row"><span class="bar-label">Cobertura de casos críticos</span><span class="bar-delta">+57 pp</span></div>
     <div class="bar-track"><div class="bar-fill bar-manual" style="width:43%;">43%</div></div>
     <div class="bar-track"><div class="bar-fill bar-auto"   style="width:100%;">100%</div></div>
   </div>
 
-  <div v-click class="bar-wrap">
+  <div class="bar-wrap">
     <div class="bar-label-row"><span class="bar-label">Detección pre-deploy</span><span class="bar-delta">+80 pp</span></div>
     <div class="bar-track"><div class="bar-fill bar-manual" style="width:20%;">20%</div></div>
     <div class="bar-track"><div class="bar-fill bar-auto"   style="width:100%;">100%</div></div>
   </div>
 
-  <div v-click class="bar-wrap">
+  <div class="bar-wrap">
     <div class="bar-label-row"><span class="bar-label">Esfuerzo humano total (n=5)</span><span class="bar-delta">−80%</span></div>
     <div class="bar-track"><div class="bar-fill bar-manual" style="width:100%;">75 min</div></div>
     <div class="bar-track"><div class="bar-fill bar-auto"   style="width:20%;">15 min</div></div>
   </div>
 
-  <div v-click class="bar-wrap">
+  <div class="bar-wrap">
     <div class="bar-label-row"><span class="bar-label">Reproducibilidad</span><span class="bar-delta">+50 pp</span></div>
     <div class="bar-track"><div class="bar-fill bar-manual" style="width:50%;">&lt;50%</div></div>
     <div class="bar-track"><div class="bar-fill bar-auto"   style="width:100%;">100%</div></div>
@@ -741,39 +740,39 @@ transition: slide-left
 
 <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; margin-top:18px;">
 
-<div v-click class="card-green">
+<div class="card-green">
   <div class="accent small" style="font-weight:700; margin-bottom:5px;"><span class="i-ph-check-light" style="width:0.9em; height:0.9em; color:#10b981;" /> Adecuación Funcional</div>
   <div class="muted small">100% flujos críticos validados: login, compra, checkout, carrito, sesión.</div>
 </div>
 
-<div v-click class="card-green">
+<div class="card-green">
   <div class="accent small" style="font-weight:700; margin-bottom:5px;"><span class="i-ph-check-light" style="width:0.9em; height:0.9em; color:#10b981;" /> Fiabilidad</div>
   <div class="muted small">Ejecución reproducible en cloud sin variaciones ni falsos positivos.</div>
 </div>
 
-<div v-click class="card-green">
+<div class="card-green">
   <div class="accent small" style="font-weight:700; margin-bottom:5px;"><span class="i-ph-check-light" style="width:0.9em; height:0.9em; color:#10b981;" /> Eficiencia de Desempeño</div>
   <div class="muted small">Reducción del 87% en tiempo y 80% en esfuerzo operativo por ciclo.</div>
 </div>
 
-<div v-click class="card-green">
+<div class="card-green">
   <div class="accent small" style="font-weight:700; margin-bottom:5px;"><span class="i-ph-check-light" style="width:0.9em; height:0.9em; color:#10b981;" /> Mantenibilidad</div>
   <div class="muted small">Specs versionadas con el código; actualizadas automáticamente en el pipeline.</div>
 </div>
 
-<div v-click class="card-green">
+<div class="card-green">
   <div class="accent small" style="font-weight:700; margin-bottom:5px;"><span class="i-ph-check-light" style="width:0.9em; height:0.9em; color:#10b981;" /> Seguridad</div>
   <div class="muted small">TC-006 valida sesiones expiradas y bloqueos de acceso no autorizado.</div>
 </div>
 
-<div v-click class="card-green">
+<div class="card-green">
   <div class="accent small" style="font-weight:700; margin-bottom:5px;"><span class="i-ph-check-light" style="width:0.9em; height:0.9em; color:#10b981;" /> Flexibilidad</div>
   <div class="muted small">Estrategia documentada y replicable a cualquier sistema web transaccional.</div>
 </div>
 
 </div>
 
-<div v-click class="card-blue small" style="margin-top:14px; text-align:center;">
+<div class="card-blue small" style="margin-top:14px; text-align:center;">
   Alineado con <span class="blue">ISO/IEC 25010:2023</span> —
   modelo de referencia: <span class="blue">Adecuación Funcional · Fiabilidad · Eficiencia · Mantenibilidad · Seguridad · Flexibilidad</span>
 </div>
@@ -784,22 +783,22 @@ transition: slide-left
 
 <div style="margin-top:12px; display:flex; flex-direction:column; gap:10px;">
 
-<div v-click class="card" style="border-left:3px solid #10b981; border-radius:0 8px 8px 0; display:flex; gap:14px; align-items:flex-start;">
+<div class="card" style="border-left:3px solid #10b981; border-radius:0 8px 8px 0; display:flex; gap:14px; align-items:flex-start;">
   <div class="i-ph-check-circle-light" style="width:1.4em; height:1.4em; flex-shrink:0; color:#10b981;" />
   <p class="small" style="margin:0;"><span class="accent">La hipótesis fue confirmada.</span> La automatización integrada en CI/CD mejora la calidad del software de forma medible, reproducible y sostenible. Los datos lo prueban: −87% en tiempo, 100% en cobertura y detección.</p>
 </div>
 
-<div v-click class="card" style="border-left:3px solid #10b981; border-radius:0 8px 8px 0; display:flex; gap:14px; align-items:flex-start;">
+<div class="card" style="border-left:3px solid #10b981; border-radius:0 8px 8px 0; display:flex; gap:14px; align-items:flex-start;">
   <div class="i-ph-lock-key-open-light" style="width:1.4em; height:1.4em; flex-shrink:0; color:#10b981;" />
   <p class="small" style="margin:0;"><span class="accent">Herramientas open-source son suficientes.</span> Cypress + GitHub Actions + GitHub Pages permiten implementar prácticas de ingeniería de calidad profesional con costo cero.</p>
 </div>
 
-<div v-click class="card" style="border-left:3px solid #10b981; border-radius:0 8px 8px 0; display:flex; gap:14px; align-items:flex-start;">
+<div class="card" style="border-left:3px solid #10b981; border-radius:0 8px 8px 0; display:flex; gap:14px; align-items:flex-start;">
   <div class="i-ph-infinity-light" style="width:1.4em; height:1.4em; flex-shrink:0; color:#10b981;" />
   <p class="small" style="margin:0;"><span class="accent">El modelo es replicable.</span> Aplicable a cualquier sistema web con flujos transaccionales críticos: e-commerce, fintech, SaaS, retail.</p>
 </div>
 
-<div v-click class="card" style="border-left:3px solid #10b981; border-radius:0 8px 8px 0; display:flex; gap:14px; align-items:flex-start;">
+<div class="card" style="border-left:3px solid #10b981; border-radius:0 8px 8px 0; display:flex; gap:14px; align-items:flex-start;">
   <div class="i-ph-trend-down-light" style="width:1.4em; height:1.4em; flex-shrink:0; color:#10b981;" />
   <p class="small" style="margin:0;"><span class="accent">El testing manual no escala.</span> Lento, de baja cobertura, no trazable. La automatización resolvió las tres debilidades identificadas en el diagnóstico inicial.</p>
 </div>
@@ -812,7 +811,7 @@ transition: slide-left
 
 <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin-top:10px;">
 
-<div v-click class="card-blue" style="display:flex; flex-direction:column; gap:5px; transition:all 0.4s ease;" :style="$clicks===1 ? 'box-shadow:0 0 20px rgba(88,166,255,0.35); border-color:rgba(88,166,255,0.5);' : ''">
+<div class="card-blue" style="display:flex; flex-direction:column; gap:5px; transition:all 0.4s ease;" :style="$clicks===1 ? 'box-shadow:0 0 20px rgba(88,166,255,0.35); border-color:rgba(88,166,255,0.5);' : ''">
   <div style="text-align:center;"><span class="i-ph-graduation-cap-light" style="width:1.4em; height:1.4em; color:#58a6ff;" /></div>
   <div class="blue small" style="font-weight:700; text-align:center; letter-spacing:.5px;">A NIVEL ACADÉMICO</div>
   <ul class="muted small" style="margin:0; padding-left:1.1em;">
@@ -825,7 +824,7 @@ transition: slide-left
   </div>
 </div>
 
-<div v-click class="card-green" style="display:flex; flex-direction:column; gap:5px; transition:all 0.4s ease;" :style="$clicks===2 ? 'box-shadow:0 0 20px rgba(16,185,129,0.35); border-color:rgba(16,185,129,0.5);' : ''">
+<div class="card-green" style="display:flex; flex-direction:column; gap:5px; transition:all 0.4s ease;" :style="$clicks===2 ? 'box-shadow:0 0 20px rgba(16,185,129,0.35); border-color:rgba(16,185,129,0.5);' : ''">
   <div style="text-align:center;"><span class="i-ph-gear-six-light" style="width:1.4em; height:1.4em; color:#10b981;" /></div>
   <div class="accent small" style="font-weight:700; text-align:center; letter-spacing:.5px;">A NIVEL TÉCNICO</div>
   <ul class="muted small" style="margin:0; padding-left:1.1em;">
@@ -839,7 +838,7 @@ transition: slide-left
   </div>
 </div>
 
-<div v-click class="card" style="display:flex; flex-direction:column; gap:5px; border-color:#f0883e; transition:all 0.4s ease;" :style="$clicks===3 ? 'box-shadow:0 0 20px rgba(240,136,62,0.35); border-color:rgba(240,136,62,0.6);' : 'border-color:#f0883e40;'">
+<div class="card" style="display:flex; flex-direction:column; gap:5px; border-color:#f0883e; transition:all 0.4s ease;" :style="$clicks===3 ? 'box-shadow:0 0 20px rgba(240,136,62,0.35); border-color:rgba(240,136,62,0.6);' : 'border-color:#f0883e40;'">
   <div style="text-align:center;"><span class="i-ph-briefcase-light" style="width:1.4em; height:1.4em; color:#f0883e;" /></div>
   <div style="color:#f0883e; font-weight:700; font-size:0.82em; text-align:center; letter-spacing:.5px;">A NIVEL PROFESIONAL</div>
   <ul class="muted small" style="margin:0; padding-left:1.1em;">
@@ -860,7 +859,7 @@ transition: slide-left
 
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:18px;">
 
-<div v-click class="card" style="display:flex; gap:12px;">
+<div class="card" style="display:flex; gap:12px;">
   <div class="i-ph-test-tube-light" style="width:1.4em; height:1.4em; flex-shrink:0; color:#58a6ff;" />
   <div>
     <div class="blue small" style="font-weight:700; margin-bottom:4px;">Pruebas no funcionales</div>
@@ -868,7 +867,7 @@ transition: slide-left
   </div>
 </div>
 
-<div v-click class="card" style="display:flex; gap:12px;">
+<div class="card" style="display:flex; gap:12px;">
   <div class="i-ph-robot-light" style="width:1.4em; height:1.4em; flex-shrink:0; color:#58a6ff;" />
   <div>
     <div class="blue small" style="font-weight:700; margin-bottom:4px;">IA en QA</div>
@@ -876,7 +875,7 @@ transition: slide-left
   </div>
 </div>
 
-<div v-click class="card" style="display:flex; gap:12px;">
+<div class="card" style="display:flex; gap:12px;">
   <div class="i-ph-chart-bar-light" style="width:1.4em; height:1.4em; flex-shrink:0; color:#58a6ff;" />
   <div>
     <div class="blue small" style="font-weight:700; margin-bottom:4px;">Dashboards en tiempo real</div>
@@ -884,7 +883,7 @@ transition: slide-left
   </div>
 </div>
 
-<div v-click class="card" style="display:flex; gap:12px;">
+<div class="card" style="display:flex; gap:12px;">
   <div class="i-ph-shield-light" style="width:1.4em; height:1.4em; flex-shrink:0; color:#58a6ff;" />
   <div>
     <div class="blue small" style="font-weight:700; margin-bottom:4px;">Análisis estático integrado</div>
