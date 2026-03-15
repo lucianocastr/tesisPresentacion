@@ -10,7 +10,7 @@
 
 ## [MATÍAS] — /2 Portada
 
-"Buenos días. Somos Luciano Castro y Matías Primitz. Durante este trabajo nos preguntamos si era posible transformar la forma en que se valida la calidad del software en un sistema real, usando herramientas gratuitas y accesibles. Lo que van a ver hoy es la respuesta a esa pregunta. Agradecemos a la Licenciada Natalia Mira y al tribunal por el espacio."
+"Buenos días. Somos Luciano Castro y Matías Primitz. Nuestro trabajo investiga cómo una estrategia de automatización de pruebas funcionales y de regresión, integrada en un pipeline CI/CD en la nube, puede mejorar de forma medible la calidad de un sistema web transaccional. Lo que van a ver hoy es cómo validamos esa estrategia sobre un prototipo funcional, demostrando que es replicable a cualquier sistema web transaccional real, con herramientas open-source y costo cero. Agradecemos a la Licenciada Natalia Mira y al tribunal por el espacio."
 
 ---
 
