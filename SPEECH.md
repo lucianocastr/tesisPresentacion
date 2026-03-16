@@ -58,7 +58,7 @@ De las características que define la norma, identificamos seis que son directam
 
 ## [LUCIANO] — /9 El Sistema Bajo Prueba
 
-"Necesitábamos un sistema real sobre el que aplicar la estrategia. Desarrollamos Mini Ticketera: una aplicación de venta de entradas con los flujos que tiene cualquier e-commerce — login, catálogo, carrito, checkout, confirmación. Está desplegada en producción, los dos links en pantalla son funcionales."
+"Necesitábamos un sistema real sobre el que aplicar la estrategia. Lo desarrollamos íntegramente nosotros — precisamente para tener un prototipo de pruebas que cumpla con todos los requisitos de testeabilidad que necesitábamos. Mini Ticketera es una aplicación de venta de entradas con los flujos que tiene cualquier e-commerce — login, catálogo, carrito, checkout, confirmación. Está desplegada en producción, los dos links en pantalla son funcionales."
 
 ---
 
@@ -76,7 +76,15 @@ De las características que define la norma, identificamos seis que son directam
 
 ## [LUCIANO] — /12 Pipeline CI/CD
 
-"El pipeline tiene tres pasos. El primero construye y verifica que la aplicación compila. El segundo la despliega en el entorno de staging. El tercero — que es el núcleo — corre los seis specs automáticamente sobre el deploy real, en Chrome, en la nube. Al terminar, genera evidencia y actualiza la gestión de incidencias sin que nadie lo haga manualmente."
+"El pipeline arranca con un push al repositorio — sin intervención manual, sin acuerdo previo, automáticamente.
+
+El primer paso es el build: instala dependencias, compila la aplicación y verifica que el artefacto es desplegable. Si algo falla acá, el pipeline se detiene — no hay sentido en desplegar algo que no compila.
+
+El segundo paso es el deploy a staging: la aplicación queda disponible en una URL real, lista para ser probada. No es un entorno simulado — es el sistema funcionando en la nube.
+
+El tercer paso es donde está el valor: Cypress corre los seis specs en Chrome, contra ese deploy real, en paralelo desde Cypress Cloud. Al terminar, sube los resultados con video y capturas, genera el reporte, y actualiza automáticamente los issues en GitHub Projects. En ningún momento intervino una persona.
+
+Lo que antes era una tarea de 15 minutos con resultado variable, ahora es un flujo que corre solo y entrega evidencia trazable."
 
 ---
 
