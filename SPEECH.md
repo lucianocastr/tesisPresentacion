@@ -76,17 +76,17 @@ De las características que define la norma, identificamos seis que son directam
 
 ## [LUCIANO] — /12 Pipeline CI/CD
 
-"El pipeline es el núcleo de este trabajo. No es una herramienta de soporte — es la pieza que orquesta toda la estrategia: build, deploy, testing, reporte y gestión de incidencias, sin intervención humana. Lo que se ve en pantalla es una versión representativa — el archivo YAML real tiene más de cien líneas de configuración; lo que mostramos acá son los tres pasos estructurales que importan entender.
+"El pipeline es el núcleo de este trabajo. No es una herramienta de soporte — es la pieza que orquesta toda la estrategia, y lo que se ve en pantalla es una versión representativa: el archivo YAML real tiene más de cien líneas; lo que mostramos son los tres pasos estructurales que importan entender.
 
-Y hay algo central que vale la pena remarcar: todo esto ocurre en la nube. El título del trabajo no es casual — cuando decimos 'entornos cloud', significa que desde el momento en que se hace el push, ningún paso requiere una máquina local encendida, ningún servidor propio, ninguna configuración manual. GitHub Actions provee el runner, GitHub Pages provee el entorno de staging, Cypress Cloud provee la infraestructura de ejecución y los reportes. El equipo no mantiene nada — solo empuja código.
+Todo ocurre en la nube. Cuando decimos 'entornos cloud' en el título, no es una etiqueta — significa que desde el push, ningún paso requiere una máquina local encendida, ningún servidor propio, ninguna configuración manual. GitHub Actions provee el runner, GitHub Pages el entorno de staging, Cypress Cloud la ejecución y los reportes. El equipo no mantiene nada.
 
-El primer paso es el build: instala dependencias, compila la aplicación y verifica que el artefacto es desplegable. Si algo falla acá, el pipeline se detiene — no tiene sentido desplegar algo que no compila.
+El primer paso es el build: compila, instala dependencias, verifica que el artefacto es desplegable. Si algo falla, el pipeline se detiene — no tiene sentido continuar con algo que no compila.
 
-El segundo paso es el deploy a staging: la aplicación queda disponible en una URL real en la nube, lista para ser probada sobre el sistema funcionando, no sobre un mock.
+El segundo paso es el deploy a staging: la aplicación queda disponible en una URL real, lista para ser probada sobre el sistema funcionando, no sobre un entorno simulado.
 
-El tercer paso es donde está el valor real: Cypress corre los seis specs en Chrome, contra ese deploy real, desde Cypress Cloud. Al terminar, sube los resultados con video y capturas, genera el reporte, y actualiza los issues en GitHub Projects. Nadie intervino en ningún punto del proceso.
+El tercer paso es donde está el valor: Cypress corre los seis specs en Chrome contra ese deploy real. Al terminar, sube resultados con video y capturas, genera el reporte y actualiza los issues en GitHub Projects.
 
-Lo que antes era una tarea manual de 15 minutos con resultado variable, ahora es un flujo 100% cloud, reproducible, que entrega evidencia trazable en cada ejecución."
+En un equipo tradicional ese ciclo involucra al menos tres roles distintos: alguien que despliega, alguien que prueba, alguien que actualiza el estado del proyecto. Acá lo hace el pipeline solo, de principio a fin, cada vez que se empuja código."
 
 ---
 
