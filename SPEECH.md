@@ -119,7 +119,15 @@ En un equipo tradicional ese ciclo involucra al menos tres roles distintos: algu
 
 "Estos son promedios de cinco corridas registradas — no estimaciones.
 
-El tiempo por ciclo bajó un 87%: de 15 minutos a 2. La cobertura de flujos críticos pasó del 43% al 100%. La detección de defectos antes del deploy pasó del 20% al 100%. El esfuerzo humano se redujo un 80%. Y las ejecuciones pasaron de ser impredecibles a ser 100% reproducibles.
+*[click]* El tiempo de validación bajó un 87%: lo que antes llevaba 15 minutos, ahora tarda 2. Ese tiempo corre en la nube mientras el equipo hace otra cosa.
+
+*[click]* La cobertura de flujos críticos pasó del 43% al 100%. Con testing manual no llegábamos a cubrir ni la mitad de los casos que importan.
+
+*[click]* La detección de defectos antes del deploy pasó del 20% al 100%. Antes, 8 de cada 10 problemas llegaban a producción. Ahora ninguno pasa sin ser detectado primero.
+
+*[click]* El esfuerzo humano dedicado a validación se redujo un 80%. El equipo dejó de ser el cuello de botella del proceso.
+
+*[click]* Y las ejecuciones pasaron a ser 100% reproducibles. El resultado no depende de quién ejecuta, desde qué máquina, ni en qué momento del día.
 
 Cada uno de esos números tiene un antes y un después medido sobre el mismo sistema, con el mismo protocolo."
 
