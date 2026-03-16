@@ -135,7 +135,13 @@ Cada uno de esos números tiene un antes y un después medido sobre el mismo sis
 
 ## [LUCIANO] — /16 Validación ISO/IEC 25010:2023
 
-"Cada uno de esos resultados cierra el ciclo con el marco teórico. No diseñamos los casos de prueba y después los mapeamos a la norma — la norma fue el criterio de diseño desde el principio. Lo que ven en pantalla es la verificación de que ese diseño funcionó. Le devuelvo a Matías."
+"Esta slide cierra el ciclo académico del trabajo. Cada característica que aparece en verde no es una declaración — es un resultado medido.
+
+La norma no fue algo que aplicamos al final para justificar lo que hicimos. Fue el punto de partida: identificamos las seis características que son directamente afectadas cuando un sistema transaccional falla, y diseñamos los casos de prueba para cubrirlas. Lo que se ve acá es la verificación de que ese diseño funcionó.
+
+Adecuación Funcional: los seis flujos críticos pasan al 100%. Fiabilidad: las ejecuciones son reproducibles en la nube, sin variaciones. Eficiencia: los números de tiempo y esfuerzo que vimos recién. Mantenibilidad: las specs viven versionadas junto al código, se actualizan con el pipeline. Seguridad: el caso de sesión expirada y acceso no autorizado está cubierto. Y Flexibilidad: la estrategia está documentada para que cualquier equipo la replique.
+
+No es teoría aplicada a un ejemplo — es teoría que se convirtió en métricas reales. Le devuelvo a Matías."
 
 ---
 
