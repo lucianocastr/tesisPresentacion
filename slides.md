@@ -923,6 +923,10 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 
 <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:10px; max-width:460px; margin:0 auto;">
   <div class="card small" style="text-align:center;">
+    <div style="height:1.8em; display:flex; justify-content:center; align-items:center;"><span class="i-ph-seal-check-light" style="width:1.4em; height:1.4em; color:#8b949e;" /></div>
+    <div class="muted">ISO/IEC 25010</div>
+  </div>
+  <div class="card small" style="text-align:center;">
     <div style="height:1.8em; display:flex; justify-content:center; align-items:center;"><img src="./img-logo-cypress.svg" style="width:1.4em; height:1.4em;" /></div>
     <div class="muted">Cypress</div>
   </div>
@@ -936,10 +940,6 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
       <img src="./img-logo-vitejs.svg" style="width:1.2em; height:1.2em;" />
     </div>
     <div class="muted">React + Vite</div>
-  </div>
-  <div class="card small" style="text-align:center;">
-    <div style="height:1.8em; display:flex; justify-content:center; align-items:center;"><span class="i-ph-seal-check-light" style="width:1.4em; height:1.4em; color:#8b949e;" /></div>
-    <div class="muted">ISO/IEC 25010</div>
   </div>
 </div>
 
