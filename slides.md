@@ -217,7 +217,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
   <div class="i-ph-lightning-light" style="width:1.5em; height:1.5em; flex-shrink:0; color:#10b981;" />
   <div>
     <div class="accent small" style="font-weight:700; letter-spacing:.5px;">03 · DEMO EN VIVO</div>
-    <div class="muted small">Recorrido en vivo por la arquitectura: pipeline CI/CD y Cypress ejecutando ante el tribunal</div>
+    <div class="muted small">Pipeline CI/CD y Cypress ejecutando en tiempo real</div>
   </div>
 </div>
 
@@ -231,7 +231,7 @@ background: linear-gradient(160deg, #0d1117 0%, #071912 60%, #0d1117 100%)
 
 <div class="card-green" style="grid-column:span 2; display:flex; gap:12px; align-items:center; justify-content:center;">
   <div class="i-ph-check-circle-light" style="width:1.5em; height:1.5em; color:#10b981;" />
-  <div class="accent small" style="font-weight:700; letter-spacing:.5px;">05 · CONCLUSIONES Y PREGUNTAS</div>
+  <div class="accent small" style="font-weight:700; letter-spacing:.5px;">05 · CONCLUSIONES Y LÍNEAS FUTURAS</div>
 </div>
 
 </div>
