@@ -438,7 +438,7 @@ transition: slide-left
   <span class="i-ph-compass-tool-light" style="width:1.4em; height:1.4em; flex-shrink:0; color:#58a6ff; margin-top:2px;" />
   <div>
     <div class="blue" style="font-weight:700; margin-bottom:4px;">ISO/IEC 25010:2023 — Modelo de Calidad del Producto Software</div>
-    <div class="muted small">Estándar internacional que define las características medibles de calidad de un sistema software. Marco de referencia elegido por su aplicabilidad directa a sistemas web transaccionales y su vigencia normativa.</div>
+    <div class="muted small">"La calidad del producto software se puede interpretar como el grado en que dicho producto satisface los requisitos de sus usuarios, aportando de esta manera un valor. El modelo de calidad representa la piedra angular en torno a la cual se establece el sistema para la evaluación de la calidad del producto."</div>
   </div>
 </div>
 
