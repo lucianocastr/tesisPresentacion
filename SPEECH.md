@@ -129,11 +129,11 @@ El esfuerzo humano dedicado a validación se redujo un 80%. El equipo dejó de s
 
 Y las ejecuciones pasaron a ser 100% reproducibles. El resultado no depende de quién ejecuta, desde qué máquina, ni en qué momento del día.
 
-Cada uno de esos números tiene un antes y un después medido sobre el mismo sistema, con el mismo protocolo."
+Cada uno de esos números tiene un antes y un después medido sobre el mismo sistema, con el mismo protocolo. Matías."
 
 ---
 
-## [LUCIANO] — /16 Validación ISO/IEC 25010:2023
+## [MATÍAS] — /16 Validación ISO/IEC 25010:2023
 
 "Esta slide cierra el ciclo académico del trabajo. Cada característica que aparece no es una declaración — es un resultado medido.
 
@@ -141,7 +141,7 @@ Recordemos que la norma define calidad como el grado en que un producto satisfac
 
 Adecuación Funcional: los seis flujos críticos pasan al 100%. Fiabilidad: las ejecuciones son reproducibles en la nube, sin variaciones. Eficiencia: los números de tiempo y esfuerzo que vimos recién. Mantenibilidad: las specs viven versionadas junto al código, se actualizan con el pipeline. Seguridad: el caso de sesión expirada y acceso no autorizado está cubierto. Y Flexibilidad: la estrategia está documentada para que cualquier equipo la replique.
 
-La norma establece que la calidad es el grado en que un producto satisface los requisitos de sus usuarios y les aporta valor. Estos resultados demuestran que lo cumplimos — con métricas, con evidencia, y con un modelo replicable. Le devuelvo a Matías."
+La norma establece que la calidad es el grado en que un producto satisface los requisitos de sus usuarios y les aporta valor. Estos resultados demuestran que lo cumplimos — con métricas, con evidencia, y con un modelo replicable."
 
 ---
 
