@@ -10,7 +10,7 @@
 
 ## [MATÍAS] — /2 Portada
 
-"Buenos días. Somos Luciano Castro y Matías Primitz. Nuestro trabajo parte de una pregunta concreta: ¿puede una estrategia de automatización de pruebas funcionales y de regresión, integrada en un pipeline CI/CD en la nube, mejorar de forma medible la calidad de un sistema web transaccional? Lo que van a ver hoy es cómo validamos esa estrategia sobre un prototipo funcional, demostrando que es replicable a cualquier sistema web transaccional real, con herramientas open-source y costo cero. Agradecemos a la Licenciada Natalia Mira y al tribunal por el espacio."
+"Somos Luciano Castro y Matías Primitz. Nuestro trabajo parte de una pregunta concreta: ¿puede una estrategia de automatización de pruebas funcionales y de regresión, integrada en un pipeline CI/CD en la nube, mejorar de forma medible la calidad de un sistema web transaccional? Lo que van a ver hoy es cómo validamos esa estrategia sobre un prototipo funcional, demostrando que es replicable a cualquier sistema web transaccional real, con herramientas open-source y costo cero."
 
 ---
 
