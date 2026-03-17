@@ -50,7 +50,7 @@ Pero más relevante para nosotros fue lo que medimos en nuestro propio sistema: 
 
 ## [MATÍAS] — /8 Marco Conceptual
 
-"Para medir calidad necesitábamos un marco de referencia que no fuera subjetivo. Elegimos ISO/IEC 25010 porque define calidad de software de una manera muy concreta: es el grado en que un producto satisface los requisitos de sus usuarios y les aporta valor. No es una lista de buenas prácticas — es una piedra angular para evaluar propiedades reales de un sistema real.
+"Para medir calidad necesitábamos un marco de referencia que no fuera subjetivo. Elegimos ISO/IEC 25010 porque su definición es precisa: la norma establece que la calidad de un producto software es — cito — 'el grado en que dicho producto satisface los requisitos de sus usuarios, aportando de esta manera un valor'. No es una lista de buenas prácticas — es la piedra angular para evaluar propiedades reales de un sistema real.
 
 De las características que define la norma, identificamos seis que son directamente afectadas cuando un sistema transaccional falla: funcionalidad, fiabilidad, eficiencia, mantenibilidad, seguridad y flexibilidad. Esas seis son las que diseñamos, medimos y validamos. Cada una va a aparecer de nuevo cuando veamos los resultados."
 
@@ -141,7 +141,7 @@ Recordemos que la norma define calidad como el grado en que un producto satisfac
 
 Adecuación Funcional: los seis flujos críticos pasan al 100%. Fiabilidad: las ejecuciones son reproducibles en la nube, sin variaciones. Eficiencia: los números de tiempo y esfuerzo que vimos recién. Mantenibilidad: las specs viven versionadas junto al código, se actualizan con el pipeline. Seguridad: el caso de sesión expirada y acceso no autorizado está cubierto. Y Flexibilidad: la estrategia está documentada para que cualquier equipo la replique.
 
-No es teoría aplicada a un ejemplo — es teoría que se convirtió en métricas reales. Le devuelvo a Matías."
+La norma establece que la calidad es el grado en que un producto satisface los requisitos de sus usuarios y les aporta valor. Estos resultados demuestran que lo cumplimos — con métricas, con evidencia, y con un modelo replicable. Le devuelvo a Matías."
 
 ---
 
