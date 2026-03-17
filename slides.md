@@ -442,7 +442,9 @@ transition: slide-left
   </div>
 </div>
 
-<div style="display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-top:10px;">
+<div class="muted small" style="margin-top:10px; margin-bottom:4px; letter-spacing:.5px;">CARACTERÍSTICAS VALIDADAS EN ESTE TRABAJO</div>
+
+<div style="display:grid; grid-template-columns:repeat(3,1fr); gap:8px;">
 
 <div class="card small" style="transition:all 0.4s ease;" :style="$clicks===2 ? 'box-shadow:0 0 16px rgba(88,166,255,0.3); border-color:rgba(88,166,255,0.5);' : ''">
   <div class="blue small" style="font-weight:700; margin-bottom:3px;">Adecuación Funcional</div>
