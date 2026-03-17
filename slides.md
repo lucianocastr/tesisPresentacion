@@ -358,9 +358,9 @@ layout: center
 background: linear-gradient(160deg, #0d1117 0%, #071912 100%)
 ---
 
-<div style="text-align:center; max-width:720px; margin:0 auto;">
+# Hipótesis de Trabajo
 
-<div class="muted small" style="letter-spacing:2px; margin-bottom:16px; animation: fade-in 0.6s ease both;">HIPÓTESIS DE TRABAJO</div>
+<div style="text-align:center; max-width:720px; margin:0 auto;">
 
 <p style="font-size:1.25em; line-height:1.7; color:#e6edf3; animation: enter-up 0.8s ease 0.3s both;">
   La integración sistemática de pruebas funcionales y de regresión automatizadas
