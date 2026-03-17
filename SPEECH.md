@@ -50,9 +50,9 @@ Pero más relevante para nosotros fue lo que medimos en nuestro propio sistema: 
 
 ## [MATÍAS] — /8 Marco Conceptual
 
-"Para medir calidad necesitábamos un marco de referencia que no fuera subjetivo. La norma ISO/IEC 25010:2023 nos da exactamente eso: un modelo que define qué significa que un software sea de calidad, en términos observables y medibles.
+"Para medir calidad necesitábamos un marco de referencia que no fuera subjetivo. Elegimos ISO/IEC 25010 porque define calidad de software de una manera muy concreta: es el grado en que un producto satisface los requisitos de sus usuarios y les aporta valor. No es una lista de buenas prácticas — es una piedra angular para evaluar propiedades reales de un sistema real.
 
-De las características que define la norma, identificamos seis que son directamente afectadas cuando un sistema transaccional tiene defectos: funcionalidad, fiabilidad, eficiencia, mantenibilidad, seguridad y flexibilidad. Cada una de estas va a aparecer de nuevo cuando veamos los resultados."
+De las características que define la norma, identificamos seis que son directamente afectadas cuando un sistema transaccional falla: funcionalidad, fiabilidad, eficiencia, mantenibilidad, seguridad y flexibilidad. Esas seis son las que diseñamos, medimos y validamos. Cada una va a aparecer de nuevo cuando veamos los resultados."
 
 ---
 
@@ -135,9 +135,9 @@ Cada uno de esos números tiene un antes y un después medido sobre el mismo sis
 
 ## [LUCIANO] — /16 Validación ISO/IEC 25010:2023
 
-"Esta slide cierra el ciclo académico del trabajo. Cada característica que aparece en verde no es una declaración — es un resultado medido.
+"Esta slide cierra el ciclo académico del trabajo. Cada característica que aparece no es una declaración — es un resultado medido.
 
-La norma no fue algo que aplicamos al final para justificar lo que hicimos. Fue el punto de partida: identificamos las seis características que son directamente afectadas cuando un sistema transaccional falla, y diseñamos los casos de prueba para cubrirlas. Lo que se ve acá es la verificación de que ese diseño funcionó.
+Recordemos que la norma define calidad como el grado en que un producto satisface los requisitos de sus usuarios y les aporta valor. Lo que se ve acá es exactamente eso: cada una de las seis características que identificamos al inicio del trabajo, con evidencia de que fue cumplida.
 
 Adecuación Funcional: los seis flujos críticos pasan al 100%. Fiabilidad: las ejecuciones son reproducibles en la nube, sin variaciones. Eficiencia: los números de tiempo y esfuerzo que vimos recién. Mantenibilidad: las specs viven versionadas junto al código, se actualizan con el pipeline. Seguridad: el caso de sesión expirada y acceso no autorizado está cubierto. Y Flexibilidad: la estrategia está documentada para que cualquier equipo la replique.
 
