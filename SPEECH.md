@@ -155,13 +155,13 @@ Reconocemos que atributos como la fiabilidad bajo carga (MTBF) o la satisfacció
 
 ## [MATÍAS] — /17 Conclusiones
 
-"La hipótesis se confirmó. Pero más allá del resultado puntual, hay tres cosas que nos parecen relevantes para llevarse de este trabajo.
+"La hipótesis se confirmó. Pero los números cuentan mejor la historia que cualquier afirmación.
 
-Una: no hace falta infraestructura costosa. Todo esto corre con herramientas gratuitas y abiertas.
+Un ciclo de validación que llevaba 15 minutos ahora tarda 2 — y corre solo. La cobertura pasó del 43% al 100%. Ocho de cada diez defectos que antes llegaban a producción, ahora se detectan antes del deploy. El esfuerzo humano se redujo un 80% y cada ejecución da exactamente el mismo resultado, sin importar quién la corra ni desde dónde.
 
-Dos: el modelo no es específico de este sistema. Cualquier equipo con un sistema web transaccional puede replicarlo.
+Todo eso con herramientas gratuitas, código abierto y sin un servidor propio.
 
-Tres: el testing manual no es una cuestión de disciplina — es un problema de escala. No puede crecer junto con el sistema. La automatización sí."
+Lo que demostramos no es solo que funciona en este sistema — es que cualquier equipo puede replicarlo. La estrategia está documentada, el pipeline está disponible, y el modelo es transferible. El testing manual no falla por falta de voluntad — falla porque no escala. Esto sí escala."
 
 ---
 
