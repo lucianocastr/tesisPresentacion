@@ -52,7 +52,7 @@ Pero más relevante para nosotros fue lo que medimos en nuestro propio sistema: 
 
 "Para medir calidad necesitábamos un marco que no fuera subjetivo.
 
-Elegimos ISO/IEC 25010. La norma define — cito — 'la calidad del producto software como el grado en que dicho producto satisface los requisitos de sus usuarios, aportando de esta manera un valor'. No es una lista de buenas prácticas — es la piedra angular para evaluar propiedades reales de un sistema real.
+Elegimos ISO/IEC 25010. La norma define la calidad del producto software como "el grado en que dicho producto satisface los requisitos de sus usuarios, aportando de esta manera un valor". No es una lista de buenas prácticas — es la piedra angular para evaluar propiedades reales de un sistema real.
 
 De las características que define, identificamos seis directamente afectadas cuando un sistema transaccional falla: funcionalidad, fiabilidad, eficiencia, mantenibilidad, seguridad y flexibilidad. Esas seis son las que diseñamos, medimos y validamos — y cada una va a aparecer de nuevo cuando veamos los resultados."
 
