@@ -50,7 +50,7 @@ Pero más relevante para nosotros fue lo que medimos en nuestro propio sistema: 
 
 ## [MATÍAS] — /8 Marco Conceptual
 
-"Para medir calidad necesitábamos un marco de referencia que no fuera subjetivo. Elegimos ISO/IEC 25010 porque su definición es precisa: la norma establece que la calidad de un producto software es — cito — 'el grado en que dicho producto satisface los requisitos de sus usuarios, aportando de esta manera un valor'. No es una lista de buenas prácticas — es la piedra angular para evaluar propiedades reales de un sistema real.
+"Para medir calidad necesitábamos un marco de referencia que no fuera subjetivo. Elegimos ISO/IEC 25010 porque su definición es precisa: la norma establece que la calidad de un producto software es 'el grado en que dicho producto satisface los requisitos de sus usuarios, aportando de esta manera un valor'. No es una lista de buenas prácticas — es la piedra angular para evaluar propiedades reales de un sistema real.
 
 De las características que define la norma, identificamos seis que son directamente afectadas cuando un sistema transaccional falla: funcionalidad, fiabilidad, eficiencia, mantenibilidad, seguridad y flexibilidad. Esas seis son las que diseñamos, medimos y validamos. Cada una va a aparecer de nuevo cuando veamos los resultados."
 
@@ -135,13 +135,21 @@ Cada uno de esos números tiene un antes y un después medido sobre el mismo sis
 
 ## [MATÍAS] — /16 Validación ISO/IEC 25010:2023
 
-"Esta slide cierra el ciclo académico del trabajo. Cada característica que aparece no es una declaración — es un resultado medido.
+"Aqui es donde todo converge
 
-Recordemos que la norma define calidad como el grado en que un producto satisface los requisitos de sus usuarios y les aporta valor. Lo que se ve acá es exactamente eso: cada una de las seis características que identificamos al inicio del trabajo, con evidencia de que fue cumplida.
+Recordemos qué dice la norma. ISO/IEC 25010 define calidad como el grado en que un producto satisface los requisitos de sus usuarios y les aporta valor. Para cada atributo que priorizamos al inicio del trabajo, generamos evidencia concreta a partir de las ejecuciones del prototipo.
 
-Adecuación Funcional: los seis flujos críticos pasan al 100%. Fiabilidad: las ejecuciones son reproducibles en la nube, sin variaciones. Eficiencia: los números de tiempo y esfuerzo que vimos recién. Mantenibilidad: las specs viven versionadas junto al código, se actualizan con el pipeline. Seguridad: el caso de sesión expirada y acceso no autorizado está cubierto. Y Flexibilidad: la estrategia está documentada para que cualquier equipo la replique.
+La adecuación funcional se evidencia en la validación completa de flujos críticos con 100% de pass rate; 
 
-La norma establece que la calidad es el grado en que un producto satisface los requisitos de sus usuarios y les aporta valor. Estos resultados demuestran que lo cumplimos — con métricas, con evidencia, y con un modelo replicable."
+La fiabilidad se demuestra con ejecuciones reproducibles sin variaciones ni falsos positivos; 
+
+La eficiencia de desempeño se refleja en la reducción del 90% en tiempos de validación; 
+
+La mantenibilidad se sustenta en que los casos están versionados junto al código.
+
+Flexibilidad: la estrategia está documentada para que cualquier equipo la replique.
+
+Reconocemos que atributos como la fiabilidad bajo carga (MTBF) o la satisfacción del usuario no fueron medidos, y esto está declarado en las limitaciones. Sin embargo, argumentamos que mejorar la capacidad de detección temprana de defectos funcionales es una mejora en la calidad del producto, no solo del proceso: un producto que se valida automáticamente en cada commit llega a producción con menos defectos que uno validado manualmente de forma parcial e intermitente."
 
 ---
 
