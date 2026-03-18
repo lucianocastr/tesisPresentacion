@@ -155,19 +155,27 @@ Reconocemos que atributos como la fiabilidad bajo carga (MTBF) o la satisfacció
 
 ## [MATÍAS] — /17 Conclusiones
 
-"La hipótesis se confirmó. Pero más allá del resultado puntual, hay tres cosas que nos parecen relevantes para llevarse de este trabajo.
+"Hay una pregunta que todo equipo de desarrollo se hace en silencio cada viernes a las seis de la tarde, justo antes de liberar a producción: ¿estamos seguros de que esto funciona?
 
-Una: no hace falta infraestructura costosa. Todo esto corre con herramientas gratuitas y abiertas.
+La mayoría responde con un 'creemos que sí'. Algunos responden con un checklist manual que alguien completó apurado. Muy pocos pueden responder con un link a un reporte que muestra seis flujos críticos validados, con video, con capturas, con trazabilidad al commit que disparó todo — generado hace dos minutos, sin que nadie lo tocara.
+Eso es lo que construimos.
 
-Dos: el modelo no es específico de este sistema. Cualquier equipo con un sistema web transaccional puede replicarlo.
+No construimos una aplicación de venta de entradas — eso fue el vehículo. Construimos un proceso que responde esa pregunta del viernes a las seis, todos los días, en cada push, con datos en lugar de intuición.
+Y lo construimos con algo que cualquier equipo ya tiene: un repositorio, un archivo YAML y la decisión de que la calidad no se negocia al final del sprint.
 
-Tres: el testing manual no es una cuestión de disciplina — es un problema de escala. No puede crecer junto con el sistema. La automatización sí."
+Eso es lo que dejamos. No una herramienta — un estándar de trabajo.""
 
 ---
 
 ## [MATÍAS] — /18 Contribuciones del Trabajo
 
-"Lo que dejamos como aporte concreto tiene tres capas. Para el ámbito académico, un caso documentado de cómo la norma ISO pasa de ser teoría a ser métricas reales. Para lo técnico, un pipeline que no solo despliega — también valida y gestiona. Para lo profesional, un modelo que un equipo puede adoptar sin importar su nivel de madurez actual."
+"Ahora, ¿qué deja este trabajo más allá de nosotros dos?
+
+A nivel académico, hay algo que nos pasó durante la carrera y probablemente les pasó a muchos: leés ISO/IEC 25010, entendés los atributos, aprobás el parcial, y al día siguiente no sabés cómo llevar eso a un proyecto real. Este trabajo construye ese puente que faltaba. Toma una norma que suele quedarse en una tabla de un PDF y la convierte en métricas reales, en reportes, en ejecuciones reproducibles. Cualquier cátedra que quiera enseñar calidad de software con un caso concreto, tiene uno listo.
+
+A nivel técnico, la mayoría de los pipelines CI/CD que se ven en la industria terminan en el deploy. El nuestro no. Nuestro pipeline compila, despliega, valida, genera evidencia, y abre o cierra issues según el resultado — todo automático, todo auditable. Y lo hace con un stack que cualquier desarrollador ya conoce: GitHub, Cypress, JavaScript. No inventamos tecnología — la integramos con un propósito que generalmente se ignora: que el pipeline no solo entregue código, sino que garantice su calidad.
+
+Y a nivel profesional, lo que dejamos es algo que no encontramos cuando lo buscamos: un modelo que un equipo pueda agarrar un lunes a la mañana y empezar a implementar. No importa si son dos personas o veinte, no importa si están en una startup o en una empresa con procesos maduros. "
 
 ---
 
