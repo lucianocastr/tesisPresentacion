@@ -153,7 +153,7 @@ Reconocemos que atributos como la fiabilidad bajo carga (MTBF) o la satisfacció
 
 ---
 
-## [MATÍAS] — /17 Conclusiones
+## [LUCIANO] — /17 Conclusiones
 
 "Hay una pregunta que todo equipo de desarrollo se hace en silencio cada viernes a las seis de la tarde, justo antes de liberar a producción: ¿estamos seguros de que esto funciona?
 
